@@ -1,0 +1,59 @@
+.row.center
+  .col.s1.center
+    %a.material-icons.tiny.grey-text{href: "http://localhost:8080", target: "_blank"} change_history
+    .h12.grey-text http://localhost:8080
+  .col.s1.center
+    %a.h5.grey-text{href: "http://growinggenkiness.me", target: "_blank"} gg
+    .h12.grey-text http://growinggenkiness.me
+  .col.s1.center
+    %a.material-icons.tiny.grey-text{href: "http://gg/", target: "_blank"} all_out
+    .h12.grey-text http://gg/
+  .col.s2.center
+    %a.h6.grey-text{href: "http://growinggenkiness.me", target: "_blank"} ninja-pushy-cats present
+  .col.s2.center
+    .div.z-depth-5
+      %a.material-icons.white-text{href: "/", target: "_blank"} looks
+      .h12.white-text kitemite
+  .col.s1.center
+    %a.h6.grey-text{href: "http://growinggenkiness.me", target: "_blank"} growinggenkiness.me
+  .col.s1.center
+    %a.h6.grey-text{href: "http://growinggenkiness.me", target: "_blank"} _gdkp
+  .col.s1.center
+    %a.material-icons.small.yellow-text.text-lighten-4{href: "http://gg/ai.log", target: "_blank"} attachment
+    %a.h12.center.yellow-text.text-lighten-4{href: "http://gg/ai.log", target: "_blank"} ai.log
+  .col.s1.center
+    %a.material-icons.small.red-text.text-lighten-4{href: "http://gg/lichenology", target: "_blank"} photo
+    %a.h12.center.red-text.text-lighten-4{href: "http://gg/lichenology", target: "_blank"} lichenology
+  .col.s1.center
+    %a.material-icons.small.blue-text.text-lighten-4{href: "http://gg/gdkp", target: "_blank"} map
+    %a.h12.center.blue-text.text-lighten-4{href: "http://gg/gdkp", target: "_blank"} _gdkp
+.container
+  .row
+    .col.s4.center
+      %a.yellow-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} 元 growing_genkiness ^
+    .col.s4.center
+      %a.red-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"}
+        ='| GREAT 王 GRAND |'
+    .col.s4.center
+      %a.blue-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} o {([guchi] genki) Games} 口 o o
+
+.container
+  .row
+  .row
+    .col.s4.center
+      %a.yellow-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} 元 growing_genkiness ^
+    .col.s4.center
+      %a.red-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"}
+        ='| GREAT 王 GRAND |'
+    .col.s4.center
+      %a.blue-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} o {([guchi] genki) Games} 口 o o
+.div
+  .col.s12.center
+    %a.material-icons.medium.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} change_history
+  .col.s12.center
+    %a.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+    %a.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+    %a.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+  .col.s12.center
+    %a.material-icons.tiny.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
+    %a.material-icons.tiny.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert

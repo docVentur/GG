@@ -1,0 +1,192 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+require 'optparse'
+
+require 'rubygems'
+
+require 'active_support/inflector'
+require 'awesome_print'
+
+
+class ComponentTemplate
+  def initialize(name, options)
+    @options = options
+    @name = name
+    @singular = ActiveSupport::Inflector.singularize name
+    @plural = ActiveSupport::Inflector.pluralize name
+    @modulename = "GG"
+    @dbname = "GGdb"
+  end
+
+  def dump
+    header @name
+    header "singular coffee"
+    print singular_coffee()
+    header "singular haml"
+    print singular_haml()
+    header "plural coffee"
+    print plural_coffee()
+    header "plural haml"
+    print plural_haml()
+    header "bits"
+    print singular_bits()
+  end
+
+  def header(value)
+    print "---------------------- #{value} ----------------------\n"
+  end
+
+  def create_singular_files
+    FileUtils.mkdir_p @singular
+    write_file "#{ @singular }/#{ @singular }.html.hamlc", singular_haml()
+    write_file "#{ @singular }/#{ @singular }.coffee", singular_coffee()
+    write_file "#{ @singular }.require", "require './#{ @singular}/#{ @singular }.coffee'\n"
+    write_file "#{ @singular }.bits", singular_bits()
+  end
+
+  def create_plural_files
+    FileUtils.mkdir_p @plural
+    write_file "#{ @plural }/#{ @plural }.html.hamlc", plural_haml()
+    write_file "#{ @plural }/#{ @plural }.coffee", plural_coffee()
+    write_file "#{ @plural }.require", "require './#{ @plural}/#{ @plural }.coffee'\n"
+    write_file "#{ @plural }.bits", plural_bits()
+  end
+
+  def write_file(filename, contents)
+    File.open(filename, "w") do |file|
+      file.write contents
+    end
+  end
+
+  def singular_haml
+    <<"HERE"
+Hello I am a #{ @singular } item and I am named
+= "{{ $ctrl.#{ @singular }.name }}"
+HERE
+  end
+
+  def singular_coffee
+    <<"HERE"
+angular = require 'angular'
+_ = require 'lodash'
+
+app = angular.module '#{ @modulename }'
+
+app.component '#{ @singular }', {
+  template: require('./#{ @singular }.html.hamlc'),
+  controller: (#{ @dbname }, $stateParams) ->
+    vm = @
+    db = #{ @dbname }.db
+
+    @#{ @singular } = false
+
+    @update = ->
+      db.get $stateParams.#{ @singular }id
+        .then (doc) ->
+          vm.#{ @singular } = doc
+
+    @update()
+
+    @
+}
+HERE
+  end
+
+  def plural_haml
+    <<"HERE"
+.container
+  .row
+    .col-md-3
+      %ul
+        %li{"ng-repeat": "#{ @singular } in $ctrl.#{ @plural } track by $index"}
+          %a{"ui-sref": "#{ @plural }.#{ @singular }({#{ @singular }id: #{ @singular }._id})"}
+            = "{{ #{ @singular }.name }} - {{ #{ @singular }.realm }}"
+        %li
+          Character: 
+          %input{"ng-model": "$ctrl.new_#{ @singular }_name"}
+        %li
+          Realm: 
+          %input{"ng-model": "$ctrl.realm.name"}
+        %li
+          %button{"ng-click": "$ctrl.add_#{ @singular }()"} Add New
+    .col-md-9
+      <ui-view></ui-view>
+HERE
+  end
+
+  def plural_coffee
+    <<HERE
+angular = require 'angular'
+_ = require 'lodash'
+
+app = angular.module '#{ @modulename }'
+
+app.component '#{ @plural }', {
+  template: require('./#{ @plural }.html.hamlc'),
+  controller: (#{ @dbname }) ->
+    vm = @
+
+    @#{ @plural } = []
+    @new_#{ @singular }_name = ''
+    @realm = {name: 'Hyjal'}
+
+    @update = ->
+      #{ @dbname }.#{ @plural }().then (results) ->
+        vm.#{ @plural } = _.map results.rows, (v, i, r) -> v.doc
+
+    @add_#{ @singular } = ->
+      #{ @dbname }.post {name: vm.new_#{ @singular }_name, realm: vm.realm.name, record_type: '#{ @singular }'}
+      @update()
+
+    @update()
+
+    @
+}
+HERE
+  end
+
+  def singular_bits
+    pieces = []
+    pieces << <<"HERE" if @options[:singular]
+  $stateProvider.state {name: '#{ @singular }', url: '/#{ @singular }', component: '#{ @singular }'}
+HERE
+
+    pieces << <<"HERE" if @options[:plural] and @options[:singular]
+  $stateProvider.state {name: '#{ @plural }.#{ @singular }', url: '/{#{ @singular }id}', component: '#{ @singular }'}
+HERE
+    return pieces.join ""
+  end
+
+  def plural_bits
+    pieces = []
+
+    pieces << <<"HERE" if @options[:plural]
+  $stateProvider.state {name: '#{ @plural }', url: '/#{ @plural }', component: '#{ @plural }'}
+HERE
+
+    pieces << <<"HERE" if @options[:plural] and @options[:singular]
+  $stateProvider.state {name: '#{ @plural }.#{ @singular }', url: '/{#{ @singular }id}', component: '#{ @singular }'}
+HERE
+    return pieces.join ""
+  end
+end
+
+options = {}
+OptionParser.new do |parser|
+  parser.on("-s", "--singular", "Enable singular mode") do
+    options[:singular] = true
+  end
+
+  parser.on("-p", "--plural", "Enable plural mode") do
+    options[:plural] = true
+  end
+end.parse!
+
+ARGV.each do |arg|
+  template = ComponentTemplate.new arg, options
+  template.create_singular_files if options[:singular]
+  template.create_plural_files if options[:plural]
+  template.dump
+end
+
