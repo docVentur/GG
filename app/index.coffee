@@ -9,7 +9,6 @@ angularMaterialize = require 'angular-materialize'
 require('materialize-css/bin/materialize.css')
 require('materialize-css/bin/materialize.js')
 
-
 require 'gg-css/gg.css'
 
 app = angular.module 'gg', [
@@ -22,10 +21,8 @@ app = angular.module 'gg', [
 require './services/services.coffee'
 require './components/components.coffee'
 
-
 app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
   $stateProvider.state {name: 'main', url: '', parent: 'layout', template: require('./components/main.html.hamlc')}
-
 
   $urlRouterProvider.when '', '/main'
