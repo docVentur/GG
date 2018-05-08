@@ -1,4 +1,4 @@
-angular.module('npc')
+angular.module('gg')
   .directive 'saga', (d3, d3Tip) ->
     link_func = (scope, iElement, iAttrs) ->
       margin = {top: 20, right: 30, bottom: 30, left: 100}

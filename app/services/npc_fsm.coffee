@@ -3,7 +3,7 @@ angular = require 'angular'
 _ = require 'lodash'
 
 npc_fsm = {
-  namespace: "npc",
+  namespace: "gg",
   initialState: "bliss",
   states: {
     bliss: {

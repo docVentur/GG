@@ -1,7 +1,7 @@
 angular = require 'angular'
 _ = require 'lodash'
 
-app = angular.module 'npc'
+app = angular.module 'gg'
 
 app.service 'himadb', (pouchDB) ->
   #@db = new pouchDB 'himadb'

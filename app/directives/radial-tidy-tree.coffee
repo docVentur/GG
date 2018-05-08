@@ -1,5 +1,5 @@
 #https://bl.ocks.org/mbostock/4063550
-angular.module('npc')
+angular.module('gg')
   .directive 'radialTidyTree', (d3, d3Tip) ->
     link_func = (scope, iElement, iAttrs) ->
 
