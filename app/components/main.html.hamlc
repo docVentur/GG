@@ -37,8 +37,44 @@
     .col.s4.center
       %a.blue-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} o {([guchi] genki) Games} 口 o o
 
-.container
+
+.container.grey.white-text
   .row
+  .row
+
+  .row
+  .row
+    .col.s12.center
+      "It's dangerous to go alone..."
+  .row
+    .col.s12.center
+      Take This!
+  .row
+    .col.s12.center
+      %a.material-icons.large.pink-text.text-lighten-3{href: "http://gg/lichenology", target: "_blank"} favorite
+  .row
+  .row
+  .row
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container
   .row
     .col.s4.center
       %a.yellow-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} 元 growing_genkiness ^
@@ -49,11 +85,11 @@
       %a.blue-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} o {([guchi] genki) Games} 口 o o
 .div
   .col.s12.center
-    %a.material-icons.medium.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} change_history
+    %i.material-icons.medium.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} change_history
   .col.s12.center
-    %a.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
-    %a.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
-    %a.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+    %i.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+    %i.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+    %i.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
   .col.s12.center
-    %a.material-icons.tiny.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
-    %a.material-icons.tiny.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
+    %i.material-icons.tiny.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
+    %i.material-icons.tiny.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
