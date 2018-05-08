@@ -10,7 +10,7 @@ require('materialize-css/bin/materialize.css')
 require('materialize-css/bin/materialize.js')
 
 
-#require 'gg-css/gg.css'
+require 'gg-css/gg.css'
 
 app = angular.module 'gg', [
   'ui.router',
