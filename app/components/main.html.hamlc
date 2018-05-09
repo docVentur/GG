@@ -9,87 +9,86 @@
     %a.material-icons.tiny.grey-text{href: "http://gg/", target: "_blank"} all_out
     .h12.grey-text http://gg/
   .col.s2.center
-    %a.h6.grey-text{href: "http://growinggenkiness.me", target: "_blank"} ninja-pushy-cats present
+    %a.h6.grey-text{href: "http://growinggenkiness.me/npc", target: "_blank"} ninja-pushy-cats present:
   .col.s2.center
     .div.z-depth-5
       %a.material-icons.white-text{href: "/", target: "_blank"} looks
       .h12.white-text kitemite
   .col.s1.center
-    %a.h6.grey-text{href: "http://growinggenkiness.me", target: "_blank"} growinggenkiness.me
+    %a.h4.grey-text{href: "http://growinggenkiness.me", target: "_blank"} growinggenkiness.me
   .col.s1.center
-    %a.h6.grey-text{href: "http://growinggenkiness.me", target: "_blank"} _gdkp
+    %a.h5.grey-text{href: "http://growinggenkiness.me/gdkp", target: "_blank"} _gdkp
   .col.s1.center
     %a.material-icons.small.yellow-text.text-lighten-4{href: "http://gg/ai.log", target: "_blank"} attachment
-    %a.h12.center.yellow-text.text-lighten-4{href: "http://gg/ai.log", target: "_blank"} ai.log
+    %br/
+    .h12.center.yellow-text.text-lighten-4{href: "http://gg/ai.log", target: "_blank"} ai.log
   .col.s1.center
     %a.material-icons.small.red-text.text-lighten-4{href: "http://gg/lichenology", target: "_blank"} photo
-    %a.h12.center.red-text.text-lighten-4{href: "http://gg/lichenology", target: "_blank"} lichenology
+    %br/
+    .h12.center.red-text.text-lighten-4{href: "http://gg/lichenology", target: "_blank"} lichenology
   .col.s1.center
     %a.material-icons.small.blue-text.text-lighten-4{href: "http://gg/gdkp", target: "_blank"} map
-    %a.h12.center.blue-text.text-lighten-4{href: "http://gg/gdkp", target: "_blank"} _gdkp
+    .h12.center.blue-text.text-lighten-4{href: "http://gg/gdkp", target: "_blank"} _gdkp
 .container
   .row
     .col.s4.center
-      %a.yellow-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} 元 growing_genkiness ^
+      %a.yellow-text.text-lighten-4{href: "http://growinggenkiness.me/growinggenkiness", target: "_blank"}
+        .h4 ='^ growing_genkiness 元'
     .col.s4.center
-      %a.red-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"}
-        ='| GREAT 王 GRAND |'
+      %a.red-text.text-lighten-4{href: "http://growinggenkiness.me/greatgrand", target: "_blank"}
+        .h5 ='|&nbsp; gREAT 王 gRAND &nbsp;|'
     .col.s4.center
-      %a.blue-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} o {([guchi] genki) Games} 口 o o
+      %a.blue-text.text-lighten-4{href: "http://growinggenkiness.me/npc", target: "_blank"}
+        .h6 ='o 口 {([guchi] genki) Games} o o'
 
-
-.container.grey.white-text
-  .row
-  .row
-
-  .row
-  .row
-    .col.s12.center
-      "It's dangerous to go alone..."
-  .row
-    .col.s12.center
-      Take This!
-  .row
-    .col.s12.center
-      %a.material-icons.large.pink-text.text-lighten-3{href: "http://gg/lichenology", target: "_blank"} favorite
-  .row
-  .row
-  .row
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.container
+  .container
+    .container.ice.white-text
+      .row
+      .row
+      .row
+        .col.s12.center.grey-text.text-lighten-1
+          .h1 It's dangerous to go alone . . .
+      .row
+        .col.s12.center
+          .btn.h2.grey Take This!
+      .row
+        .col.s12.center
+          %i.material-icons.large.pink-text.text-lighten-3{href: "http://gg/lichenology", target: "_blank"} favorite
+      .row
+        .col.s12.center.pink-text.text-lighten-5
+          .h3 i.am
+      .row
+        .col.s12.center.pink-text.text-lighten-4
+          .h2 growinggenkiness.me
+      .row
 
 .container
   .row
+  .row
+
+  .row
     .col.s4.center
-      %a.yellow-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} 元 growing_genkiness ^
+      %a.yellow-text.text-lighten-4{href: "http://growinggenkiness.me/growinggenkiness", target: "_blank"}
+        .h4 ='^ growing_genkiness 元'
     .col.s4.center
-      %a.red-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"}
-        ='| GREAT 王 GRAND |'
+      %a.red-text.text-lighten-4{href: "http://growinggenkiness.me/greatgrand", target: "_blank"}
+        .h5 ='|&nbsp; gREAT 王 gRAND &nbsp;|'
     .col.s4.center
-      %a.blue-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"} o {([guchi] genki) Games} 口 o o
+      %a.blue-text.text-lighten-4{href: "http://growinggenkiness.me/npc", target: "_blank"}
+        .h6 ='o 口 {([guchi] genki) Games} o o'
+
+
+
+
+
 .div
   .col.s12.center
-    %i.material-icons.medium.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} change_history
+    %i.material-icons.medium.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} change_history
   .col.s12.center
-    %i.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
-    %i.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
-    %i.material-icons.small.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+    %i.material-icons.small.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+    %i.material-icons.small.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+    %i.material-icons.small.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
   .col.s12.center
-    %i.material-icons.tiny.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
-    %i.material-icons.tiny.grey-text.text-darken-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
+    %i.material-icons.tiny.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
+    %i.material-icons.tiny.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
