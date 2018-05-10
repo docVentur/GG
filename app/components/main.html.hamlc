@@ -28,6 +28,7 @@
     .h12.center.red-text.text-lighten-4{href: "http://gg/lichenology", target: "_blank"} lichenology
   .col.s1.center
     %a.material-icons.small.blue-text.text-lighten-4{href: "http://gg/gdkp", target: "_blank"} map
+    %br/
     .h12.center.blue-text.text-lighten-4{href: "http://gg/gdkp", target: "_blank"} _gdkp
 .container
   .row
@@ -51,16 +52,19 @@
           .h1 It's dangerous to go alone . . .
       .row
         .col.s12.center
-          .btn.h2.grey Take This!
+          %a.btn.h2.grey{href: "http://growinggenkiness.me/growinggenkiness", target: "_blank"}
+            Take This!
       .row
         .col.s12.center
-          %i.material-icons.large.pink-text.text-lighten-3{href: "http://gg/lichenology", target: "_blank"} favorite
+          %i.material-icons.large.pink-text.text-lighten-3{href: "http://growinggenkiness.me/growinggenkiness", target: "_blank"} favorite
       .row
-        .col.s12.center.pink-text.text-lighten-5
-          .h3 i.am
+        .col.s12.center
+          %a.h3.pink-text.text-lighten-5{href: "http://growinggenkiness.me/about", target: "_blank"}
+            i.am
       .row
-        .col.s12.center.pink-text.text-lighten-4
-          .h2 growinggenkiness.me
+        .col.s12.center
+          %a.h2.pink-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"}
+            growinggenkiness.me
       .row
 
 .container
@@ -84,11 +88,11 @@
 
 .div
   .col.s12.center
-    %i.material-icons.medium.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} change_history
+    %i.material-icons.medium.grey-text.text-lighten-1 change_history
   .col.s12.center
-    %i.material-icons.small.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
-    %i.material-icons.small.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
-    %i.material-icons.small.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} refresh
+    %i.material-icons.small.grey-text.text-lighten-1 refresh
+    %i.material-icons.small.grey-text.text-lighten-1 refresh
+    %i.material-icons.small.grey-text.text-lighten-1 refresh
   .col.s12.center
-    %i.material-icons.tiny.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
-    %i.material-icons.tiny.grey-text.text-lighten-1{href: "http://growinggenkiness.me", target: "_blank"} more_vert
+    %i.material-icons.tiny.grey-text.text-lighten-1 more_vert
+    %i.material-icons.tiny.grey-text.text-lighten-1 more_vert
