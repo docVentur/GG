@@ -22,7 +22,7 @@ require './services/services.coffee'
 require './components/components.coffee'
 
 app.config ($stateProvider, $urlRouterProvider) ->
-  $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
+  $stateProvider.state {name: 'layout', template: require('gg-css/gg-layout.html.hamlc')}
   $stateProvider.state {name: 'main', url: '', parent: 'layout', template: require('./components/main.html.hamlc')}
 
   $urlRouterProvider.when '', '/main'
