@@ -1,60 +1,163 @@
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row.center
     .col.s1
-      %a.material-icons.white-text.black{style: "font-size: 3em"}{href: "http://localhost:8080", target: "_blank"} change_history
-    .col.s3
-      .hindex.black.white-text{style: "font-size: 2em"}= ".hindex [gg"
+      %a.material-icons.white-text.black{style: "font-size: 2em"}{href: "http://localhost:8080", target: "_blank"} change_history
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://localhost:8080"
     .col.s1
-      %a.material-icons.white-text.pink.lighten-4{style: "font-size: 3em"}{href: "http://gg", target: "_blank"} more_vert
-    .col.s3
-      .hneg1.white-text.pink.lighten-4{style: "font-size: 2em"}= ".hneg1 {gg <3"
+      .hindex.black.white-text{style: "font-size: 1em"}= ".hindex [gg"
     .col.s1
-      %a.material-icons.pink-text.text-lighten-4{style: "font-size: 3em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
+      %a.material-icons.white-text.pink.lighten-4{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} more_vert
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"
+    .col.s1
+      .hneg1.white-text.pink.lighten-4{style: "font-size: 1em"}= ".hneg1 {gg <3"
+    .col.s1
+      %a.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
+    .col.s1
+      .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= ".h0 (gg ;"
+    .col.s2
     .col.s3
-      .h0.pink-text.text-lighten-4{style: "font-size: 2em"}= ".h0 (gg ;"
-%hr
+      .row
+        .col.s3
+          %a.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} expand_less
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"
+        .col.s3
+          %a.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gg/kitemite", target: "_blank"} pause
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/kitemite"
+        .col.s3
+          %a.material-icons.blue-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gmail.com", target: "_blank"} dialpad
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gmail.com"
+        .col.s3
+    .col.s1
+      %a.material-icons.green-text.text-lighten-4{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"} explore
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://veronica-anderson-atr6.squarespace.com/config/"
+.row
+  .col.s4.yellow-text.text-lighten-3.center
+    .div
+      %a.h1.yellow-text.text-lighten-3{href: "http://growinggenkiness.me/breathe"}{style: "font-size: 1em"}= "^ BREATHE"
+  .col.s4.red-text.text-lighten-3.center
+    .div
+      %a.h3.red-text.text-lighten-3{href: "http://growinggenkiness.me/feel"}{style: "font-size: 1em"}= "| FeeL |"
+  .col.s4.blue-text.text-lighten-3.center
+    .div
+      %a.h5.blue-text.text-lighten-3{href: "http://growinggenkiness.me/think"}{style: "font-size: 1em"}= ". think .."
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+    .col.s1.black
+      .h1.yellow-text{style: "font-size: 1em"}= "^ai"
+    .col.s1.black
+      .h2.orange-text{style: "font-size: 1em"}= "#cards"
+    .col.s1.black
+      .h3.red-text{style: "font-size: 1em"}= "|promises"
+    .col.s1.black
+      .h4.purple-text{style: "font-size: 1em"}= "/edu"
+    .col.s1.black
+      .h5.blue-text{style: "font-size: 1em"}= ".gdkp"
+    .col.s1.black
+      .h6.green-text{style: "font-size: 1em"}= "@gg"
+    .col.s1.black
+      .h7.white-text{style: "font-size: 1em"}= "*mus129"
+    .col.s1.white
+      .h8.black-text{style: "font-size: 1em"}= "$fin218"
+    .col.s1.white
+      .h9.grey-text{style: "font-size: 1em"}= "{:}mgmt299"
+    .col.s1.white
+      .h10.pink-text{style: "font-size: 1em"}= "(%)phe275"
+    .col.s1.white
+      .h11.teal-text{style: "font-size: 1em"}= "[_]ps102"
+    .col.s1.white
+      .h12.brown-text{style: "font-size: 1em"}= "gg_gg"
+  .row.pink.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+    %hr
 <ui-view></ui-view>
 %hr
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row.center
     .col.s2
-      .h13.pink-text.text-lighten-4{style: "font-size: 3em"}= "gg)"
+      .row
+        .col.s4
+          %a.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} expand_less
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"
+        .col.s4
+          %a.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gg/kitemite", target: "_blank"} pause
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/kitemite"
+        .col.s4
+          %a.material-icons.blue-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gmail.com", target: "_blank"} dialpad
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gmail.com"
+    .col.s1
+    .col.s1
+      %a.material-icons.green-text.text-lighten-4{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"} explore
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://veronica-anderson-atr6.squarespace.com/config/"
     .col.s2
-      %a.material-icons.pink-text.text-lighten-4{style: "font-size: 3em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
-    .col.s2
-      .h14.pink.white-text.lighten-4{style: "font-size: 3em"}= "gg}"
-    .col.s2
-      %a.material-icons.pink.white-text.lighten-4{style: "font-size: 3em"}{href: "http://gg", target: "_blank"} more_vert
-    .col.s2
-      .h15.white-text.black{style: "font-size: 3em"}= "gg]"
-    .col.s2
-      %a.material-icons.white-text.black{style: "font-size: 3em"}{href: "http://localhost:8080", target: "_blank"} change_history
+    .col.s1
+      .h13.pink-text.text-lighten-4{style: "font-size: 1em"}= "gg)"
+    .col.s1
+      %a.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
+    .col.s1
+      .h14.pink.white-text.lighten-4{style: "font-size: 1em"}= "gg}"
+    .col.s1
+      %a.material-icons.pink.white-text.lighten-4{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} more_vert
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"
+    .col.s1
+      .h15.white-text.black{style: "font-size: 1em"}= "gg]"
+    .col.s1
+      %a.material-icons.white-text.black{style: "font-size: 2em"}{href: "http://localhost:8080", target: "_blank"} change_history
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://localhost:8080"
+
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .div
     .row
       .col.s4.center
-        %a.h4.yellow-text.text-lighten-4{href: "http://gg/", target: "_blank"} ^gg 元
+        %a.h4.yellow-text.text-lighten-4 ^gg 元
       .col.s4.center
-        %a.h5.red-text.text-lighten-4{href: "http://gg/wzr.d", target: "_blank"} 王&nbsp; |&nbsp; wzr.d_G&G &nbsp;|&nbsp; 王
+        %a.h5.red-text.text-lighten-4 王&nbsp; |&nbsp; wzr.d_G&G &nbsp;|&nbsp; 王
       .col.s4.center
-        %a.h6.blue-text.text-lighten-4{href: "http://gg/ggg", target: "_blank"} .&nbsp;口&nbsp;gg&nbsp;口&nbsp;.&nbsp;g&nbsp;口&nbsp;.
+        %a.h6.blue-text.text-lighten-4 .&nbsp;口&nbsp;gg&nbsp;口&nbsp;.&nbsp;g&nbsp;口&nbsp;.
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .container
     .row
-    .row
       .col.s4.center
-        .yellow-text.text-lighten-4 元 growing_genkiness ^
+        .yellow-text.text-lighten-4  ^ growing_genkiness 元
       .col.s4.center
         .red-text.text-lighten-4
-          ='| GREAT 王 GRAND |'
+          ='|&nbsp; GREAT &nbsp;王&nbsp; GRAND&nbsp;|'
       .col.s4.center
         .blue-text.text-lighten-4 o {([guchi] genki) Games} 口 o o
-  .div
-    .col.s12.center
-      %i.material-icons.medium.grey-text.text-darken-1{"ui-sref" => "carot"} change_history
-    .col.s12.center
-      %i.material-icons.small.grey-text.text-darken-1{"ui-sref" => "dot"} refresh
-      %i.material-icons.small.grey-text.text-darken-1{"ui-sref" => "dot"} refresh
-      %i.material-icons.small.grey-text.text-darken-1{"ui-sref" => "dot"} refresh
-    .col.s12.center
-      %i.material-icons.tiny.grey-text.text-darken-1{"ui-sref" => "pipe"} more_vert
-      %i.material-icons.tiny.grey-text.text-darken-1{"ui-sref" => "pipe"} more_vert
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s4
+      .div
+        .col.s12.center
+          %i.material-icons.large.grey-text.text-darken-2 change_history
+        .col.s12.center
+          %i.material-icons.medium.grey-text.text-darken-2 refresh
+          %i.material-icons.medium.grey-text.text-darken-2 refresh
+          %i.material-icons.medium.grey-text.text-darken-2 refresh
+        .col.s12.center
+          %i.material-icons.small.grey-text.text-darken-2 more_vert
+          %i.material-icons.small.grey-text.text-darken-2 more_vert
+    .col.s4
+      .div
+        .col.s12.center
+          %i.material-icons.large.grey-text change_history
+        .col.s12.center
+          %i.material-icons.medium.grey-text refresh
+          %i.material-icons.medium.grey-text refresh
+          %i.material-icons.medium.grey-text refresh
+        .col.s12.center
+          %i.material-icons.small.grey-text more_vert
+          %i.material-icons.small.grey-text more_vert
+    .col.s4
+      .div
+        .col.s12.center
+          %i.material-icons.large.grey-text.text-lighten-1 change_history
+        .col.s12.center
+          %i.material-icons.medium.grey-text.text-lighten-1 refresh
+          %i.material-icons.medium.grey-text.text-lighten-1 refresh
+          %i.material-icons.medium.grey-text.text-lighten-1 refresh
+        .col.s12.center
+          %i.material-icons.small.grey-text.text-lighten-1 more_vert
+          %i.material-icons.small.grey-text.text-lighten-1 more_vert

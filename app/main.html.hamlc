@@ -1,162 +1,90 @@
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-  .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-    .col.s1.black
-      .h1.yellow-text{style: "font-size: 2em"}= "^gg"
-    .col.s1.black
-      .h2.orange-text{style: "font-size: 2em"}= "#ai"
-    .col.s1.black
-      .h3.red-text{style: "font-size: 2em"}= "|gg"
-    .col.s1.black
-      .h4.purple-text{style: "font-size: 2em"}= "/gg"
-    .col.s1.black
-      .h5.blue-text{style: "font-size: 2em"}= ".gg"
-    .col.s1.black
-      .h6.green-text{style: "font-size: 2em"}= "@gg"
-    .col.s1.black
-      .h7.white-text{style: "font-size: 2em"}= "*gg"
-    .col.s1.white
-      .h8.black-text{style: "font-size: 2em"}= "$gg"
-    .col.s1.white
-      .h9.grey-text{style: "font-size: 2em"}= "{:}gg"
-    .col.s1.white
-      .h10.pink-text{style: "font-size: 2em"}= "(%)gg"
-    .col.s1.white
-      .h11.teal-text{style: "font-size: 2em"}= "[_]gg"
-    .col.s1.white
-      .h12.brown-text{style: "font-size: 2em"}= "gg_gg"
+  .row
+    .col.s4.yellow-text.text-lighten-3.center
+      .div
+        %a.h1.yellow-text.text-lighten-3{href: "http://growinggenkiness.me/carot"}{style: "font-size: 1em"}= "^ carot"
+    .col.s4.red-text.text-lighten-3.center
+      .div
+        %a.h3.red-text.text-lighten-3{href: "http://growinggenkiness.me/pipe"}{style: "font-size: 1em"}= "| pipe |"
+    .col.s4.blue-text.text-lighten-3.center
+      .div
+        %a.h5.blue-text.text-lighten-3{href: "http://growinggenkiness.me/dot"}{style: "font-size: 1em"}= ". dot .."
+
+
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-  .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row
     .col.s1.black
+      .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+        .col.s12
+          %a.material-icons.yellow-text.lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.log", target: "_blank"} attachment
+          .h1.yellow-text{style: "font-size: 1em"}= "^ai.log"
+    .col.s1.grey.darken-4
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.yellow-text.lighten-4{style: "font-size: 3em"}{href: "http://gg/ai.log", target: "_blank"} attachment
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h2.orange-text{style: "font-size: 2em"}= "#gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h3.red-text{style: "font-size: 2em"}= "|gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h4.purple-text{style: "font-size: 2em"}= "/gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h5.blue-text{style: "font-size: 2em"}= ".gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h6.green-text{style: "font-size: 2em"}= "@gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h7.white-text{style: "font-size: 2em"}= "*gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.white
-            .h8.black-text{style: "font-size: 2em"}= "$gg"
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
           .col.s12
-            .h9.grey-text{style: "font-size: 2em"}= "{:}gg"
+            %a.material-icons.orange-text.text-lighten-3.black{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/pages", target: "_blank"} crop_square
+            .h12.orange-text{style: "font-size: 1em"}= "#playing.card-tachi"
+    .col.s1.grey.darken-3
+      .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
           .col.s12
-            .h10.pink-text{style: "font-size: 2em"}= "(%)gg"
+            %a.material-icons.red-text.lighten-4{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} more_vert
+            .h12.red-text{style: "font-size: 1em"}= "CATasTrophy"
+    .col.s1.grey.darken-2
+      .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
           .col.s12
-            .h11.teal-text{style: "font-size: 2em"}= "[_]gg"
+            %a.material-icons.purple-text.lighten-4{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} more_vert
+            .h12.purple-text{style: "font-size: 1em"}= "poke-db.oard"
+    .col.s1.grey.darken-1
+      .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
           .col.s12
-            .h12.brown-text{style: "font-size: 2em"}= "gg_gg"
-
-    .col.s1.black
+            %a.material-icons.blue-text.lighten-4{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} more_vert
+            .h12.blue-text{style: "font-size: 1em"}= ".gdkp"
+    .col.s1.grey
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.orange-text.text-lighten-3.black{style: "font-size: 3em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/pages", target: "_blank"} crop_square
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h2.orange-text{style: "font-size: 2em"}= "#gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h3.red-text{style: "font-size: 2em"}= "|gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h4.purple-text{style: "font-size: 2em"}= "/gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h5.blue-text{style: "font-size: 2em"}= ".gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            .h6.green-text{style: "font-size: 2em"}= "@gg"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.center.pink.lighten-4
-            .h7.black-text{style: "font-size: 2em"}= "gg_mus129"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.center.pink.lighten-4
-            .h8.black-text{style: "font-size: 2em"}= "gg_fin218"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.center.pink.lighten-4
-            .h9.black-text{style: "font-size: 2em"}= "gg_mgmt299"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.center.pink.lighten-4
-            .h10.black-text{style: "font-size: 2em"}= "gg_phe275"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.center.pink.lighten-4
-            .h11.black-text{style: "font-size: 2em"}= "gg_ps102"
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.center.pink.lighten-4
-            .h12.black-text.pink.lighten-4{style: "font-size: 2em"}= "gg_gg"
-
-    .col.s1.black
+          .col.s12
+            %a.material-icons.green-text.lighten-4{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} more_vert
+            .col.s1
+            .h12.green-text{style: "font-size: 1em"}= "gg"
+    .col.s1.grey.lighten-1
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.pink.white-text.lighten-4{style: "font-size: 3em"}{href: "http://gg", target: "_blank"} more_vert
-    .col.s1.black
+          .col.s12
+            %a.material-icons.yellow-text.lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} book
+            .h12.white-text{style: "font-size: 1em"}= "mus129"
+    .col.s1.grey.lighten-2
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.pink.white-text.lighten-4{style: "font-size: 3em"}{href: "http://gg", target: "_blank"} more_vert
-    .col.s1.black
+          .col.s12
+            %a.material-icons.orange-text.lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} collections
+            .h12.black-text{style: "font-size: 1em"}= "fin218"
+    .col.s1.grey.lighten-3
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.pink.white-text.lighten-4{style: "font-size: 3em"}{href: "http://gg", target: "_blank"} more_vert
-    .col.s1.black
+          .col.s12
+            %a.material-icons.red-text.lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} flare
+            .h12.grey-text{style: "font-size: 1em"}= "mgmt299"
+    .col.s1.grey.lighten-4
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.pink.white-text.lighten-4{style: "font-size: 3em"}{href: "http://gg", target: "_blank"} more_vert
-    .col.s1.black
+          .col.s12
+            %a.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} leak_add
+            .h12.pink-text{style: "font-size: 1em"}= "phe275"
+    .col.s1.grey.lighten-5
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.yellow-text.lighten-4{style: "font-size: 3em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} book
-    .col.s1.black
+          .col.s12
+            %a.material-icons.cyan-text{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} linear_scale
+            .h12.cyan-text{style: "font-size: 1em"}= "ps102"
+    .col.s1.white
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.orange-text.lighten-4{style: "font-size: 3em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} collections
-    .col.s1.black
-      .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.red-text.lighten-4{style: "font-size: 3em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} flare
-    .col.s1.black
-      .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.pink-text.text-lighten-4{style: "font-size: 3em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} leak_add
-    .col.s1.black
-      .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.cyan-text{style: "font-size: 3em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} linear_scale
-    .col.s1.black
-      .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-        .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-          .col.s12.black
-            %a.material-icons.brown-text.lighten-4{style: "font-size: 3em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} repeat_one
-
-
-
+          .col.s12
+            %a.material-icons.brown-text.lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} repeat_one
+            .h12.brown-text{style: "font-size: 1em"}= "gg_gg"
 %h3.h7 :: button for krysta's fishing dailies
 
 
