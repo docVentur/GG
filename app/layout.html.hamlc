@@ -32,15 +32,24 @@
       %a.material-icons.green-text.text-lighten-4{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"} explore
       .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://veronica-anderson-atr6.squarespace.com/config/"
 .row
-  .col.s4.yellow-text.text-lighten-3.center
+  .col.s2.yellow-text.text-lighten-3.center
     .div
       %a.h1.yellow-text.text-lighten-3{href: "http://growinggenkiness.me/breathe"}{style: "font-size: 1em"}= "^ BREATHE"
-  .col.s4.red-text.text-lighten-3.center
+  .col.s2.blue-text.text-lighten-3.center
+    .div
+      .hindex active-task
+  .col.s2.red-text.text-lighten-3.center
     .div
       %a.h3.red-text.text-lighten-3{href: "http://growinggenkiness.me/feel"}{style: "font-size: 1em"}= "| FeeL |"
-  .col.s4.blue-text.text-lighten-3.center
+  .col.s2.blue-text.text-lighten-3.center
+    .div
+      .hindex icetask
+  .col.s2.blue-text.text-lighten-3.center
     .div
       %a.h5.blue-text.text-lighten-3{href: "http://growinggenkiness.me/think"}{style: "font-size: 1em"}= ". think .."
+  .col.s2.blue-text.text-lighten-3.center
+    .div
+      .hindex pitask
 
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
