@@ -1,0 +1,52 @@
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.center
+    .col.s2
+      %a.material-icons.white-text.black{style: "font-size: 6em"}{href: "http://localhost:8080", target: "_blank"} change_history
+    .col.s2
+      .hindex.black.white-text{style: "font-size: 3em"}= ".hindex [gg"
+    .col.s2
+      %a.material-icons.black-text.white{style: "font-size: 6em"}{href: "http://gg", target: "_blank"} more_vert
+    .col.s2
+      .hneg1.white.black-text{style: "font-size: 3em"}= ".hneg1 {gg <3"
+    .col.s2
+      %a.material-icons.white.pink-text.text-lighten-4{style: "font-size: 6em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
+    .col.s2
+      .h0.white.pink-text.text-lighten-3{style: "font-size: 3em"}= ".h0 (gg ;"
+%hr
+<ui-view></ui-view>
+%hr
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.center
+    .col.s2
+      .h13.white.pink-text.text-lighten-3{style: "font-size: 3em"}= "gg)"
+    .col.s2
+      %a.material-icons.white.pink-text.text-lighten-4{style: "font-size: 6em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
+    .col.s2
+      .h14.black-texct.white{style: "font-size: 3em"}= "gg}"
+    .col.s2
+      %a.material-icons.black-text.white{style: "font-size: 6em"}{href: "http://gg", target: "_blank"} more_vert
+    .col.s2
+      .h15.white-text.black{style: "font-size: 3em"}= "gg]"
+    .col.s2
+      %a.material-icons.white-text.black{style: "font-size: 6em"}{href: "http://localhost:8080", target: "_blank"} change_history
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .container
+    .row
+    .row
+      .col.s4.center
+        .yellow-text.text-lighten-4 元 growing_genkiness ^
+      .col.s4.center
+        .red-text.text-lighten-4
+          ='| GREAT 王 GRAND |'
+      .col.s4.center
+        .blue-text.text-lighten-4 o {([guchi] genki) Games} 口 o o
+  .div
+    .col.s12.center
+      %i.material-icons.medium.grey-text.text-darken-1{"ui-sref" => "carot"} change_history
+    .col.s12.center
+      %i.material-icons.small.grey-text.text-darken-1{"ui-sref" => "dot"} refresh
+      %i.material-icons.small.grey-text.text-darken-1{"ui-sref" => "dot"} refresh
+      %i.material-icons.small.grey-text.text-darken-1{"ui-sref" => "dot"} refresh
+    .col.s12.center
+      %i.material-icons.tiny.grey-text.text-darken-1{"ui-sref" => "pipe"} more_vert
+      %i.material-icons.tiny.grey-text.text-darken-1{"ui-sref" => "pipe"} more_vert
