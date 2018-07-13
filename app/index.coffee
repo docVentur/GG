@@ -25,7 +25,7 @@ require 'gg-css/gg.css'
 app.config ($stateProvider, $urlRouterProvider) ->
 #  $stateProvider.state {name: 'layout', template: require('gg-css/gg-layout.html.hamlc')}
 
-  $stateProvider.state {name: 'layout', url: '', template: require('./layout.html.hamlc')}
+  $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
   $stateProvider.state {name: 'main', url: '/main', parent: 'layout', template: require('./main.html.hamlc')}
 
   $urlRouterProvider.when '', '/main'

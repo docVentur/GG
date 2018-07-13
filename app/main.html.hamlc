@@ -1,4 +1,4 @@
-%h1 main
+%h1.h1 main
 
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
