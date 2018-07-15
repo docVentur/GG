@@ -6,8 +6,8 @@
     .col.s1
       .hindex.black.white-text{style: "font-size: 1em"}= ".hindex [gg"
     .col.s1
-      %a.material-icons.white-text.pink.lighten-4{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} more_vert
-      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"
+      %a.material-icons.white-text.pink.lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"} more_vert
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
     .col.s1
       .hneg1.white-text.pink.lighten-4{style: "font-size: 1em"}= ".hneg1 {gg <3"
     .col.s1
