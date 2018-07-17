@@ -13,16 +13,16 @@
 
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
-    .col.s1.black
+    .col.s1
       .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .col.s12
-          %a.material-icons.yellow-text.lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.log", target: "_blank"} attachment
+          %a.button.btn.black.material-icons.yellow-text.lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.log", target: "_blank"} attachment
           .h1.yellow-text{style: "font-size: 1em"}= "^ai.log"
-    .col.s1.grey.darken-4
+    .col.s1
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
         .row.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
           .col.s12
-            %a.material-icons.orange-text.text-lighten-3.black{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/pages", target: "_blank"} crop_square
+            %a.button.btn.grey.darken-4.material-icons.orange-text.text-lighten-3.black{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/pages", target: "_blank"} crop_square
             .h12.orange-text{style: "font-size: 1em"}= "#playing.card-tachi"
     .col.s1.grey.darken-3
       .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
@@ -85,6 +85,24 @@
           .col.s12
             %a.material-icons.brown-text.lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} repeat_one
             .h12.brown-text{style: "font-size: 1em"}= "gg_gg"
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s2.center
+      %a.button.btn.hindex{href: "https://docs.google.com/spreadsheets/d/1KjVihqYEoS2ASSwXE1NDOUFNO0ps79-276vIYL2a_vE/edit#gid=0", target: "_blank"} serviced sites
+    .col.s2.center
+      .hneg1{style: "font-size: 1em"}= "{"
+    .col.s2.center
+      .h0{style: "font-size: 1em"}= "("
+    .col.s2.center
+      .h13{style: "font-size: 1em"}= ")"
+    .col.s2.center
+      .h14{style: "font-size: 1em"}= "}"
+    .col.s2.center
+      .h15{style: "font-size: 1em"}= "]"
+
+
+
+
 %h3.h7 :: button for krysta's fishing dailies
 
 
