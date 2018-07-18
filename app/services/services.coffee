@@ -2,3 +2,4 @@
 #require './npc.css'
 #require './npc_fsm.coffee'
 #require './himadb.coffee'
+require './ailogdb.coffee'

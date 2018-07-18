@@ -1,3 +1,9 @@
+.container
+  .row
+    .col.s2.green
+      <saga-button icon="expand_less" name="Mestinon" color="yellow" mostrecententry="$ctrl.mostrecententry['Mestinon']" type="pitask" intensity="lighten-4" fields="[{name: 'foo', type: 'string'}, {name: 'bG', type: 'integer'}]"></saga-button>
+    .col.s10.red
+      Hello people
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s4.yellow-text.text-lighten-3.center

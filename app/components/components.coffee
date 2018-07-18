@@ -8,4 +8,5 @@
 #require './kitemiteWrapper/kitemiteWrapper.coffee'
 #require './npcWrapper/npcWrapper.coffee'
 #require './growing_genkiness/growing_genkiness.coffee'
-require './breathe-button/breathe-button.coffee'
+require './main/main.coffee'
+require './saga-button/saga-button.coffee'

@@ -154,8 +154,8 @@
       .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/gg_gg"
   .row.pink.center{style: "width: 100% !important; max-width: none", 'ng-if': 'false'}
     %hr
-.container{style: "width: 100% !important; max-width: none", 'ng-if': 'false'}
-  <ui-view></ui-view>
+
+<ui-view></ui-view>
 
 
 %hr

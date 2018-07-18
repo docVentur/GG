@@ -3,8 +3,8 @@ _ = require 'lodash'
 
 app = angular.module 'gg'
 
-app.component 'breatheButton', {
-  template: require('./breathe-button.html.hamlc'),
+app.component 'sagaButton', {
+  template: require('./saga-button.html.hamlc'),
   bindings:
     icon: "@"
     name: "@"
@@ -13,11 +13,11 @@ app.component 'breatheButton', {
     type: "@"
     fields: "<"
     intensity: "@"
-  controller: (ggdb) ->
+  controller: (ailogdb) ->
     vm = @
     @field_values = {}
 
-    @entries = gglogdb.objects.entries
+    @entries = ailogdb.objects.entries
     @make_entry = =>
       new_doc = {name: @name, comment: "button press", type: @type, color: @color, icon: @icon}
       if @field_values
