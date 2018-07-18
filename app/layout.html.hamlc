@@ -1,3 +1,5 @@
+<ui-view></ui-view>
+
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s2.yellow-text.text-lighten-1.center
@@ -35,7 +37,7 @@
         .col.s4
           .h0{style: "font-size: 1em"}= "gg_GG"
     .col.s8.grey
-      .div
+      .div.grey
         %hr
       .row
         .col.s1
@@ -111,7 +113,7 @@
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .div.center{style: 'ng-if': 'true'}
     .col.s12.black
-      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "d e v e l o p m e n t      b o a r d s :: how do i get rid of padding between rows?"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "d e v e l o p . m e n t  _    b o a r d s :: how do i get rid of padding between rows? :: why is .pink-text different above from below?"
   .row.center
     .col.s12.white
 
@@ -154,8 +156,6 @@
       .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/gg_gg"
   .row.pink.center{style: "width: 100% !important; max-width: none", 'ng-if': 'false'}
     %hr
-
-<ui-view></ui-view>
 
 
 %hr
