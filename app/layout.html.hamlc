@@ -1,31 +1,72 @@
-<ui-view></ui-view>
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.center
+    .col.s12
+      <ui-view></ui-view>
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.center
+    .col.s4
+      <ui-view></ui-view>
+
+
+    .col.s1
+      %a.button.btn.material-icons.white-text.black{style: "font-size: 2em"}{href: "http://localhost:8080", target: "_blank"} change_history
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://localhost:8080"
+    .col.s1
+      %a.button.btn.material-icons.white-text.pink.lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"} more_vert
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+    .col.s1
+      %a.button.btn.grey.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
+
+    .col.s5
+      .row
+        .col.s2
+          %a.button.btn.grey.darken-1.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} expand_less
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"
+        .col.s2
+          %a.button.btn.grey.darken-1.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg/ai.log", target: "_blank"} attachment
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/ai.log"
+        .col.s2
+          %a.button.btn.grey.darken-1.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} book
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/ai.yellow.b00ks"
+
+        .col.s2
+          %a.button.btn.grey.darken-1.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gg/kitemite", target: "_blank"} pause
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/kitemite"
+        .col.s2
+          %a.button.btn.grey.darken-1.material-icons.blue-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gmail.com", target: "_blank"} dialpad
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gmail.com"
+        .col.s1
+        .col.s1
+          %a.button.btn.grey.darken-1.material-icons.green-text.text-lighten-4{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"} explore
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://veronica-anderson-atr6.squarespace.com/config/"
 
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
-    .col.s2.yellow-text.text-lighten-1.center
+    .col.s4.yellow-text.text-lighten-1.center
       .div
         %a.button.btn.grey.darken-4.h1.yellow-text.text-lighten-3{href: "http://growinggenkiness.me/breathe", target: "_blank"}{style: "font-size: 1em"}= "^ BREATHE"
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/breathe"
-    .col.s2.blue-text.text-lighten-3.center
-      .div.teal
-        .row
-        .hindex active-task
-    .col.s2.red-text.text-lighten-3.center
+    .col.s4.red-text.text-lighten-3.center
       .div
         %a.button.btn.darken-3.grey.h3.red-text.text-lighten-3{href: "http://growinggenkiness.me/feel", target: "_blank"}{style: "font-size: 1em"}= "| FeeL |"
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/feel"
-    .col.s2.blue-text.text-lighten-3.center
-      .div.teal
-        .row
-        .hindex icetask
-    .col.s2.blue-text.text-lighten-3.center
+
+    .col.s4.blue-text.text-lighten-3.center
       .div
         %a.button.btn.darken-2.grey.h5.blue-text.text-lighten-3{href: "http://growinggenkiness.me/think", target: "_blank"}{style: "font-size: 1em"}= ". think .."
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/think"
-    .col.s2.blue-text.text-lighten-3.center
-      .div.teal
-        .row
-        .hindex pitask
+
+  .row{'ng-if': 'false'}
+    .col.s4.white.center
+      %iframe{src: "http://gg/ai.log", name: "ailog", width: "500", height: "100"}
+    .col.s4.black.center
+      %iframe{src: "http://gg/ai.log/icetask", name: "icetask", width: "500", height: "100"}
+    .col.s4.pink.lighten-4.center
+      %iframe{src: "http://gg/ai.log/pitask", name: "icetask", width: "500", height: "100"}
+
+
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s2

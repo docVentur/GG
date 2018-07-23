@@ -92,8 +92,8 @@ app.service 'ailogdb', (pouchDB, $rootScope, moment) ->
   @create_entry = (doc) ->
     doc.$ref ="http://gg/ai.log/entry.schema"
     doc.entered_at = moment().format()
+    console.log doc
     @db.post doc
-    doc
 
   @when_done_callback = undefined
 

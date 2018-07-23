@@ -1,7 +1,11 @@
-.container{style: "width: 75% !important; max-width: none", 'ng-if': 'true'}
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
-    .col.s12
+    .col.s6
+      <pyridostigmine-button icon="accessibility" name="pyridostigmine" color="black" mostrecententry="$ctrl.mostrecententry['pyridostigmine']" type="icetask" intensity="lighten-4">
+      </pyridostigmine-button>
+    .col.s6
       <saga-button icon="expand_less" name="Mestinon" color="yellow" mostrecententry="$ctrl.mostrecententry['Mestinon']" type="pitask" intensity="lighten-4" fields="[{name: 'f00', type: 'string'}, {name: 'bG', type: 'integer'}]"></saga-button>
+
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'false'}
   .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
     .row

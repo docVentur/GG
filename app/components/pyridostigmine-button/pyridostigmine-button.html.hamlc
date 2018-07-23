@@ -1,0 +1,11 @@
+.div.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
+  .div{"ng-click": "$ctrl.make_entry()"}
+    .row
+      .col.s5
+        .hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
+      .col.s2
+        .h7.pink-text last clicked
+      .col.s4
+        %div{"ng-if": "$ctrl.mostrecententry.fields"}
+          .hindex{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
+          .hindex.pink-text b00
