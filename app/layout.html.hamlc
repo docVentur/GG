@@ -40,6 +40,150 @@
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://veronica-anderson-atr6.squarespace.com/config/"
 
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.center
+    .col.s4
+      .row
+        .col.s4
+          .hindex{style: "font-size: 1em"}= "gg_GG"
+          %a.button.btn.material-icons.white-text.black{style: "font-size: 2em"}{href: "http://localhost:8080", target: "_blank"} change_history
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://localhost:8080"
+        .col.s4
+          .hneg1{style: "font-size: 1em"}= "gg_GG"
+          %a.button.btn.material-icons.white-text.pink.lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"} more_vert
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+        .col.s4
+          .h0{style: "font-size: 1em"}= "gg_GG"
+          %a.button.btn.grey.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
+    .col.s4
+      .row.black
+        %hr
+      .row
+        .col.s4
+          .h1.yellow-text.text-lighten-5{style: "font-size: 1em"}= "gg_GG"
+          %a.button.btn.grey.darken-1.material-icons.yellow-text.text-lighten-5{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} expand_less
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"
+        .col.s4
+          .h2.red-text.text-lighten-5{style: "font-size: 1em"}= "gg_GG"
+          %a.button.btn.grey.darken-1.material-icons.pink-text.text-lighten-5{style: "font-size: 2em"}{href: "http://gg/kitemite", target: "_blank"} pause
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/kitemite"
+
+        .col.s4
+          .h3.blue-text.text-lighten-5{style: "font-size: 1em"}= "gg_GG"
+          %a.button.btn.grey.darken-1.material-icons.blue-text.text-lighten-5{style: "font-size: 2em"}{href: "http://gmail.com", target: "_blank"} more_horiz
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gmail.com"
+
+    .col.s4
+      .row
+        .col.s4
+          .h13{style: "font-size: 1em"}= "gg_GG"
+        .col.s4
+          .h14{style: "font-size: 1em"}= "gg_GG"
+          %a.button.btn.h14{href: "https://docs.google.com/spreadsheets/d/1KjVihqYEoS2ASSwXE1NDOUFNO0ps79-276vIYL2a_vE/edit#gid=0", target: "_blank"} serviced sites
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "google spreadsheet"
+
+        .col.s4
+          .h15{style: "font-size: 1em"}= "gg_GG"
+          %a.button.btn.grey.darken-1.material-icons.green-text.text-lighten-4{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"} explore
+          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://veronica-anderson-atr6.squarespace.com/config/"
+
+
+.container.center{style: "width: 45% !important; max-width: none", 'ng-if': 'true'}
+  .row.yellow
+    %hr
+  .row
+    .col.s3
+      .h1.yellow-text.text-lighten-4{style: "font-size: 1em"}= "gg_GG"
+      %a.button.btn.grey.darken-1.material-icons.yellow-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gg/ai.log", target: "_blank"} attachment
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/ai.log"
+    .col.s3
+      .h2.red-text.text-lighten-4{style: "font-size: 1em"}= "gg_GG"
+    .col.s3
+      .h3.blue-text.text-lighten-4{style: "font-size: 1em"}= "gg_GG"
+    .col.s3
+      .h4.green-text.text-lighten-4{style: "font-size: 1em"}= "gg_GG"
+
+.container.center{style: "width: 55% !important; max-width: none", 'ng-if': 'true'}
+  .row.red
+    %hr
+  .row
+    .col.s2
+      .h1.yellow-text.text-lighten-3{style: "font-size: 1em"}= "gg_GG"
+      %a.button.btn.grey.darken-1.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} book
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/ai.yellow.b00ks"
+    .col.s2
+      .h2.orange-text.text-lighten-3{style: "font-size: 1em"}= "gg_GG"
+    .col.s2
+      .h3.red-text.text-lighten-3{style: "font-size: 1em"}= "gg_GG"
+    .col.s2
+      .h4.purple-text.text-lighten-3{style: "font-size: 1em"}= "gg_GG"
+    .col.s2
+      .h5.blue-text.text-lighten-3{style: "font-size: 1em"}= "gg_GG"
+    .col.s2
+      .h6.green-text.text-lighten-3{style: "font-size: 1em"}= "gg_GG"
+
+.container{style: "width: 70% !important; max-width: none", 'ng-if': 'true'}
+  .row.blue
+    %hr
+  .row.grey
+    .col.s2
+      .h1{style: "font-size: 1em"}= "gg_GG"
+      %a.button.btn.grey.darken-1.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} add
+
+    .col.s2
+      .h2{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h3{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h4{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h5{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h6{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h7{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h8{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h9{style: "font-size: 1em"}= "gg_GG"
+
+
+.container{style: "width: 85% !important; max-width: none", 'ng-if': 'true'}
+  .row.green
+    %hr
+  .row.grey
+    .col.s1
+      .h1{style: "font-size: 1em"}= "gg_GG"
+      %a.button.btn.grey.darken-1.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} add
+    .col.s1
+      .h2{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h3{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h4{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h5{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h6{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h7{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h8{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h9{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h10{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h11{style: "font-size: 1em"}= "gg_GG"
+    .col.s1
+      .h12{style: "font-size: 1em"}= "gg_GG"
+
+
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.white
+    %hr
   .row
     .col.s2
       .row
@@ -85,6 +229,11 @@
           .h14{style: "font-size: 1em"}= "gg_GG"
         .col.s4
           .h15{style: "font-size: 1em"}= "gg_GG"
+
+
+
+
+
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row.center
     .col.s1
@@ -120,61 +269,6 @@
 
     .col.s2
       %a.button.btn.h14{href: "https://docs.google.com/spreadsheets/d/1KjVihqYEoS2ASSwXE1NDOUFNO0ps79-276vIYL2a_vE/edit#gid=0", target: "_blank"} serviced sites
-
-.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-  .row
-    .col.s2
-      .row
-        .col.s4
-          .hindex{style: "font-size: 1em"}= "gg_GG"
-        .col.s4
-          .hneg1{style: "font-size: 1em"}= "gg_GG"
-        .col.s4
-          .h0{style: "font-size: 1em"}= "gg_GG"
-    .col.s8.grey
-      .div.grey
-        %hr
-      .row
-        .col.s1
-          .h1{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h2{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h3{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h4{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h5{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h6{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h7{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h8{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h9{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h10{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h11{style: "font-size: 1em"}= "gg_GG"
-        .col.s1
-          .h12{style: "font-size: 1em"}= "gg_GG"
-    .col.s2
-      .row
-        .col.s4
-          .h13{style: "font-size: 1em"}= "gg_GG"
-        .col.s4
-          .h14{style: "font-size: 1em"}= "gg_GG"
-        .col.s4
-          .h15{style: "font-size: 1em"}= "gg_GG"
-
-
-
-
-
-
-
-
 
 
 

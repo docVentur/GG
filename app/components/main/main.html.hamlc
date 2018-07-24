@@ -6,6 +6,55 @@
     .col.s6
       <saga-button icon="arrow_drop_up" name="ice" color="yellow" mostrecententry="$ctrl.mostrecententry['ice']" type="icetask" intensity="lighten-5" fields="[{name: 'f00', type: 'string'}, {name: 'ntgr', type: 'integer'}]"></saga-button>
 
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s2
+      .row
+        .col.s4
+          .hindex{style: "font-size: 1em"}= "gg_GG"
+        .col.s4
+          .hneg1{style: "font-size: 1em"}= "gg_GG"
+        .col.s4
+          .h0{style: "font-size: 1em"}= "gg_GG"
+    .col.s8.grey
+      .div.grey
+        %hr
+      .row
+        .col.s1
+          .h1{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h2{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h3{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h4{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h5{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h6{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h7{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h8{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h9{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h10{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h11{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h12{style: "font-size: 1em"}= "gg_GG"
+    .col.s2
+      .row
+        .col.s4
+          .h13{style: "font-size: 1em"}= "gg_GG"
+        .col.s4
+          .h14{style: "font-size: 1em"}= "gg_GG"
+        .col.s4
+          .h15{style: "font-size: 1em"}= "gg_GG"
+
+
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'false'}
   .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
     .row
