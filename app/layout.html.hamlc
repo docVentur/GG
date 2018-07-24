@@ -1,14 +1,13 @@
-.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'false'}
+.container{'ng-if': 'false'}
   .row.center
     .col.s12
       <ui-view></ui-view>
 
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row.center
-    .col.s4
+    .col.s3
       <ui-view></ui-view>
-
-
     .col.s1
       %a.button.btn.material-icons.white-text.black{style: "font-size: 2em"}{href: "http://localhost:8080", target: "_blank"} change_history
       .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://localhost:8080"
@@ -18,7 +17,6 @@
     .col.s1
       %a.button.btn.grey.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
       .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
-
     .col.s5
       .row
         .col.s2
@@ -30,7 +28,6 @@
         .col.s2
           %a.button.btn.grey.darken-1.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} book
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/ai.yellow.b00ks"
-
         .col.s2
           %a.button.btn.grey.darken-1.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gg/kitemite", target: "_blank"} pause
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/kitemite"
@@ -41,31 +38,6 @@
         .col.s1
           %a.button.btn.grey.darken-1.material-icons.green-text.text-lighten-4{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"} explore
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://veronica-anderson-atr6.squarespace.com/config/"
-
-.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-  .row
-    .col.s4.yellow-text.text-lighten-1.center
-      .div
-        %a.button.btn.grey.darken-4.h1.yellow-text.text-lighten-3{href: "http://growinggenkiness.me/breathe", target: "_blank"}{style: "font-size: 1em"}= "^ BREATHE"
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/breathe"
-    .col.s4.red-text.text-lighten-3.center
-      .div
-        %a.button.btn.darken-3.grey.h3.red-text.text-lighten-3{href: "http://growinggenkiness.me/feel", target: "_blank"}{style: "font-size: 1em"}= "| FeeL |"
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/feel"
-
-    .col.s4.blue-text.text-lighten-3.center
-      .div
-        %a.button.btn.darken-2.grey.h5.blue-text.text-lighten-3{href: "http://growinggenkiness.me/think", target: "_blank"}{style: "font-size: 1em"}= ". think .."
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/think"
-
-  .row{'ng-if': 'false'}
-    .col.s4.white.center
-      %iframe{src: "http://gg/ai.log", name: "ailog", width: "500", height: "100"}
-    .col.s4.black.center
-      %iframe{src: "http://gg/ai.log/icetask", name: "icetask", width: "500", height: "100"}
-    .col.s4.pink.lighten-4.center
-      %iframe{src: "http://gg/ai.log/pitask", name: "icetask", width: "500", height: "100"}
-
 
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
@@ -126,7 +98,7 @@
       .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
     .col.s1
     .col.s5
-      .row
+      .row.grey
         .col.s2
           %a.button.btn.grey.darken-1.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} expand_less
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"
@@ -136,20 +108,79 @@
         .col.s2
           %a.button.btn.grey.darken-1.material-icons.yellow-text{style: "font-size: 2em"}{href: "http://gg/ai.yellow.b00ks", target: "_blank"} book
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/ai.yellow.b00ks"
-
         .col.s2
           %a.button.btn.grey.darken-1.material-icons.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gg/kitemite", target: "_blank"} pause
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/kitemite"
         .col.s2
           %a.button.btn.grey.darken-1.material-icons.blue-text.text-lighten-4{style: "font-size: 2em"}{href: "http://gmail.com", target: "_blank"} dialpad
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gmail.com"
-        .col.s1
-        .col.s1
+        .col.s2
           %a.button.btn.grey.darken-1.material-icons.green-text.text-lighten-4{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"} explore
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://veronica-anderson-atr6.squarespace.com/config/"
-    .col.s1
+
     .col.s2
       %a.button.btn.h14{href: "https://docs.google.com/spreadsheets/d/1KjVihqYEoS2ASSwXE1NDOUFNO0ps79-276vIYL2a_vE/edit#gid=0", target: "_blank"} serviced sites
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s2
+      .row
+        .col.s4
+          .hindex{style: "font-size: 1em"}= "gg_GG"
+        .col.s4
+          .hneg1{style: "font-size: 1em"}= "gg_GG"
+        .col.s4
+          .h0{style: "font-size: 1em"}= "gg_GG"
+    .col.s8.grey
+      .div.grey
+        %hr
+      .row
+        .col.s1
+          .h1{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h2{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h3{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h4{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h5{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h6{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h7{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h8{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h9{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h10{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h11{style: "font-size: 1em"}= "gg_GG"
+        .col.s1
+          .h12{style: "font-size: 1em"}= "gg_GG"
+    .col.s2
+      .row
+        .col.s4
+          .h13{style: "font-size: 1em"}= "gg_GG"
+        .col.s4
+          .h14{style: "font-size: 1em"}= "gg_GG"
+        .col.s4
+          .h15{style: "font-size: 1em"}= "gg_GG"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .div.center{style: 'ng-if': 'true'}
@@ -233,6 +264,33 @@
     .col.s1
       %a.material-icons.white-text.black{style: "font-size: 2em"}{href: "http://localhost:8080", target: "_blank"} change_history
       .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://localhost:8080"
+
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s4.yellow-text.text-lighten-1.center
+      .div
+        %a.button.btn.grey.darken-4.h1.yellow-text.text-lighten-3{href: "http://growinggenkiness.me/breathe", target: "_blank"}{style: "font-size: 1em"}= "^ BREATHE"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/breathe"
+    .col.s4.red-text.text-lighten-3.center
+      .div
+        %a.button.btn.darken-3.grey.h3.red-text.text-lighten-3{href: "http://growinggenkiness.me/feel", target: "_blank"}{style: "font-size: 1em"}= "| FeeL |"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/feel"
+
+    .col.s4.blue-text.text-lighten-3.center
+      .div
+        %a.button.btn.darken-2.grey.h5.blue-text.text-lighten-3{href: "http://growinggenkiness.me/think", target: "_blank"}{style: "font-size: 1em"}= ". think .."
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/think"
+
+  .row{'ng-if': 'false'}
+    .col.s4.white.center
+      %iframe{src: "http://gg/ai.log", name: "ailog", width: "500", height: "100"}
+    .col.s4.black.center
+      %iframe{src: "http://gg/ai.log/icetask", name: "icetask", width: "500", height: "100"}
+    .col.s4.pink.lighten-4.center
+      %iframe{src: "http://gg/ai.log/pitask", name: "icetask", width: "500", height: "100"}
+
+
 
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .div

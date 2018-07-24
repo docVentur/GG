@@ -3,9 +3,9 @@
     .row
       .col.s5
         .hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
-      .col.s2
-        .h7.pink-text last clicked
+      .col.s3
+        .hneg1{style: "font-size: .5em"} last clicked
       .col.s4
         %div{"ng-if": "$ctrl.mostrecententry.fields"}
-          .hindex{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
+          .hneg1{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
           .hindex.pink-text b00
