@@ -56,6 +56,10 @@
     .col.s6.yellow.lighten-4
       %hr
     .col.s3
+
+
+
+
   .row
     .col.s2
       %hr
@@ -75,6 +79,7 @@
       %hr
       <saga-button icon="arrow_drop_up" name="ice" color="yellow" mostrecententry="$ctrl.mostrecententry['ice']" type="icetask" intensity="lighten-5" fields="[{name: 'f00', type: 'string'}, {name: 'ntgr', type: 'integer'}]">
       </saga-button>
+
 
 
 .container.center{style: "width: 75% !important; max-width: none", 'ng-if': 'true'}
@@ -225,7 +230,9 @@
           .h14{style: "font-size: 1em"}= "gg_GG"
         .col.s4
           .h15{style: "font-size: 1em"}= "gg_GG"
-
+  .row.white
+    .col.s12
+      .h15= "kami: 紙 = paper :: 髪 = hair :: 神 = god"
   .row.black
     %hr
   .row.grey
