@@ -80,6 +80,25 @@
 .container.center{style: "width: 75% !important; max-width: none", 'ng-if': 'true'}
   .row.orange.lighten-4
     %hr
+  .row
+    .col.s2
+      %a.h1.kami.yellow-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/ai.yellow.b00ks", target: "_blank"}= "^ ai .yell OW .b00ks"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/ai.yellow.b00ks"
+    .col.s2
+      %a.h2.kami.orange-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/playing.card-tachi", target: "_blank"}= "#play ing .card -tachi"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/playing.card-tachi"
+    .col.s2
+      %a.h3.kami.red-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/CATasTrophy", target: "_blank"}= "|| CAT as Trophy"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/CATasTrophy"
+    .col.s2
+      %a.h4.kami.purple-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/poke.rface", target: "_blank"}= "|/ poke. r face"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/poke.rface"
+    .col.s2
+      %a.h5.kami.blue-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/pushi.f00t.map", target: "_blank"}= "... pushi .f00t. map"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pushi.f00t.map"
+    .col.s2
+      %a.h6.kami.green-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/sudo-ku", target: "_blank"}= "@@@ sudo -ku"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/sudo-ku"
 
   .row.pink.lighten-3
     %hr
