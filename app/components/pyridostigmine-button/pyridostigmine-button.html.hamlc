@@ -6,6 +6,6 @@
       .col.s3
         .hneg1{style: "font-size: .5em"} last clicked
       .col.s4
-        %div{"ng-if": "$ctrl.mostrecententry.fields"}
+        %div{"ng-if": "$ctrl.mostrecententry"}
           .hneg1{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
           .hindex.pink-text b00
