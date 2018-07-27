@@ -8,11 +8,14 @@
       .col.s4
         %div{"ng-if": "$ctrl.mostrecententry.fields"}
           .h0{style: "font-size: .5em"}{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
-    .row.grey{'ng-if': 'false'}
+    .row.grey{style: "height: 50% !important; max-height: none", 'ng-if': 'false'}
       .col.s3
         %div{"ng-if": "$ctrl.mostrecententry.fields"}
           .h0.grey{style: "font-size: .5em"} with value
           .h0.grey{style: "font-size: .5em"}= "{{ $ctrl.mostrecententry.fields.bG }}"
+          .h0.pink-text.grey{style: "font-size: .5em"} height isnt working
+          .h0.pink-text.grey{style: "font-size: .5em"} this button SHOULD have fields, right?
+          .h0.pink-text.grey{style: "font-size: .5em"} local host pyrid is blank and ice matches the 18 min ago from gg/. why arent both buttons working the same          
       .col.s3
         %div{"ng-if": "$ctrl.mostrecententry.fields"}
           .h1.grey{style: "font-size: .5em"} and comment

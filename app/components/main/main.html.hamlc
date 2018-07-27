@@ -50,16 +50,10 @@
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://clu"
           .h0.pink-text{style: "font-size: .4em"}= "color weirdness on keypress"
 
-.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-  .row
-    .col.s3
-    .col.s6.yellow.lighten-4
-      %hr
-    .col.s3
-
-
-
-
+.container{style: "width: 40% !important; max-width: none", 'ng-if': 'true'}
+  .row.yellow.lighten-4
+    %hr
+.container{style: "width: 95% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s2
       %hr
@@ -81,32 +75,34 @@
       </saga-button>
 
 
-
-.container.center{style: "width: 75% !important; max-width: none", 'ng-if': 'true'}
+.container.center{style: "width: 50% !important; max-width: none", 'ng-if': 'true'}
   .row.orange.lighten-4
     %hr
-  .row
-    .col.s2
-      %a.h1.kami.yellow-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/ai.yellow.b00ks", target: "_blank"}= "^ ai .yell OW .b00ks"
-      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/ai.yellow.b00ks"
-    .col.s2
-      %a.h2.kami.orange-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/playing.card-tachi", target: "_blank"}= "#play ing .card -tachi"
-      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/playing.card-tachi"
-    .col.s2
-      %a.h3.kami.red-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/CATasTrophy", target: "_blank"}= "|| CAT as Trophy"
-      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/CATasTrophy"
-    .col.s2
-      %a.h4.kami.purple-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/poke.rface", target: "_blank"}= "|/ poke. r face"
-      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/poke.rface"
-    .col.s2
-      %a.h5.kami.blue-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/pushi.f00t.map", target: "_blank"}= "... pushi .f00t. map"
-      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pushi.f00t.map"
-    .col.s2
-      %a.h6.kami.green-text.text-lighten-3{style: "font-size: .5em"}{href: "http://growinggenkiness.me/sudo-ku", target: "_blank"}= "@@@ sudo -ku"
-      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/sudo-ku"
 
+.container.center{style: "width: 95% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s2.kami
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/ai.yellow.b00ks", target: "_blank"}= "^ ai .yell OW .b00ks"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/ai.yellow.b00ks"
+    .col.s2.kami
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/playing.card-tachi", target: "_blank"}= "#play ing .card -tachi"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/playing.card-tachi"
+    .col.s2.kami
+      %a.h3.red-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/CATasTrophy", target: "_blank"}= "|| CAT as Trophy"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/CATasTrophy"
+    .col.s2.kami
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/poke.rface", target: "_blank"}= "|/ poke. r face"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/poke.rface"
+    .col.s2.kami
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/pushi.f00t.map", target: "_blank"}= "... pushi .f00t. map"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pushi.f00t.map"
+    .col.s2.kami
+      %a.h6.green-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/sudo-ku", target: "_blank"}= "@@@ sudo -ku"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/sudo-ku"
+.container.center{style: "width: 60% !important; max-width: none", 'ng-if': 'true'}
   .row.pink.lighten-3
     %hr
+.container.center{style: "width: 73% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s2
       .h1.yellow-text.text-lighten-3{style: "font-size: 1em"}= "gg_GG"
@@ -123,12 +119,29 @@
     .col.s2
       .h6.green-text.text-lighten-3{style: "font-size: 1em"}= "gg_GG"
 
-.container{style: "width: 85% !important; max-width: none", 'ng-if': 'true'}
+.container{style: "width: 70% !important; max-width: none", 'ng-if': 'true'}
   .row.purple.lighten-3
     %hr
 
+.container{style: "width: 90% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s3
+      %a.h4.kami.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "https://www.pdx.edu/", target: "_blank"}= "pdx.edu"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://www.pdx.edu/"
+    .col.s6
+      %a.h4.kami.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "https://1drv.ms/w/s!AuI-PtPRzR53tVwDnCJ1XfwkroyN", target: "_blank"}= "HA"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "HA"
+    .col.s3
+      %a.h4.kami.purple-text.text-lighten-3{style: "font-size: 1em"}{href: "https://1drv.ms/w/s!AuI-PtPRzR53tVw8O3qHsq53E7Z0", target: "_blank"}= "HA - view only"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "HA - view only"
+
+
+
+
+.container{style: "width: 80% !important; max-width: none", 'ng-if': 'true'}
   .row.blue.lighten-2
     %hr
+.container{style: "width: 85% !important; max-width: none", 'ng-if': 'true'}
   .row.grey
     .col.s2
       .h1{style: "font-size: 1em"}= "gg_GG"
@@ -152,9 +165,10 @@
       .h9{style: "font-size: 1em"}= "gg_GG"
 
 
-.container{style: "width: 93% !important; max-width: none", 'ng-if': 'true'}
+.container{style: "width: 90% !important; max-width: none", 'ng-if': 'true'}
   .row.green.lighten-1
     %hr
+.container{style: "width: 95% !important; max-width: none", 'ng-if': 'true'}
   .row.grey
     .col.s1
       .h1{style: "font-size: 1em"}= "gg_GG"
