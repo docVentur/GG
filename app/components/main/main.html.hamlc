@@ -46,7 +46,7 @@
 
         .col.s4
           .h15{style: "font-size: 1em"}= "gg_GG"
-          %a.button.btn.material-icons.h15{style: "font-size: 2em"}{href: "https://clu", target: "_blank"} play_for_work
+          %a.button.btn.material-icons.h15{style: "font-size: 2em"}{href: "http://clu", target: "_blank"} play_for_work
           .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://clu"
           .h0.pink-text{style: "font-size: .4em"}= "color weirdness on keypress"
 
@@ -247,6 +247,510 @@
   .row.white
     .col.s12
       .h15= "kami: 紙 = paper :: 髪 = hair :: 神 = god"
+
+
+.container.center{style: "width: 95% !important; max-width: none", 'ng-if': 'true'}
+  .row.white
+    .col.s12.kami.grey.darken-4
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/ai", target: "_blank"}= "^ai"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/ai"
+  .row.white
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/yellow", target: "_blank"}= "yellow"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/yellow"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/orange", target: "_blank"}= "orange"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/orange"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/red", target: "_blank"}= "red"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/red"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/purple", target: "_blank"}= "purple"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/purple"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/blue", target: "_blank"}= "blue"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/blue"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/green", target: "_blank"}= "green"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/green"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/white", target: "_blank"}= "white"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/white"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/black", target: "_blank"}= "black"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/black"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/grey", target: "_blank"}= "grey"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/grey"
+    .col.s1.kami.grey.darken-2
+      %a.h10.i-t.transparent{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pink", target: "_blank"}= "pink"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pink"
+    .col.s1.kami.grey.darken-2
+      %a.h11.c-t.transparent{style: "font-size: 2em"}{href: "http://growinggenkiness.me/cyan", target: "_blank"}= "cyan"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/cyan"
+    .col.s1.kami.grey.darken-2
+      %a.h12.n-t.transparent{style: "font-size: 2em"}{href: "http://growinggenkiness.me/brown", target: "_blank"}= "brown"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/brown"
+
+  .row.orange
+    .col.s1.kami.blue-grey
+      %a.h1.y-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "phy"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.blue-grey
+      %a.h1.o-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "occ"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.blue-grey
+      %a.h1.r-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "emo"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.blue-grey
+      %a.h1.p-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "int"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.blue-grey
+      %a.h1.b-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "soc"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.blue-grey
+      %a.h1.g-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "env"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.blue-grey
+      %a.h1.w-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "sprt"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.blue-grey
+      %a.h1.l-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "fin"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.blue-grey
+      %a.h1.e-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "nut"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.blue-grey
+      %a.h1.i-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "gen"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.blue-grey
+      %a.h1.c-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "hab"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.blue-grey
+      %a.h1.n-t{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= "punct"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.orange
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "emu"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "bird of paradise"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "archer fish"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 1.5em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "kangaroo"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "pot belly pig"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "elephant"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "kitten"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "puppy"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "spider"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10.transparent{style: "font-size: 1.5em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "monkey"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11.c-t.transparent{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "swan"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12.transparent{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= "sasquatch"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.purple
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "^"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "#"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "|"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "/"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "."
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "@"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "*"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "$"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "&nbsp;(%)&nbsp;"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "&nbsp;&nbsp;{:}&nbsp;&nbsp;"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "&nbsp;&nbsp;[_]&nbsp;&nbsp;"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= "&nbsp;&nbsp;;&nbsp;&nbsp;"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'false'}
+
+  .row.orange
+    .col.s1.kami.blue-grey
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "emu"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.blue-grey
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "bird of paradise"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.blue-grey
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "archer fish"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.blue-grey
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 1.5em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "kangaroo"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.blue-grey
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 1em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "pot belly pig"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.blue-grey
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "elephant"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.blue-grey
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "kitten"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.blue-grey
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "puppy"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.blue-grey
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "spider"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.blue-grey
+      %a.h10.transparent{style: "font-size: 1.5em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "monkey"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.blue-grey
+      %a.h11.c-t.transparent{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "swan"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.blue-grey
+      %a.h12.transparent{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= "sasquatch"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.blue
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "^"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "#"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "|"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "/"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "."
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "@"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "*"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "$"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "(%)"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "{:}"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "[_]"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= ";"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.green
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "^"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "#"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "|"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "/"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "."
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "@"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "*"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "$"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "(%)"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "{:}"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "[_]"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= ";"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.white
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "^"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "#"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "|"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "/"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "."
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "@"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "*"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "$"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "(%)"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "{:}"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "[_]"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= ";"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.black
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "^"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "#"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "|"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "/"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "."
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "@"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "*"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "$"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "(%)"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "{:}"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "[_]"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= ";"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.grey
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "^"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "#"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "|"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "/"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "."
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "@"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "*"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "$"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "(%)"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "{:}"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "[_]"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= ";"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.pink
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "^"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "#"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "|"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "/"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "."
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "@"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "*"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "$"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "(%)"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "{:}"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "[_]"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= ";"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.cyan
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "^"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "#"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "|"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "/"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "."
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "@"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "*"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "$"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "(%)"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "{:}"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "[_]"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= ";"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+  .row.brown
+    .col.s1.kami.grey.darken-2
+      %a.h1.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/carot", target: "_blank"}= "^"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/carot"
+    .col.s1.kami.grey.darken-2
+      %a.h2.orange-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/hash", target: "_blank"}= "#"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/hash"
+    .col.s1.kami.grey.darken-2
+      %a.h3.red-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/pipe", target: "_blank"}= "|"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/pipe"
+    .col.s1.kami.grey.darken-2
+      %a.h4.purple-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/slash", target: "_blank"}= "/"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/slash"
+    .col.s1.kami.grey.darken-2
+      %a.h5.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dot", target: "_blank"}= "."
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dot"
+    .col.s1.kami.grey.darken-2
+      %a.h6.green-text.text-lighten-3{style: "font-size: 2em"}{href: "http://growinggenkiness.me/at", target: "_blank"}= "@"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/at"
+    .col.s1.kami.grey.darken-2
+      %a.h7{style: "font-size: 2em"}{href: "http://growinggenkiness.me/star", target: "_blank"}= "*"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/star"
+    .col.s1.kami.grey.darken-2
+      %a.h8{style: "font-size: 2em"}{href: "http://growinggenkiness.me/dollar", target: "_blank"}= "$"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/dollar"
+    .col.s1.kami.grey.darken-2
+      %a.h9{style: "font-size: 2em"}{href: "http://growinggenkiness.me/parenpercentthesis", target: "_blank"}= "(%)"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.m/parenpercentthesis"
+    .col.s1.kami.grey.darken-2
+      %a.h10{style: "font-size: 2em"}{href: "http://growinggenkiness.me/curlycolon", target: "_blank"}= "{:}"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/curlycolon"
+    .col.s1.kami.grey.darken-2
+      %a.h11{style: "font-size: 2em"}{href: "http://growinggenkiness.me/boxunderscorebracket", target: "_blank"}= "[_]"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/boxunderscorebracket"
+    .col.s1.kami.grey.darken-2
+      %a.h12{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= ";"
+      .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+
+.container.center{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+
   .row.black
     %hr
   .row.grey
