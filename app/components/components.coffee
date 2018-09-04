@@ -11,3 +11,4 @@
 require './main/main.coffee'
 require './saga-button/saga-button.coffee'
 require './pyridostigmine-button/pyridostigmine-button.coffee'
+require './index/index.coffee'

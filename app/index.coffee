@@ -18,6 +18,9 @@ app = angular.module 'gg', [
   'angularMoment'
 ]
 
+require './services/npc.css'
+# future iterations will use gg-library/gg.css
+
 require './services/services.coffee'
 require './components/components.coffee'
 
