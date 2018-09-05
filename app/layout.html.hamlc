@@ -1,4 +1,4 @@
-.ice.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row.center
     .col.s12
       <ui-view></ui-view>

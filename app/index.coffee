@@ -29,5 +29,6 @@ app.config ($stateProvider, $urlRouterProvider) ->
 
   $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
   $stateProvider.state {name: 'main', url: '/main', parent: 'layout', component: 'main'}
+  $stateProvider.state {name: 'npc', url: '/npc', parent: 'main', component: 'npc'}
 
   $urlRouterProvider.when '', '/main'
