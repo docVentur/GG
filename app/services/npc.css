@@ -55,6 +55,14 @@
   text-align: center;
 }
 
+.zoo {
+  border: 1px solid yellow;
+  font-size: 1rem;
+  font-family: 'VT323';
+  color: #ffff00;
+  background-color: #8d6e63;
+}
+
 .tsugzoo {}
 
 .yamzoo {
@@ -66,15 +74,6 @@
   background-color: #3e2723;
 }
 
-
-.zoo {
-  border: 1px solid yellow;
-  margin: 0px;
-  font-size: 1rem;
-  font-family: 'VT323';
-  color: #ffff00;
-  background-color: #8d6e63;
-}
 
 .wiz {
   display: inline-block;

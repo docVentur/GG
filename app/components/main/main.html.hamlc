@@ -4,44 +4,102 @@
       %hr
       <pyridostigmine-button icon="accessibility" name="pyridostigmine" color="black" mostrecententry="$ctrl.mostrecententry['pyridostigmine']" type="icetask" intensity="lighten-4">
       </pyridostigmine-button>
+    .col.s1
+      .row
+      .row
       .row
         .ice.hindex{style: "font-size: 1em"}= ".ice"
         %a.button.btn.material-icons.white-text.black{style: "font-size: 2em"}{href: "http://localhost:8080", target: "_blank"} change_history
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://localhost:8080"
+      .row
         .pi.hneg1{style: "font-size: 1em"}= ".pi"
         %a.button.btn.material-icons.white-text.pink.lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"} more_vert
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+      .row
         .zoo.h0{style: "font-size: 1em"}= ".zoo"
         %a.button.btn.grey.material-icons.pink-text.darken-3.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
+
     .col.s6
       <npc></npc>
-    .col.s2.center
+
+    .col.s1.center
+      .row
+      .row
+      .row
+      .row
+
+      .row
+      .row
       .row.pink
         %hr
       .row
-        .h1.yellow-text.text-lighten-5{style: "font-size: 1em"}= "gg_GG"
+      .row      
+        .h1.yellow-text.text-lighten-5{style: "font-size: 1em"}= "gg.me"
         %a.button.btn.grey.darken-1.material-icons.yellow-text.text-lighten-5{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} expand_less
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"
-        .h2.red-text.text-lighten-5{style: "font-size: 1em"}= "gg_GG"
+      .row
+      .row
+        .h2.red-text.text-lighten-5{style: "font-size: 1em"}= "kitemite"
         %a.button.btn.grey.darken-1.material-icons.pink-text.text-lighten-5{style: "font-size: 2em"}{href: "http://gg/kitemite", target: "_blank"} pause
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg/kitemite"
-        .h3.blue-text.text-lighten-5{style: "font-size: 1em"}= "gg_GG"
+      .row
+      .row
+        .h3.blue-text.text-lighten-5{style: "font-size: 1em"}= "connect"
         %a.button.btn.grey.darken-1.material-icons.blue-text.text-lighten-5{style: "font-size: 2em"}{href: "http://gmail.com", target: "_blank"} more_horiz
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gmail.com"
-    .col.s2.center
+    .col.s1.center
+      .row
+      .row
+      .row
+      .row
+      .row
+      .row
+      .row
+      .row
       .row.teal
         %hr
-      .ice.row
-        .h13{style: "font-size: 1em"}= "gg_GG"
+      .row
+      .row
+        .h13{style: "font-size: 1em"}= "ss.gg.me"
         %a.button.btn.material-icons.h13.grey.darken-3{style: "font-size: 2em"}{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"} crop_square
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://veronica-anderson-atr6.squarespace.com/config/"
-      .pi.row
-        .h14{style: "font-size: 1em"}= "gg_GG"
+      .row
+      .row
+        .h14{style: "font-size: 1em"}= "serviced sites"
         %a.button.btn.material-icons.h14{style: "font-size: 2em"}{href: "https://docs.google.com/spreadsheets/d/1KjVihqYEoS2ASSwXE1NDOUFNO0ps79-276vIYL2a_vE/edit#gid=0", target: "_blank"} devices_other
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "g00gle sheet: serviced sites"
-      .zoo.row
-        .h15{style: "font-size: 1em"}= "gg_GG"
+      .row
+      .row
+        .h15{style: "font-size: 1em"}= "clu"
         %a.button.btn.material-icons.h15{style: "font-size: 2em"}{href: "http://clu", target: "_blank"} play_for_work
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://clu"
         .h0.pink-text{style: "font-size: .4em"}= "color weirdness on keypress"
+    .col.s1.center
+      .row
+      .row
+      .row
+      .row
+      .row
+      .row
+      .row
+      .row
+      .row
+      .row
+      .row.brown
+        %hr
+      .row
+      .row
+        .h13.yellow-text.text-lighten-4{style: "font-size: 1em"}= "tsugu"
+        %a.button.btn.grey.darken-1.material-icons.yellow-text.text-lighten-3{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} favorite
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "gg"
+      .row
+      .row
+        .h13.red-text.text-lighten-4{style: "font-size: 1em"}= "tsugu"
+        %a.button.btn.grey.darken-1.material-icons.pink-text.text-lighten-3{style: "font-size: 2em"}{href: "http://gg/kitemite", target: "_blank"} favorite
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "gg"
+      .row
+      .row
+        .h13.blue-text.text-lighten-4{style: "font-size: 1em"}= "tsugu"
+        %a.button.btn.grey.darken-1.material-icons.blue-text.text-lighten-3{style: "font-size: 2em"}{href: "http://gmail.com", target: "_blank"} favorite
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "gg"

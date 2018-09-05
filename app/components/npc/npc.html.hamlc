@@ -1,23 +1,30 @@
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.center
+    .col.s12
+      .h10.grey This box contains what will be published as a fidget game on Android Apps by Thanksgiving 2018 as a proof of concept educational project.
+      .index to be beta-ed by Halloween
+
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .container.ice{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
     .row
     .row
     .row
       .col.s12.center.grey-text.text-lighten-1
-        .h1 "It's dangerous to go alone . . ."
+        .h1{style: "font-size: 2em"} "It's dangerous to go alone . . ."
     .row
       .col.s12.center
-        %a.btn.h2.grey{href: "http://growinggenkiness.me", target: "_blank"}
+        %a.btn.h2.grey{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"}
           Take This!
     .row
       .col.s12.center
-        %i.material-icons.large.pink-text.text-lighten-3{href: "http://growinggenkiness.me/growinggenkiness", target: "_blank"} favorite
+        %a.material-icons.large.pink-text.text-lighten-3{style: "font-size: 7em"}{href: "http://growinggenkiness.me/growinggenkiness", target: "_blank"} favorite
     .row
       .col.s12.center
-        %a.h3.pink-text.text-lighten-5{href: "http://growinggenkiness.me/about", target: "_blank"}
+        %a.h3.pink-text.text-lighten-5{style: "font-size: 2em"}{href: "http://growinggenkiness.me/about", target: "_blank"}
           i.am
     .row
       .col.s12.center
-        %a.h2.pink-text.text-lighten-4{href: "http://growinggenkiness.me", target: "_blank"}
+        %a.h2.pink-text.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"}
           growinggenkiness.me
     .row
