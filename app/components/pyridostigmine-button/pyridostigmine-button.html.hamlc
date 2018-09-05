@@ -1,6 +1,9 @@
 .div.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
   .div{"ng-click": "$ctrl.make_entry()"}
     .row
+      .col.12
+        .h1.i-t.center{style: "font-size: 2em"} ^breathe
+    .row
       .col.s5
         .hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
       .col.s3
