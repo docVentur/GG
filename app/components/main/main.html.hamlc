@@ -20,8 +20,8 @@
         %a.button.btn.grey.material-icons.pink-text.darken-3.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
 
-    .col.s6
-      <npc></npc>
+    .col.s6.pink
+      <ui-view></ui-view>
 
     .col.s1.center
       .row
@@ -34,7 +34,7 @@
       .row.pink
         %hr
       .row
-      .row      
+      .row
         .h1.yellow-text.text-lighten-5{style: "font-size: 1em"}= "gg.me"
         %a.button.btn.grey.darken-1.material-icons.yellow-text.text-lighten-5{style: "font-size: 2em"}{href: "http://gg", target: "_blank"} expand_less
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://gg"

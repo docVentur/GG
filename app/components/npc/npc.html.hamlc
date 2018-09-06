@@ -14,14 +14,14 @@
         .h1{style: "font-size: 2em"} "It's dangerous to go alone . . ."
     .row
       .col.s12.center
-        %a.btn.h2.grey{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"}
+        %a.btn.h2.grey{style: "font-size: 2em"}
           Take This!
     .row
       .col.s12.center
-        %a.material-icons.large.pink-text.text-lighten-3{style: "font-size: 7em"}{href: "http://growinggenkiness.me/growinggenkiness", target: "_blank"} favorite
+        %a.material-icons.large.pink-text.text-lighten-3{style: "font-size: 7em", "ui-sref": "/main/aiyellowb00kslayout"} favorite
     .row
       .col.s12.center
-        %a.h3.pink-text.text-lighten-5{style: "font-size: 2em"}{href: "http://growinggenkiness.me/about", target: "_blank"}
+        %a.h3.pink-text.text-lighten-5{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"}
           i.am
     .row
       .col.s12.center
