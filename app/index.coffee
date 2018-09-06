@@ -31,4 +31,11 @@ app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'main', url: '/main', parent: 'layout', component: 'main'}
   $stateProvider.state {name: 'npc', url: '/npc', parent: 'main', component: 'npc'}
 
+#  $stateProvider.state {name: 'aiyellowb00ks', url: '/npc/aiyellowb00ks', parent: 'npc', component: 'aiyellowb00ks'}
+#  $stateProvider.state {name: 'playingcardtachi', url: '/npc/playingcardtachi', parent: 'npc', component: 'playingcardtachi'}
+#  $stateProvider.state {name: 'catastrophy', url: '/npc/catastrophy', parent: 'npc', component: 'catastrophy'}
+#  $stateProvider.state {name: 'pokerface', url: '/npc/pokerface', parent: 'npc', component: 'pokerface'}
+#  $stateProvider.state {name: 'pushyf00tmap', url: '/npc/pushyf00tmap', parent: 'npc', component: 'pushyf00tmap'}
+#  $stateProvider.state {name: 'sudoku', url: '/npc/sudoku', parent: 'npc', component: 'sudoku'}
+
   $urlRouterProvider.when '', '/main'
