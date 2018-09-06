@@ -1,0 +1,122 @@
+.container{'ng-if': 'true'}
+  .h9.grey{style: "font-size: 3em"} mgmt 299
+  .row
+    .col.s12{style: "font-size: .5em"}
+      .h13 Homewor
+      .h13 Quizzes
+      .h13 Discuss
+      .h13 Relfect
+      .h15 TOTAL P
+
+
+.container{'ng-if': 'true'}
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .hneg1 Erica Wagner
+        %a.h12{href: "http://www.facultybookshelf.org/books.php?isbn=0133973336H|0133877728H&course=FIN+218%3A+Personal+Finance&instructor=David+Bell&univ=pdx", target: "_blank"} zebras and workbook go here
+        .h0 week 1 6/25-7/1
+        .h4.grey MS Word & Powerpoint
+        .h7 Word #1 Post-test
+        .h8 Word #2 Post-test
+        .h9 Guided Project
+        .h10 Independent PRoject
+        .h11 Word Practice Exam
+        .h12 Word Exam
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 2 7/2-8
+        .h4.grey MS Powerpoint
+        .h7 PPT #1 Post-test
+        .h8 PPT #2 Post-test
+        .h9 Guided Project
+        .h10 Independent PRoject
+        .h10 'So What?' Assignment #3`
+        .h11 PPT Practice Exam
+        .h12 PPT Exam
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 3 7/9-15
+        .h4.grey MS Excel
+        .h7 Excel #1 Post-test
+        .h8 Excel #2 Post-test
+        .h9 Excel #3 Post-test
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 4 7/16-22
+        .h4.grey MS Excel
+        .h9 Guided Project
+        .h10 Independent PRoject
+        .h11 Excel Practice Exam pt 1
+        .h12 Excel Exam pt 1
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 5 7/23-29
+        .h4.grey MS Excel
+        .h11 Excel Practice Exam pt 2
+        .h12 Excel Exam pt 2
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.green.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 6 7/30-8/5
+        .h4.grey MS Excel
+        .h11 HW: So What? Assignment 2
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.white
+      .col.s4
+        .hindex ^mono
+        .h0 week 7 8/6-12
+        .h4.grey MS Access
+        .h7 Access #1 Post-test
+        .h8 Access #2 Post-test
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.black
+      .col.s4
+        .hindex ^mono
+        .h0 week 8 8/13-19
+        .h4.grey MS Access
+        .h10 'So What?' Assignment #3
+        .h11 Access Practice Exam
+        .h12 Access Exam
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.

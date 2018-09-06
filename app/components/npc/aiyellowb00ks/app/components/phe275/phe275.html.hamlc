@@ -1,0 +1,176 @@
+.container{'ng-if': 'true'}
+  .h10.grey{style: "font-size: 3em"} phe 275
+  .row
+    .col.s3{style: "font-size: .5em"}
+      .h13 Quizzes: 20%
+      .h13 Discussions: 10%
+      .h13 Stress Management Project: 70%
+      .h15 TOTAL POINTS = 100%  ::   drc@pdx.edu Disability Resource Center
+    .col.s3{style: "font-size: .5em"}
+      .h1 email stress mgmt plan to dr currie: 10%
+      .h1 weekly online stress response tracking (aka stress tracker) 15%
+      .h1 project response final paper: 45%
+    .col.s3{style: "font-size: .5em"}
+      .h4= "Progressive Muscle Relaxation *"
+      .h4= "Meditation *"
+      .h4= "Visualization *"
+      .h4= "Deep Breathing *"
+      .h4= "Gratitude Listing +"
+      .h4= "Cardio Exercise #"
+      .h4= "Yoga ^"
+    .col.s3{style: "font-size: .5em"}
+      .h11.grey = "^ = 2 times/week, no less than 60 minutes total per week"
+      .h11.grey = "# = 3 times/week, no less than 90 minutes total per week"
+      .h11.grey = "* = minimum 60 minutes per week"
+      .h11.grey = "+ = daily"
+
+
+.container{'ng-if': 'true'}
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .hneg1 Erin Currie
+        %a.h12{href: "http://www.facultybookshelf.org/books.php?isbn=0133973336H|0133877728H&course=FIN+218%3A+Personal+Finance&instructor=David+Bell&univ=pdx", target: "_blank"} zebra and workbook
+        .h0 week 1 6/25-7/1 Biology/Hormones
+        .h4.grey Z c 2 & 3; RWB p4 - 16 & c 2
+        .h4 Glands, Gooseflesh, and Hormones
+        .h4 Stroke, Heart Attacks, and Voodoo Death
+        %a.h12{href: "https://www.youtube.com/watch?v=0IDgBlCHVsA", target: "_blank"} Stress & Sympathetic Nervous System
+
+        .h10 Discussion 1
+        .h11 HW Stress Awareness Diary & online stress response tracker
+        .h12 extra credit mini-quiz
+      .col.s4
+        .hneg1= "| koto |"
+        .h6= "Neuron travels from root in the spinal cord to a ganglion (Preganglionic cell [ACH] -> Ganglion -> Postganglionic cell [norepinephrine]-> Effector organ)"
+        .div
+          .h6 neurotransmitters (nervous system)
+          .h6 hormones (glands) (endocrine system)
+        .h4 ACH acetylcholine :: premium currency of the realm
+        .h4 norepinephrine: its always norepinephrine thats released from postganglionic fibers in the sympathetic nervous system
+        .h4 adrenal glands release norepinephrine as neurotransmitters
+        .h4 adrenal glands releases epinephrine and norepinephrine as hormones
+        .h6 stimulating and inhibiting the same system depending on the receptors (smooth muscle: alpha receptors contrict beta receptors relax)
+        .h6 vasodilation & vwd
+        .h1 non-lifethreatening stresors can endanger your life in the long run
+        .h4 diaphragmatic breathing using stomach
+        .h10 STRESS AWARENESS DIARY: Time/Stressful Event/Symptom
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 2 7/2-8 Psychology of Stress
+        .h4.grey Z c 13 & p 398-412 RWB c 4 & 6
+        .h4 Why is Psychological Stress Stressful?
+        .h4 Stress Management: Reading the Label Carefully
+        .h4 Exercise
+        .h4 Meditation
+        .h4 get more control, more predictability in your life ... maybe
+        .h4 social support
+        .h4 religion and spirituality
+        .h4 picking the right strategy at the right time: cognitive flexibility
+        .h10 submit stress response tracker
+        .h11 HW: email stress management plan by 7/3
+        .h12 Quiz/Paper
+        %a.h12{href: "https://www.youtube.com/watch?v=PYsuvRNZfxE", target: "_blank"} Progressive Muscle Relaxation
+        %a.h12{href: "https://www.youtube.com/watch?v=H14bBuluwB8", target: "_blank"} Grit: The Anti Type-A
+
+      .col.s4
+        .hneg1= "| koto |"
+        .h4 Lifestyle change isnt easy
+        .h4 how to set myself up for success
+        .h4 transtheoretical change model
+        .h4 prochaska
+        .h4
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 3 7/9-15 Stress on the Body
+        .h4.grey Z c 11; RWB c 5
+        .h4 Stress and a Good Nights Sleep
+        .h10 submit stress response tracker
+        .h11 HW: IMPLEMENT STRESS MANAGEMENT PLAN
+        .h12 Quiz 1 Z c 2,3,13, p 398-412, lect w 1-3
+        %a.h12{href: "https://www.youtube.com/watch?v=eYG0ZuTv5rs&feature=youtu.be", target: "_blank"} Stress, Portrait of a Killer (baboons)
+        %a.h12{href: "https://youtu.be/ehNvZ1tKRI0", target: "_blank"} 20 min yoga
+        %a.h12{href: "https://ideas.ted.com/could-your-thoughts-make-you-age-faster/", target: "_blank"} Could your thouhts make you age faster?
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 4 7/16-22 Stress on the Body
+        .h4.grey Z c 4 & 8, RWB c 7
+        .h4 Stress, Metabolism, and Liquidating Your Assets
+        .h4 Immunity, Stress, and Disease
+        .h10 submit stress response tracker
+        .h11 HW: INTEGRATION DISCUSSION - Group 1
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 5 7/23-29 College Success
+        .h4.grey Z c 10; RWB c 11 & 12
+        .h4 Stress and Memory
+        .h10 submit stress response tracker
+        .h11 HW: INTEGRATION DISCUSSION - Group 2
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.green.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 6 7/30-8/5 Mental Health
+        .h4.grey Z c 15; RWB c 13
+        .h4 Personality, Temperament, and Their Stress-Related Consequences
+
+        .h10 submit stress response tracker
+        .h12 Quiz 2 (Z ch 4, 8, 10, 11, lectures for weeks 4, 5, 6)
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.white
+      .col.s4
+        .hindex ^mono
+        .h0 week 7 8/6-12 Society
+        .h4.grey Z c 17; RWB c 15 or 17
+        .h4 The Vew from the Bottom
+
+        .h10 submit stress response tracker
+        .h11 Contribution Discussion 2
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.black
+      .col.s4
+        .hindex ^mono
+        .h0 week 8 8/13-19 Adrenaline Junkies
+        .h4.grey Z c p 337-341; RWB c 21
+        .h4 The Neurochemistry of Pleasure
+        .h4 Stress and Reward
+
+        .h12 Quiz 3 (Z c 15, 13, 17, p 337-341, lect w 7 & 8)
+        .h12 Reaction Paper due 8/14
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.

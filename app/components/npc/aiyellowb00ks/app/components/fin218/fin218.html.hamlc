@@ -1,0 +1,124 @@
+.container{'ng-if': 'true'}
+  .h8{style: "font-size: 3em"} fin 218
+  .row
+    .col.s12{style: "font-size: .5em"}
+      .h13 Homework 30 points total :: 30 % :: Due every other Sunday at 11:59 starting week 1
+      .h13 Quizzes 10 points each :: 40 % :: Open every other Monday at 6am starting in Week 2. Closes Sunday at 11:59pm. Lowest Quiz dropped.
+      .h13 Discussion Posts 1.5 points each :: 15% :: First post due Wednesday (personal bio), all others due Sunday by 11:59pm. To earn full points you must meet minimum quality and quantity guidelines.
+      .h13 Relfection Paper 15 points :: 15% :: Due in Week 7 on Sunday by 11:59pm
+      .h15 TOTAL POINTS = 100 drc@pdx.edu Disability Resource Center
+
+.container{'ng-if': 'true'}
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .hneg1 David Bell
+        %a.h12{href: "http://www.facultybookshelf.org/books.php?isbn=0133973336H|0133877728H&course=FIN+218%3A+Personal+Finance&instructor=David+Bell&univ=pdx", target: "_blank"} Personal Finance: Turning Money into Wealth
+        .h0 week 1 6/25-7/1
+        .h4.grey Chapter 1
+        .h10 Discussion 1 & 2
+        .h11 HW Worksheets 1, 2, & 7
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 2 7/2-8
+        .h4.grey Chapter 2
+        .h10 Discussion 3
+        .h11 HW: Resume & Job/Salary Worksheet
+        .h12 Quiz 1
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 3 7/9-15
+        .h4.grey Chapter 3 & 4
+        .h4 time value of money
+        .h4 interest paid on interest = compounding
+        .h4 Future value = present value x (1+i)
+        .h10 Discussion 4
+        .h11 HW: Worksheet 4
+        .h12 Extra Credit Current Event
+        %a.h12{href: "https://www.youtube.com/watch?v=u3ccx0LMXfA", target: "_blank"} Time Value of Money
+        %a.h12{href: "https://youtu.be/catzkdyzi7I", target: "_blank"} Time Value of Money
+
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 4 7/16-22
+        .h4.grey Chapter 6 & 7
+        .h10 Discussion 5
+        .h11 HW: Credit Score, How to Improve your Credit, Debt Paydown, Paying for College
+        .h12 Quiz 2
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 5 7/23-29
+        .h4.grey Chapter 8, 9, & 10
+        .h10 Discussion 6 & 7
+        .h11 HW: Rent vs Buy, Auto OR Health Ins
+        .h12 Quiz 3
+        %a.h12{href: "https://www.youtube.com/watch?v=vPwEpxEC-pw", target: "_blank"} Rent vs Buy
+        %a.h12{href: "https://www.youtube.com/watch?v=c5FWBfMRWwI", target: "_blank"} Insure or Not to Insure
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.green.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 6 7/30-8/5
+        .h4.grey Chapter 11 & 12
+        .h10 Discussion 8
+        .h11 HW: Interview 5 Individuals, Worksheet 7, Risk Tolerance, Stock Research, Dollar Diet
+        .h12 Quiz 4
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.white
+      .col.s4
+        .hindex ^mono
+        .h0 week 7 8/6-12
+        .h4.grey Chapter 15 & 16
+        .h10 Discussion 9
+        .h11 HW: Fidelity, Letter of Last Instruction
+        .h12 Reflection Paper DUE
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.black
+      .col.s4
+        .hindex ^mono
+        .h0 week 8 8/13-19
+        .h4.grey Chapter 13 & 14
+        .h10 Discussion 10
+        .h11 Extra Credit
+        .h12 Quiz 5
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.

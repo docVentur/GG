@@ -1,0 +1,22 @@
+%body
+  .container.ice.white-text
+    %div{style: 'background-image: url("assets/meadow.png"); height: 666px'}
+      .row
+        .col.s12.center.grey-text.text-lighten-1
+          .h1{style: "font-size: 3em"} It's dangerous to go alone . . .
+      .row
+        .col.s12.center
+          %a.btn.h2.grey{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"}
+            Take This!
+      .row
+        .col.s12.center
+          %i.material-icons.pink-text.text-lighten-3{style: "font-size: 15em"}{href: "http://growinggenkiness.me", target: "_blank"} favorite
+      .row
+        .col.s12.center
+          %a.h3.pink-text.text-lighten-3{style: "font-size: 5em"}{href: "http://growinggenkiness.me/about", target: "_blank"}
+            i.am
+      .row
+        .col.s12.center
+          %a.h2.grey.button.pink-text.text-lighten-4{style: "font-size: 5em"}{href: "http://growinggenkiness.me", target: "_blank"}
+            growinggenkiness.me
+      .row

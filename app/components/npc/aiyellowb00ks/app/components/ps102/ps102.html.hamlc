@@ -1,0 +1,74 @@
+.container{'ng-if': 'true'}
+  .h11.grey{style: "font-size: 3em"} ps 102
+  .row
+    .col.s12{style: "font-size: .5em"}
+      .h13 Mid-Semester Exam: 25%
+      .h13 Final Exam: 25%
+      .h13 D2L Post-Tests: 30%
+      .h13 D2L Chapter Exercises: 20%
+      .h15 TOTAL POINTS = 100% drc@pdx.ed :: 1% penalty for each pre-test not taken
+
+.container{'ng-if': 'true'}
+  .h11{style: "font-size: 2em"} ps 102
+  .div
+    .row.yellow.darken-4
+      .col.s4
+        .hindex ^mono
+        .hneg1 David Bell
+        %a.h12{href: "http://books.wwnorton.com/books/webad.aspx?id=4294993781", target: "_blank"} We the People, 11th Essentials Edition 2017
+        %a.h12{href: "https://digital.wwnorton.com/wethepeople11ess", target: "_blank"} mai.We
+        https://digital.wwnorton.com/wethepeople11ess
+        .h0 week 1 7/23-7/26
+        .h4.grey Chapter 1 & 5
+        .h4 Introduction: The Citizen and the Government
+        .h4 Public Opinion
+        .h12 Integrity Quiz by Thursday
+        %a.h12{href: "https://www.pdx.edu/dos/psu-student-code-conduct", target: "_blank"} PSU student code of conduct
+          .div
+            .h4 syllamus is mai.responsibility
+            .h4 due dates are mai.responsibility
+            .h4 PSU email daily is mai.responsibility
+            .h4 communicating questions is mai.responsibility
+            .h4 online = more time than face to face
+            .h4 mid and final exams are open 72 hours
+            .h4 all quizzes and exams are time limited
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.orange.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 2 7/30-8/2
+        .h4.grey Chapter 6 & 7
+        .h4 The Media
+        .h4 Political Parties, Participation, and Elections
+        .h12 Mid-Term Exam opens 8/3-8/5
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.red.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 3 8/6-8-9
+        .h4.grey Chapters 8 & 13
+        .h4 Interest Groups
+        .h4 Domestic Policy
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.purple.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 4 7/16-22
+        .h4.grey Chapter 13 & 14
+        .h12 FINAL 8/13 5pm - 8/16 5pm
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.

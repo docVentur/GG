@@ -1,0 +1,13 @@
+%h1.h4 for mai.information
+%h1 for mai.information
+.h4 for mai.information
+%hr
+.h8 known bug. must click on FMI twice for log to show
+%hr
+%div
+  .button.btn.h1.grey-text.yellow.lighten-3{"ng-click": "$ctrl.showmethemoney()"} show me the money
+%div
+  %ul
+    %li{"ng-repeat": "entry in $ctrl.recententries"}
+      ="{{ entry.timestamp }}"
+      ="{{ entry.type }}"

@@ -1,0 +1,546 @@
+.container{'ng-if': 'true'}
+  .h7{style: "font-size: 5em"} mus 129
+  .row
+    .col.s12{style: "font-size: .5em"}
+      .h13 weekly quizzes (8 x 10 points each) = 80
+      .h13 weekly project submissions (6 x 20 points each) = 120
+      .h13 Discussion Questions (4 x 20 points each) = 80
+      .h13 Term Project = 20
+      .h15 Total Points = 300
+.container{'ng-if': 'true'}
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .hneg1 Anwyn Cavill Willette
+        %a.h12 Studio One 4
+        .h0 week 1 6/25-7/1
+        .h0 Desktop Production Tools
+        .h4 anatomy of an interface
+        .h4 signal flow
+        .h4 introduction to the elements of music
+        .h10 Assignment 1: System Check
+        .h11 Getting started with Studio One 4
+        .h4 Purchasing, downloading, and installing Studio One 4
+        .h4 Studio One overview videos
+        .h4 creating a new song
+        .h4 navigation
+        .h4 drag and drop functionality
+        .h4 basic editing
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 2 7/2-8
+        .h0 Virtual Instruments & MIDI
+        .h4 Introduction to Musical Rhythm
+        .h4 Introduction to Percussion
+        .h4 Programming MIDI Drum Loops
+        .h10 Assignment 2: Creating MIDI drum loops
+        .h11 Studio One 3 MIDI
+        .h4 Impact
+        .h4 Programming Realistic Drums
+        %a.h12{style: "font-size: 1em"}{href: "https://www.youtube.com/watch?v=z1yLdfDmeUw", target: "_blank"} Quantitize MIDI
+        %a.h12{href: "https://youtu.be/XcyZ_WE_35U", target: "_blank"} What is Quantize and How is it Used
+
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 3 7/9-15
+        .h0 Making Great Sounds
+        .h4 Bass and Drums, a marriage made in heaven
+        .h4 MIDI Editing
+        .h4 Creating Loops with Virtual Instruments
+        .h10 Assigment 3: Creating Instrument Loops
+        .h11 Studio One 3 MIDI
+        .h3 Presence
+        .h4 Configuring an Instrument Track
+        .h4 Changing Sounds
+        .h4 Composing Using MIDI piano roll
+        .h4 Loop Record
+
+
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 4 7/16-22
+        .h0 Synthesizers
+        .h4 Synthesizer Basics
+        .h4 Oscillators, filters, amplifiers and envelope controls
+        .h4 Sample player
+        .h10 Assignment 4: Create and save new sounds and creating an atmospheric loop
+        .h11 Studio One 3
+        .h4 Mojito
+        .h4 Mai Tai
+        .h4 Sample One
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 5 7/23-29
+        .h0 Recording Essentials
+        .h4 Recording Essentials
+        .h4 Recording Guitars, Drums and Vocals
+        .h4 Comping and Editing
+        .h10 Assignment 5: Alhpabet soup
+        .h11 Sudio 4 Effects
+        .h4 Delay
+        .h4 Distortion
+        .h4 Dynamics
+        .h4 Modulation
+        .h4 Reverb
+        .h4 Compression
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.green.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 6 7/30-8/5
+        .h0 Audio editing
+        .h4 Non-destructive Audio Editing
+        .h4 Classic Vocal Sounds
+        .h10 Assignment 6: Creating a Voice Over
+        .h11 Studio One 4 Editing
+        .h4 Transient Markers
+        .h4 Quantization
+        .h4 Time Stretching
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.white
+      .col.s4
+        .hindex ^mono
+        .h0 week 7 8/6-12
+        .h0 Music Production Process
+        .h4 Whats the Process?
+        .h4 Anatomy of a Song
+        .h11 Studio One 4
+        .h4 Incorporation of all skills presented
+        .h12 Term Project: Simple Song
+
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.black
+      .col.s4
+        .hindex ^mono
+        .h0 week 8 8/13-19
+        .h0 Mixing
+        .h4 Creating Space, Timbral Balance
+        .h4 EQ
+        .h11 Studio One 3 Mixing
+        .h4 Intro to Mixing
+        .h4 Automation
+        .h4 Advanced Techniques
+        .h4 Finalizing the mix, bouncing and exporting
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.yellow.lighten-5
+    .row.black
+      .col.s4
+        .hindex ^mono
+        .h0 week 8 8/13-19
+        .h0 Mixing
+        .h4 Creating Space, Timbral Balance
+        .h4 EQ
+        .h11 Studio One 3 Mixing
+        .h4 Intro to Mixing
+        .h4 Automation
+        .h4 Advanced Techniques
+        .h4 Finalizing the mix, bouncing and exporting
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+
+
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row.yellow.lighten-5
+    .row.black
+      .col.s4
+        .hindex ^mono
+        .h0 week 8 8/13-19
+        .h0 Mixing
+        .h4 Creating Space, Timbral Balance
+        .h4 EQ
+        .h11 Studio One 3 Mixing
+        .h4 Intro to Mixing
+        .h4 Automation
+        .h4 Advanced Techniques
+        .h4 Finalizing the mix, bouncing and exporting
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'false'}
+  .row.yellow.lighten-5
+    .col.s4
+      .row
+        .col.s12.white
+          .hindex{style: "font-size: 2em"} ^MONO
+          .hneg1{style: "font-size: 1em"} Anwyn Cavill Willette
+          %a.h12{style: "font-size: 1.5em"}{href: "https://www.sweetwater.com/store/detail/S1v4AEdu--presonus-studio-one-4-artist-download-academic-license", target: "_blank"} Presonus Studio One 4 Artists or 4 Pro
+          .h0 WEEK 1 :: DESKTOP PRODUCTION TOOLS
+          .h1 6/25
+          .div
+            .h4 Anatomy of an interface
+            .h4 Signal Flow
+            .h4 Introduction to the Elements of Music
+            .div.grey
+              .h4 Howard Goodall
+              %a.h8{style: "font-size: 1em"}{href: "http://youtube.com", target: "_blank"} Harmony
+              %br
+              %a.h8{style: "font-size: 1em"}{href: "http://youtube.com", target: "_blank"} Melody
+              %br
+              %a.h8{style: "font-size: 1em"}{href: "http://youtube.com", target: "_blank"} Rhythm
+              %br
+              %a.h8{style: "font-size: 1em"}{href: "http://youtube.com", target: "_blank"} Introduction to the Elements of Music
+              %br
+          .h10.black Assignment 1: System Check
+          .h11 Getting Started with Studio One 4
+          .div.teal.lighten-4
+            .h4 Purchasing, downloading and installing, Studio One 4
+            .h4 Studio One overview videos
+            .h4 Creating a New Song
+            .h4 Navigation
+            .h4 Drag and Drop Functionality
+            .h4 Basic editing
+    .col.s4
+      .row
+        .col.s12.pink.lighten-5
+          .hneg1{style: "font-size: 2em"} | koto |
+    .col.s4
+      .row
+        .col.s12.teal.lighten-5
+          .h0{style: "font-size: 2em"} dot.mai.owo.
+
+  .row.orange.lighten-5
+    .col.s4
+      .row
+        .col.s12.white
+          .h0 WEEK 2: VIRTUAL INSTRUMENTS AND MIDI
+          .h1 7/2
+          .h2 Virtual Instruments and MIDI
+          .div
+            .h2 Introduction to Musical Rhythm
+            .h2 Introduction to Percussion
+            .h2 Programming MIDI Drum Loops
+          .h10 Assignment 2: Creating MIDI drum loops
+          .h11 Studio One 3 MIDI
+          .div.teal.lighten-4
+            .h8 Impact
+            .h8 Programming Realistic Drums
+    .col.s4
+      .row
+        .col.s12.pink.lighten-5
+          .h7.black-text{style: "font-size: 2em"} | koto |
+    .col.s4
+      .row
+        .col.s12.teal.lighten-5
+          .h7.black-text{style: "font-size: 2em"} dot.mai.owo.
+
+  .row.red.lighten-4
+    .col.s4
+      .row
+        .col.s12.white
+          .h0 WEEK 3: MAKING GREAT SOUNDS
+          .h1 7/9
+          .h8 Making Great Sounds
+          .h8 Bass and Drums, a marriage made in heaven
+          .h8 MIDI editing
+          .h8 Creating Loops with Virtual Instruments
+          .h10 Assignment 3: Creating Instrument loops
+          .h8 Studio One 3 MIDI
+          .h8 Presence
+          .h8 Configuring an Instrument Track
+          .h8 Changing Sounds
+          .h8 Composing Using MIDI piano roll
+          .h8 Loop Record
+    .col.s4
+      .row
+        .col.s12.pink.lighten-5
+          .h7.black-text{style: "font-size: 2em"} | koto |
+    .col.s4
+      .row
+        .col.s12.teal.lighten-5
+          .h7.black-text{style: "font-size: 2em"} dot.mai.owo.
+  .row.purple.lighten-4
+    .col.s4
+      .row
+        .col.s12.white
+          .h0 WEEK 4: SYNTHESIZERS
+          .h1 7/16
+          .h8 Synthesizers
+          .h8 Synthesizer Basics
+          .h8 Oscillators, filters, amplifiers and envelope controls
+          .h8 Sample player
+          .h10 Assignment 4: Create and save new sounds and creating an atmospheric loop
+          .h8 Studio One 3
+          .h8 Mojito
+          .h8 Mai Tai
+          .h8 Sample One
+    .col.s4
+      .row
+        .col.s12.pink.lighten-5
+          .h7.black-text{style: "font-size: 2em"} | koto |
+    .col.s4
+      .row
+        .col.s12.teal.lighten-5
+          .h7.black-text{style: "font-size: 2em"} dot.mai.owo.
+  .row.blue.lighten-4
+    .col.s4
+      .row
+        .col.s12.white
+          .h0 WEEK 5: RECORDING ESSENTIALS
+          .h1 7/23
+          .h8 Recording Essentials
+          .h8 Recording Essentials
+          .h8 Recording Guitars, Drums, and Vocals
+          .h8 Comping and Editing
+          .h10 Assignment 5: Alphabet soup
+          .h8 Studio One 4 Effects
+          .h8 Delay
+          .h8 Distortion
+          .h8 Dynamics
+          .h8 Modulation
+          .h8 Reverb
+          .h8 Compression
+    .col.s4
+      .row
+        .col.s12.pink.lighten-5
+          .h7.black-text{style: "font-size: 2em"} | koto |
+    .col.s4
+      .row
+        .col.s12.teal.lighten-5
+          .h7.black-text{style: "font-size: 2em"} dot.mai.owo.
+  .row.green.lighten-4
+    .col.s4
+      .row
+        .col.s12.white
+        .h8 Audio Editing
+          .h0 WEEK 6: AUDIO EDITING
+          .h1 7/30
+          .h8 Non-destructive Audio Editing
+          .h8 Classic Vocal Sounds
+          .h10 Assignment 6: Creating a Voice Over
+          .h8 Studio One 4 Editing
+          .h8 Transient Markers
+          .h8 Quantization
+          .h8 Time Stretching
+    .col.s4
+      .row
+        .col.s12.pink.lighten-5
+          .h7.black-text{style: "font-size: 2em"} | koto |
+    .col.s4
+      .row
+        .col.s12.teal.lighten-5
+          .h7.black-text{style: "font-size: 2em"} dot.mai.owo.
+  .row.white
+    .col.s4
+      .row
+        .col.s12.white
+          .h0 WEEK 7: MUSIC PRODUCTION PROCESS
+          .h1 8/6
+          .h8 Music Production Process
+          .h8 What's the Process?
+          .h8 Anatomy of a Song
+          .h8 Term Project: Simple Song
+          .h11 Studio One 4
+          .h8 Incorporation of all skills presented
+    .col.s4
+      .row
+        .col.s12.pink.lighten-5
+          .h7.black-text{style: "font-size: 2em"} | koto |
+    .col.s4
+      .row
+        .col.s12.teal.lighten-5
+          .h7.black-text{style: "font-size: 2em"} dot.mai.owo.
+  .row.black.white-text
+    .col.s4
+      .row
+        .col.s12.white.black-text
+          .h0 WEEK 8: MIXING
+          .h1 8/13
+          .h8 Mixing
+          .h8 Creating Space, Timbral Balance, EQ
+          .h8 Studio One 3 Mixing
+          .h8 Introl to Mixing
+          .h8 Automation
+          .h8 Advanced Techniques
+          .h8 Finalizing the mix, bouncing and exporting.
+    .col.s4
+      .row
+        .col.s12.pink.lighten-5
+          .h7.black-text{style: "font-size: 2em"} | koto |
+    .col.s4
+      .row
+        .col.s12.teal.lighten-5
+          .h7.black-text{style: "font-size: 2em"} dot.mai.owo.
+.container{'ng-if': 'false'}
+  .h8{style: "font-size: 2em"} fin 218
+  .div
+    .row.yellow.darken-4
+      .col.s4
+        .hindex ^mono
+        .hneg1 David Bell
+        %a.h12{href: "http://www.facultybookshelf.org/books.php?isbn=0133973336H|0133877728H&course=FIN+218%3A+Personal+Finance&instructor=David+Bell&univ=pdx", target: "_blank"} Personal Finance: Turning Money into Wealth
+        .h0 week 1 6/25-7/1
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.orange.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 2 7/2-8
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.red.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 3 7/9-15
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.purple.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 4 7/16-22
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.blue.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 5 7/23-29
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.green.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 6 7/30-8/5
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.white
+      .col.s4
+        .hindex ^mono
+        .h0 week 7 8/6-12
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.black
+      .col.s4
+        .hindex ^mono
+        .h0 week 8 8/13-19
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.

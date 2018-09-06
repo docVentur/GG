@@ -1,0 +1,48 @@
+
+%head
+.container.yellow.lighten-3{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s1.center
+      %a.material-icons.grey.white-text{href: "http://localhost:8080", target: "_blank"} expand_less
+    .col.s11
+      %nav.yellow.lighten-3{role: "navigation"}
+        .nav-wrapper
+          %a.h1.left#logo-container.brand-logo.grey-text{href: "#"} ai.yellow.b00ks
+          %ul.right
+            %li
+              %a.h1.grey-text.yellow.lighten-2{"ui-sref" => "beginning"} beginning
+            %li
+              %a.h2.grey-text.yellow.lighten-1{"ui-sref" => "middle"} middle
+            %li
+              %a.h4.purple-text.yellow.lighten-3{"ui-sref" => "mus129"} mus 129
+            %li
+              %a.h4.purple-text.yellow.lighten-3{"ui-sref" => "fin218"} fin 218
+            %li
+              %a.h4.purple-text.yellow.lighten-3{"ui-sref" => "mgmt299"} mgmt 299
+            %li
+              %a.h4.purple-text.yellow.lighten-3{"ui-sref" => "phe275"} phe 275
+            %li
+              %a.h4.purple-text.yellow.lighten-3{"ui-sref" => "ps102"} ps 102
+            %li
+              %a.h4.purple-text.yellow.lighten-3{"ui-sref" => "gg_gg"} gg_gg
+            %li
+              %a.h3.grey-text.yellow{"ui-sref" => "fin"} fin
+            %li
+              %a.h7.white-text{"ui-sref" => "meadow"} meadow
+            %li
+              %a.h8.black-text{"ui-sref" => "fmi"} FMI
+            %li
+              %a.h11.teal-text{"ui-sref" => "testing"} testing
+<ui-view></ui-view>
+%footer.page-footer.grey
+  .container
+    .row
+      .col.s12.center
+        %i.material-icons.medium.yellow-text.text-lighten-1 change_history
+      .col.s12.center
+        %i.material-icons.small.yellow-text.text-lighten-1 refresh
+        %i.material-icons.small.yellow-text.text-lighten-1 refresh
+        %i.material-icons.small.yellow-text.text-lighten-1 refresh
+      .col.s12.center
+        %i.material-icons.tiny.yellow-text.text-lighten-1 more_vert
+        %i.material-icons.tiny.yellow-text.text-lighten-1 more_vert

@@ -1,0 +1,6 @@
+%h1.h1 beginning
+%h1 beginning
+.h1 beginning
+%h1.h7 find me in app/components/beginning/beginning.html.hamlc
+
+%h1.h12 strawhouse

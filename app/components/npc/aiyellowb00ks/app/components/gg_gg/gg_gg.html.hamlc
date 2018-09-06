@@ -1,0 +1,116 @@
+%h1.h12.grey c mi?y.our.gleux
+
+.container{'ng-if': 'true'}
+  .h12.grey{style: "font-size: 3em"} gg_GG
+  .row
+    .col.s12{style: "font-size: .5em"}
+      .h13 Public beta by Halloween
+      .h15 l00kC to NICH by Thanksgiving
+
+.container{'ng-if': 'true'}
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .hneg1 neg1
+        %a.h12{href: "http://growinggenkiness.me/gg_gg", target: "_blank"} growinggenkiness.me/gg_gg
+        .h0 week 1 6/25-7/1
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 2 7/2-8
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 3 7/9-15
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 4 7/16-22
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row
+      .col.s4
+        .hindex ^mono
+        .h0 week 5 7/23-29
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.green.darken-4
+      .col.s4
+        .hindex ^mono
+        .h0 week 6 7/30-8/5
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.white
+      .col.s4
+        .hindex ^mono
+        .h0 week 7 8/6-12
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.
+  .div
+    .row.black
+      .col.s4
+        .hindex ^mono
+        .h0 week 8 8/13-19
+        .h4.grey Chapter
+        .h10 Discussion
+        .h11 HW
+        .h12 Quiz/Paper
+      .col.s4
+        .hneg1= "| koto |"
+      .col.s4
+        .h0 dot.mai.owo.

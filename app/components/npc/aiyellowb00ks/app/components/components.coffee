@@ -1,0 +1,13 @@
+require './beginning/beginning.coffee'
+require './middle/middle.coffee'
+require './fin/fin.coffee'
+require './meadow/meadow.coffee'
+require './FMI/fmi.coffee'
+require './testing/testing.coffee'
+
+require './mus129/mus129.coffee'
+require './fin218/fin218.coffee'
+require './mgmt299/mgmt299.coffee'
+require './phe275/phe275.coffee'
+require './ps102/ps102.coffee'
+require './gg_gg/gg_gg.coffee'

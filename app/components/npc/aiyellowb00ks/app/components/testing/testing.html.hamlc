@@ -1,0 +1,12 @@
+%h1.h11.teal-text testing
+.h11 if I know what I'm doing
+.h11 I should be able to put a log here
+.h11 going back one week.
+
+%div{style: 'height: 50px'}
+  %ul
+    %li{"ng-repeat": "entry in $ctrl.lessrecententries"}
+      ="{{ entry.timestamp }}"
+      ="{{ entry.type }}"
+    %li.black.white-text
+      testing ^^ LESS recent entries log should show up above ^^
