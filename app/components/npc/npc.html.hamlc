@@ -1,11 +1,4 @@
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-  .row.center
-    .col.s12
-      .h10.grey This box contains what will be published as a fidget game on Android Apps by Thanksgiving 2018 as a proof of concept educational project.
-      .index to be beta-ed by Halloween
-
-
-.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .container.ice{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
     .row
     .row
@@ -18,7 +11,7 @@
           Take This!
     .row
       .col.s12.center
-        %a.material-icons.large.pink-text.text-lighten-3{style: "font-size: 7em", "ui-sref": "/main/aiyellowb00kslayout"} favorite
+        %a.material-icons.large.pink-text.text-lighten-3{style: "font-size: 7em", "ui-sref": "aiyellowb00kslayout"} favorite
     .row
       .col.s12.center
         %a.h3.pink-text.text-lighten-5{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"}

@@ -20,7 +20,11 @@
         %a.button.btn.grey.material-icons.pink-text.darken-3.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
         .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
 
-    .col.s6.pink
+    .col.s6
+      .row.center
+        .col.s12
+          .h10.grey This box contains what will be published as a fidget game on Android Apps by Thanksgiving 2018 as a proof of concept educational project.
+          .index to be beta-ed by Halloween
       <ui-view></ui-view>
 
     .col.s1.center
