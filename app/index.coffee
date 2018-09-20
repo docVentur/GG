@@ -23,6 +23,7 @@ require './services/npc.css'
 
 require './services/services.coffee'
 require './components/components.coffee'
+require '../style.css'
 
 app.config ($stateProvider, $urlRouterProvider) ->
   get_recent_entries = (aiyellowb00ksdb) ->
@@ -47,6 +48,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 #  $stateProvider.state {name: 'layout', template: require('gg-css/gg-layout.html.hamlc')}
 
   $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
+  $stateProvider.state {name: 'levelzero', url: '/levelzero', parent: 'layout', component: 'levelzero'}
   $stateProvider.state {name: 'main', url: '/main', parent: 'layout', component: 'main'}
   $stateProvider.state {name: 'npc', url: '/npc', parent: 'main', component: 'npc'}
 
@@ -60,7 +62,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 
   $stateProvider.state {name: 'aiyellowb00kslayout', parent: 'main', url: '/aiyellowb00kslayout', template: require('./components/npc/aiyellowb00ks/app/aiyellowb00kslayout.html.hamlc')}
 
-  $urlRouterProvider.when '', '/main/npc'
+  $urlRouterProvider.when '', '/levelzero'
 
 #  $stateProvider.state {name: 'main', url: '/main', parent: 'layout', template: require('./main.html.hamlc')}
 #  $stateProvider.state {name: 'beginning', url: '/beginning', parent: 'meadow', component: 'beginning'}
