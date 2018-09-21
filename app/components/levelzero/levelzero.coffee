@@ -26,5 +26,10 @@ app.component 'levelzero', {
         @mostrecenttask = @mostrecenttask or entry if entry.type == "task"
 
       vm.recent_entries = vm.entries[0..100]
+
+
+
+
+
     @
 }

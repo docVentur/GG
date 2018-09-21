@@ -1,174 +1,30 @@
-.ice
-  .h1 Level Zero
-  .pi
-    .zoo
-      .ice.container{style: "width: 95% !important; max-width: none", 'ng-if': 'true'}
-        .row.center
-          .col.s12
-            <ui-view></ui-view>
-      .pi.container{style: "width: 90% !important; max-width: none", 'ng-if': 'true'}
-        .row.grey.darken-1.center
-          .col.s2
-            .h1.y-t= "^ai.yellow.b00ks"
-          .col.s2
-            .h2.o-t= "#playing.card-tachi"
-          .col.s2
-            .h3.r-t= "|CATasTrophy|"
-          .col.s2
-            .h4.p-t= "/poke.rface"
-          .col.s2
-            .h5.b-t= ".pushy.f00t.map."
-          .col.s2
-            .h6.g-t= "@sudo@ku@"
-        .row.grey.darken-1.center
-          .col.s2
-            %p= "^12 page node to golden books"
-          .col.s2
-            %p= "#svg playing card manipulator"
-          .col.s2
-            %p= "|wireworld game putting out cat created fires|"
-          .col.s2
-            %p= "/solitaire card game using generated playing cards"
-          .col.s2
-            %p= ".d3.js.playground. linking RW problem management tools"
-          .col.s2
-            %p= "@big@picture@perspective@ using svg cards"
-        .row.grey.darken-1.center
-          .col.s2
-            %p= "00"
-            .h0 speak truth w ai
-          .col.s2
-            %p= "-tachi"
-            .h0 promote community
-          .col.s2
-            %p= "Trophy"
-            .h0 measurable achievements
-          .col.s2
-            %p= "rface"
-            .h0 confident enough to appropriately bluff
-          .col.s2
-            %p= "pushy"
-            %p.h0 take up the right amount of space in this world
-          .col.s2
-            %p= "sudo"
-            .h0 be a TRY-er
+.hindex Ninja-Pushy-Cats
+.hindex{style: "font-size: .5em"} hindex <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.hneg1 i.am
+.hneg1{style: "font-size: .5em"} hneg1 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h0 growinggenkiness.me
+.h0{style: "font-size: .5em"} h0 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h1{style: "font-size: .5em"} h1 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h2{style: "font-size: .5em"} h2 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h3{style: "font-size: .5em"} h3 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h4{style: "font-size: .5em"} h4 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h5{style: "font-size: .5em"} h5 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h6{style: "font-size: .5em"} h6 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h7{style: "font-size: .5em"} h7 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h8{style: "font-size: .5em"} h8 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h9.grey{style: "font-size: .5em"} h9 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h10{style: "font-size: .5em"} h10 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h11{style: "font-size: .5em"} h11 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h12{style: "font-size: .5em"} h12 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+<img src="app/assets/kitten.jpg" alt="Pa" style="width: 100px" style="center"></img>
+.h13{style: "font-size: .5em"} h13 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h14{style: "font-size: .5em"} h14 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
+.h15{style: "font-size: .5em"} h15 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
 
-        .container
-          .container
-            .row
-              .col.s2
-                .hindex index.html .hamlc .materialize
-              .col.s2
-                .hneg1 components bundle.js .coffee
-              .col.s2
-                .h0 css
-              .col.s2
-                .h13 Gg
-              .col.s2
-                .h14 Test
-                .h14 a 4 ltr word
-              .col.s2
-                .h15 publication
-        .container
-          .row
-            .col.s1
-              .h1= "^Gg"
-            .col.s1
-              .h2= "#Gg"
-            .col.s1
-              .h3= "|Gg"
-            .col.s1
-              .h4= "/Gg"
-            .col.s1
-              .h5= "@Gg"
-            .col.s1
-              .h6= ".Gg"
-            .col.s1
-              .h7= "*Gg"
-            .col.s1
-              .h8= "$Gg"
-            .col.s1
-              .h9= "%Gg"
-            .col.s1
-              .h10= ":Gg"
-            .col.s1
-              .h11= "_Gg"
-            .col.s1
-              .h12= ";Gg"
-      .zoo.center.container{style: "width: 85% !important; max-width: none", 'ng-if': 'true'}
-        .row
-          .col.s1
-            .h1= "^Gg"
-          .col.s1
-            .h2= "#Gg"
-          .col.s1
-            .h3= "|Gg"
-          .col.s1
-            .h4= "/Gg"
-          .col.s1
-            .h5= "@Gg"
-          .col.s1
-            .h6= ".Gg"
-          .col.s1
-            .h7= "*Gg"
-          .col.s1
-            .h8= "$Gg"
-          .col.s1
-            .h9= "%Gg"
-          .col.s1
-            .h10= ":Gg"
-          .col.s1
-            .h11= "_Gg"
-          .col.s1
-            .h12= ";Gg"
-        .container
-          .container
-            .row
-              .col.s2
-                .hindex= "[ [ Gg"
-              .col.s2
-                .hneg1= "{ { Gg"
-              .col.s2
-                .h0= "( ( Gg"
-              .col.s2
-                .h13= "Gg ) )"
-              .col.s2
-                .h14= "Gg } }"
-              .col.s2
-                .h15= "Gg ] ]"
-      %hr
-      %hr
-      %hr
-      %footer
-      .container
-        .div
-          .row
-            .col.s4.center
-              %a.h4.yellow-text.text-lighten-4 ^gg 元
-            .col.s4.center
-              %a.h5.red-text.text-lighten-4 王&nbsp; |&nbsp; G&G &nbsp;|&nbsp; 王
-            .col.s4.center
-              %a.h6.blue-text.text-lighten-4 .&nbsp;口&nbsp;gg&nbsp;口&nbsp;.&nbsp;g&nbsp;口&nbsp;.
-      .container
-        .container
-          .row
-            .col.s4.center
-              .yellow-text.text-lighten-4  ^ growing_genkiness 元
-            .col.s4.center
-              .red-text.text-lighten-4
-                ='|&nbsp; GREAT &nbsp;王&nbsp; GRAND&nbsp;|'
-            .col.s4.center
-              .blue-text.text-lighten-4 o {([guchi] genki) Games} 口 o o
-      .container
-        .row
-          .col.s12
-            .div
-              .col.s12.center
-                %i.material-icons.large.grey-text change_history
-              .col.s12.center
-                %i.material-icons.medium.grey-text refresh
-                %i.material-icons.medium.grey-text refresh
-                %i.material-icons.medium.grey-text refresh
-              .col.s12.center
-                %i.material-icons.small.grey-text more_vert
-                %i.material-icons.small.grey-text more_vert
+
+%hr
+%hr
+%hr
+
+%p.h0{style: "font-size: .5em"} npm install
+%p.h0{style: "font-size: .5em"} webpack-dev-server

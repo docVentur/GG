@@ -7,23 +7,23 @@ pdb = require 'angular-pouchdb'
 angularMaterialize = require 'angular-materialize'
 require 'angular-moment'
 
-require('materialize-css/bin/materialize.css')
-require('materialize-css/bin/materialize.js')
+require('materialize-css/dist/css/materialize.css')
+require('materialize-css/dist/js/materialize.js')
 
 app = angular.module 'gg', [
   'ui.router',
   'ngAnimate',
   'pouchdb',
-  angularMaterialize,
+  'ui.materialize',
   'angularMoment'
 ]
 
 require './services/npc.css'
+# gave up on parallax 9/20/2018
 # future iterations will use gg-library/gg.css
 
 require './services/services.coffee'
 require './components/components.coffee'
-require '../style.css'
 
 app.config ($stateProvider, $urlRouterProvider) ->
   get_recent_entries = (aiyellowb00ksdb) ->
@@ -48,7 +48,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 #  $stateProvider.state {name: 'layout', template: require('gg-css/gg-layout.html.hamlc')}
 
   $stateProvider.state {name: 'layout', template: require('./layout.html.hamlc')}
-  $stateProvider.state {name: 'levelzero', url: '/levelzero', parent: 'layout', component: 'levelzero'}
+  $stateProvider.state {name: 'levelzero', url: '/levelzero', component: 'levelzero'}
   $stateProvider.state {name: 'main', url: '/main', parent: 'layout', component: 'main'}
   $stateProvider.state {name: 'npc', url: '/npc', parent: 'main', component: 'npc'}
 

@@ -431,13 +431,11 @@ if we can download it we can use it
 .h10 {
   font-family: 'Homemade Apple';
   color: pink;
-  background-color: #311b92;
   text-align: center;
 }
 .h11 {
   font-family: 'Indie Flower';
-  color: #009688;
-  background-color: #cddc39;
+  color: teal;
   text-align: center;
 }
 .h12 {
@@ -446,10 +444,6 @@ if we can download it we can use it
   text-align: center;
   background-color: white;
 }
-
-
-
-
 
 p {
   font-family: 'Roboto';
