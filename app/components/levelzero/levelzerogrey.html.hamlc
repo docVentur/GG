@@ -1,4 +1,4 @@
-%h9 admin :: how you get to the edit screens for other stuff
+.h9.yellow-text.text-lighten-5{style: "font-size: 5em"} admin :: how you get to the edit screens for other stuff
 .h3 beastiary -tachi complete
 .h4 items -mono unlocked at different times
 need to nail core game loop.

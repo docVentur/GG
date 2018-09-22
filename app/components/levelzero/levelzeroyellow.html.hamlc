@@ -1,14 +1,14 @@
-.h1 Player Screen
+.h1.yellow-text.text-lighten-5{style: "font-size: 5em"}  Player Screen
 
-.h1 max_hp
+.h1{style: "font-size: 5em"} max_hp
 .h2
-.h3 orientation
+.h3{style: "font-size: 5em"} orientation
 .h4
-.h5 race
+.h5{style: "font-size: 5em"} race
 .h6
 .h7
 .h8
 .h9
 .h10
-.h11 legacy
+.h11{style: "font-size: 5em"} legacy
 .h12

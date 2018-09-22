@@ -1,329 +1,228 @@
-.hindex{style: "font-size: 3em"} gG
-.hindex{style: "font-size: 2em"} g00d game
-.hindex games are just dumb boxes
-.hneg1 ai 愛 I
-.hneg1{style: "font-size: 1em"} playing the game tells it what to do
-.h0 i.am growinggenkiness.me
-.h0 ewe can game
+.row.center
+  .col.s1.black
+    .row
+    .row
+    .row
+      %a.button.btn.hindex.grey.darken-4{"ui-sref": "main"}= "[["
+    .row
+      .button.btn.hneg1.grey.darken-5{"ui-sref": "main"}= "{{"
+    .row
+      .button.btn.h0{"ui-sref": "main"}= "(("
+    .row
+    .row
+  .col.s2.black.white-text
+    .hindex{style: "font-size: 3em"} gG
+    .hindex{style: "font-size: 2em"} g00d game
+    .hindex games are just dumb boxes
+    .hneg1.pink-text.text-lighten-5{style: "font-size: .5em"} ai 愛 I
+    .hneg1{style: "font-size: 1em"} playing the game tells it what to do
+    .h0.pink-text.text-lighten-5{style: "font-size: .5em"} i.am growinggenkiness.me
+    .h0.lime-text ewe can game
+    %hr
+    .h13.yellow-text.text-lighten-5 think logically
+    .h14.red-text.text-lighten-5 pay attention to detail
+    .h15.blue-text.text-lighten-5 fails teach us what to do next
+    .hindex.text-lighten-5 get g00d gaming
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "levelzero doesn't exist"
 
-.container{style: "width: 66% !important; max-width: none", 'ng-if': 'true'}
+
+  .col.s1.grey.darken-4
+    .row
+    .row
+      .button.btn.h1.y-t= "^"
+    .row
+      .button.btn.h2.o-t= "#"
+    .row
+      .button.btn.h3.r-t= "||"
+    .row
+  .col.s1.grey.darken-3
+    .row
+    .row
+      .button.btn.h4.p-t= "//"
+    .row
+      .button.btn.h5.b-t= "..."
+    .row
+      .button.btn.h6.g-t= "@@@"
+    .row
+  .col.s1.grey
+    .row
+    .row
+      .button.btn.h7.w-t= "*"
+    .row
+      .button.btn.h8.l-t= "$"
+    .row
+      .button.btn.h9.e-t.grey= "(%)"
+    .row
+
+  .col.s1.grey.lighten-3
+    .row
+    .row
+      .button.btn.h10.i-t= "{:}"
+    .row
+      .button.btn.h11.c-t= "[_]"
+    .row
+      .button.btn.h12.n-t= ";"
+    .row
+  .col.s4.center
+    .row
+      .col.s6
+        %a.button.btn.h1.yellow.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "player"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "player"
+        %a.button.btn.h2.orange.lighten-4.black-text{"ui-sref": "levelzeroorange"}= "beast"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "beast"
+        %a.button.btn.h3.red.lighten-4.black-text{"ui-sref": "levelzerored"}= "beastiary"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "beastiary"
+        %a.button.btn.h4.purple.lighten-4.black-text{"ui-sref": "levelzeropurple"}= "items"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "items"
+        %a.button.btn.h5.blue.lighten-4.black-text{"ui-sref": "levelzerooblue"}= "item"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "item"
+        %a.button.btn.h6.green.lighten-4.black-text{"ui-sref": "levelzerogreen"}= "world"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "world"
+      .col.s6
+        %a.button.btn.h7.white.black-text{"ui-sref": "levelzerowhite"}= "beast editor"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "bolsh"
+        %a.button.btn.h8.black.white-text{"ui-sref": "levelzeroblack"}= 'curves'
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "curves"
+        %a.button.btn.h9.grey{"ui-sref": "levelzerogrey"}= "admin"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "admin"
+        %a.button.btn.h10.black-text.pink.lighten-4{"ui-sref": "levelzeropink"} "legacy"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "legacy"
+        %a.button.btn.h11.cyan.lighten-4{"ui-sref": "levelzerocyan"}= "item editor"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "item editor"
+        %a.button.btn.h12.brown.lighten-4{"ui-sref": "levelzerobrown"}= "MPC"
+        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "MPC"
+  .col.s1.white
+    .row
+    .row
+    .row
+      .button.btn.h13= "))"
+    .row
+      .button.btn.h14.grey= "}}"
+    .row
+      .button.btn.h15.black= "]]"
+    .row
+  %hr
+  %hr
+  %hr
+  %hr
+  %hr
+  %hr
+%hr
+%hr
+%hr
+.container.grey{style: "width: 50%"}
   .row
-    .col.s3
-    .col.s1.ice
-      <img src="app/assets/kitten.jpg" alt="Pa" style="width: 100px" style="center"></img>
-    .col.s6.pi
-      .row
-      .h13 think logically
-      .h14 pay attention to detail
-      .h15 fails teach us what to do next
-      .row
-    .col.s2
-.zoo.hindex get g00d gaming
+    .col.s4.black
+      .h1 arena 1
+      .h1 arena 1
+      .h1 arena 1
+      .h1.pink-text arena 1
+      .h1 arena 1
+      .h1 arena 1
+    .col.s8
+      .row.white
+        .h2 arena drop down and arrow
+      .row.pink
+        .h8 something curvy
+        .h8 something curvy
+        .h8 something curvy
+        .h8 something curvy
+.container
+  .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "computers have ghosts"
 
-.container{style: "width: 66% !important; max-width: none", 'ng-if': 'true'}
-  .row.ice
-    .col.s2
-      .row
-      .row
-        .hindex.button.btn= "[ 愛"
-        %a.button.btn.hindex{href: "http://growinggenkiness.me/dg", target: "_blank"}= "[ dg"
-      .row
-        .hneg1.button.btn= "{ 元"
-        %a.button.btn.hneg1{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= "{ DKDG"
-      .row
-        .h0.button.btn= "( 気"
-        %a.button.btn.h0{href: "http://growinggenkiness.me/ai", target: "_blank"}= "( ai"
+.container
+  .row
+    .col.s7
+      .row.yellow
+        .col.s8
+          .h1 sumtin special
+        .col.s4.white
+          .h8 sumtim pretty
+      .row.orange
+        .col.s8
+          .h1 sumtin special
+        .col.s4.white
+          .h8 sumtim pretty
+      .row.red
+        .col.s8
+          .h1 sumtin special
+        .col.s4.white
+          .h8 sumtim pretty
+      .row.purple
+        .col.s8
+          .h1 sumtin special
+        .col.s4.white
+          .h8 sumtim pretty
+      .row.blue
+        .col.s8
+          .h1 sumtin special
+        .col.s4.white
+          .h8 sumtim pretty
+      .row.green
+        .col.s8
+          .h1 sumtin special
+        .col.s4.white
+          .h8 sumtim pretty
+    .col.s1
     .col.s4
       .row
+        .col.s6.pink.white-text
+          .h1 honeybadger
+          .h1 honeybadger
+          .h1 honeybadger
+        .col.s6.black.white-text
+          .h2 Snek
+          .h2 Snek
+          .h2 Snek
+      .row
         .col.s6
-          %a.button.btn.h1.yellow.lighten-4{href: "http://clu.sectorfour:5984/_utils/index.html"}= "db"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://lab.sectorfour/users/sign_in"
-          %a.button.btn.h2.orange.lighten-4{href: "http://growinggenkiness.me"}= "gg.me"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
-          %a.button.btn.h3.red.lighten-4{href: "http://ddpyoga.com"}= "ddpy"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://ddpyoga.com"
-          %a.button.btn.h4.purple.lighten-4{href: "https://www.reddit.com/"}= "rdit"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://reddit/lichenology lichenology relationships programming woweconomy endlessfrontier"
-          %a.button.btn.h5.blue.lighten-4{href: "http://veronica-anderson-atr6.squarespace.com/config/"}= "ss"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://veronica-anderson-atr6.squarespace.com/config/"
-          %a.button.btn.h6.green.lighten-4{href: "http://growinggenkiness.me/ai_gg_gdkp"}= "ai_gg_gdkp"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/ai_gg_gdkp"
+          .h11.teal.white-text Honey Badger
         .col.s6
-          %a.button.btn.h7.white.black-text{href: "http://growinggenkiness.me/bolsh"}= "bolsh"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/bolsh"
-          %a.button.btn.h8.black.white-text{href: "https://c18.qbo.intuit.com/app/homepage?launchSetup=false"}= "qbo"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://c18.qbo.intuit.com/app/homepage?launchSetup=false"
-          %a.button.btn.h9.grey{href: "http://ddpyoga.com"}= "ddpy"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://www.allrecipes.com/cook/my/"
-          %a.button.btn.h10.black-text.pink.lighten-4{href: "https://www.reddit.com/"}= "ar"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "allrecipes.com/cook/my/"
-          %a.button.btn.h11.cyan.lighten-4{href: "http://facebook"}= "fb"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://facebook"
-          %a.button.btn.h12.brown.lighten-4{href: "http://www.makeplayingcards.com"}= "MPC"
-          .h0.pink-text.text-lighten-4.black-text{style: "font-size: .4em"}= "http://www.makeplayingcards"
-
-    .col.s2.zoo
+          .h11.teal.white-text Snek
       .row
-      .row
-      .row
-        %a.button.btn.h13{href: "http://veronica-anderson-atr6.squarespace.com/config/"}= "ss"
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://veronica-anderson-atr6.squarespace.com/config/"
-      .row
-        %a.button.btn.h14{href: "http://clu.sectorfour:5984/_utils/index.html"}= "db"
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://lab.sectorfour/users/sign_in"
-      .row
-        %a.button.btn.h15{href: "localhost:8080/#!"}= "localhost"
-        .h0.pink-text.text-lighten-4.black-text{style: "font-size: .4em"}= "localhost:8080/#!"
-    .col.s4.zoo.center
-      .row.pi
-        .col.s6
-          %a.button.btn.h1.yellow.lighten-4{href: "http://clu.sectorfour:5984/_utils/index.html"}= "player"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "beastiary"
-          %a.button.btn.h2.orange.lighten-4{href: "http://growinggenkiness.me"}= "beast"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
-          %a.button.btn.h3.red.lighten-4{href: "http://ddpyoga.com"}= "beastiary"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://ddpyoga.com"
-          %a.button.btn.h4.purple.lighten-4{href: "https://www.reddit.com/"}= "items"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://reddit/lichenology lichenology relationships programming woweconomy endlessfrontier"
-          %a.button.btn.h5.blue.lighten-4{href: "http://veronica-anderson-atr6.squarespace.com/config/"}= "item"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://veronica-anderson-atr6.squarespace.com/config/"
-          %a.button.btn.h6.green.lighten-4{href: "http://growinggenkiness.me/ai_gg_gdkp"}= "world"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/ai_gg_gdkp"
-        .col.s6
-          %a.button.btn.h7.white.black-text{href: "http://growinggenkiness.me/bolsh"}= "beast editor"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/bolsh"
-          %a.button.btn.h8.black.white-text{href: "https://c18.qbo.intuit.com/app/homepage?launchSetup=false"}= 'curves'
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://c18.qbo.intuit.com/app/homepage?launchSetup=false"
-          %a.button.btn.h9.grey{href: "http://ddpyoga.com"}= "admin"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://www.allrecipes.com/cook/my/"
-          %a.button.btn.h10.black-text.pink.lighten-4{href: "https://www.reddit.com/"}= "ar"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "allrecipes.com/cook/my/"
-          %a.button.btn.h11.cyan.lighten-4{href: "http://facebook"}= "item editor"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://facebook"
-          %a.button.btn.h12.brown.lighten-4{href: "http://www.makeplayingcards.com"}= "MPC"
-          .h0.pink-text.text-lighten-4.black-text{style: "font-size: .4em"}= "http://www.makeplayingcards"
+        .col.s6.pink.white-text
+          .h1 honeybadger
+          .h1 honeybadger
+          .h1 honeybadger
+        .col.s6.black.white-text
+          .h2 Snek
+          .h2 Snek
+          .h2 Snek
 
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-
-
-
-
-
-
-
-
-.container{style: "width: 66% !important; max-width: none", 'ng-if': 'true'}
-  .row
-    .col.s1.center
-      .button.btn.hindex= "["
-      .button.btn.hneg1= "{"
-      .button.btn.h0= "("
-      %hr
-      .button.btn.h1.y-t= "^"
-      .button.btn.h2.o-t= "#"
-      .button.btn.h3.r-t= "|"
-      .button.btn.h4.p-t= "/"
-      .button.btn.h5.b-t= "."
-      .button.btn.h6.g-t= "@"
-      .button.btn.h7.w-t= "*"
-      .button.btn.h8.l-t= "$"
-      .button.btn.h9.e-t.grey= "(%)"
-      .button.btn.h10.i-t= "{:}"
-      .button.btn.h11.c-t= "[_]"
-      .button.btn.h12.n-t= ";"
-      %hr
-      .button.btn.h13= "))"
-      .button.btn.h14= "}}"
-      .button.btn.h15= "]]"
-    .col.s1.center
-      .button.btn.hindex.grey= "["
-      .button.btn.hneg1.grey= "{"
-      .button.btn.h0.grey= "("
-      %hr
-      .button.btn.h1.grey.y-t= "^"
-      .button.btn.h2.grey.o-t= "#"
-      .button.btn.h3.grey.r-t= "|"
-      .button.btn.h4.grey.p-t= "/"
-      .button.btn.h5.grey.b-t= "."
-      .button.btn.h6.grey.g-t= "@"
-      .button.btn.h7.grey.w-t= "*"
-      .button.btn.h8.grey.l-t= "$"
-      .button.btn.h9.e-t.grey= "(%)"
-      .button.btn.h10.grey.i-t= "{:}"
-      .button.btn.h11.grey.c-t= "[_]"
-      .button.btn.h12.grey.n-t= ";"
-      %hr
-      .button.btn.h13.grey= "))"
-      .button.btn.h14.grey= "}}"
-      .button.btn.h15.grey= "]]"
-    .col.s1.center
-      .button.btn.hindex.grey= "["
-      .button.btn.hneg1.grey= "{"
-      .button.btn.h0.grey= "("
-      %hr
-      .button.btn.h1.grey= "^"
-      .button.btn.h2.grey= "#"
-      .button.btn.h3.grey= "|"
-      .button.btn.h4.grey= "/"
-      .button.btn.h5.grey= "."
-      .button.btn.h6.grey= "@"
-      .button.btn.h7.grey= "*"
-      .button.btn.h8.grey= "$"
-      .button.btn.h9.e-t.grey= "(%)"
-      .button.btn.h10.grey= "{:}"
-      .button.btn.h11.grey= "[_]"
-      .button.btn.h12.grey= ";"
-      %hr
-      .button.btn.h13.grey= "))"
-      .button.btn.h14.grey= "}}"
-      .button.btn.h15.grey= "]]"
-
-
-
-    .col.s1.center
-      .hindex= "["
-      .hneg1= "{"
-      .h0= "("
-      %hr
-      .h1.y-t y
-      .h2.o-t o
-      .h3.r-t r
-      .h4.p-t p
-      .h5.b-t b
-      .h6.g-t g
-      .h7.w-t w
-      .h8.l-t l
-      .h9.e-t.grey e
-      .h10.i-t i
-      .h11.c-t y
-      .h12.n-t n
-      %hr
-      .h13 13
-      .h14 14
-      .h15 15
-    .col.s1.center
-      .hindex= "["
-      .hneg1= "{"
-      .h0= "("
-      %hr
-      .h1.y-t= "^"
-      .h2.o-t= "#"
-      .h3.r-t= "|"
-      .h4.p-t= "/"
-      .h5.b-t= "."
-      .h6.g-t= "@"
-      .h7.w-t= "*"
-      .h8.l-t= "$"
-      .h9.e-t.grey= "(%)"
-      .h10.i-t= "{:}"
-      .h11.c-t= "[_]"
-      .h12.n-t= ";"
-      %hr
-      .h13= "))"
-      .h14= "}}"
-      .h15= "]]"
-
-    .col.s1.center
-      .hindex= "["
-      .hneg1= "{"
-      .h0= "("
-      %hr
-      .h1 ai.log
-      .h2 add.mono
-      .h3 lichenology
-      .h4 poke.db-oard
-      .h5 hima-tachi_map
-      .h6 dot.mai.owo
-      .h7 tsugu
-      .h8 7edger
-      .h9.grey axe
-      .h10 mai.saga
-      .h11 pract.ice_habit
-      .h12 saga
-      %hr
-      .h13 13
-      .h14 14
-      .h15 15
-    .col.s6.center
-      .hindex.button.btn= "["
-      .hneg1.button.btn= "{"
-      .h0.button.btn= "("
-      %hr
-      .h1.button.btn.yellow.lighten-4 :: http://lab.sectorfour/users/sign_in
-      .h2.button.btn.orange.lighten-4 :: http://growinggenkiness.me
-      .h3.button.btn.red.lighten-4 :: https://ddpyoga.com/
-      .h4.button.btn.purple.lighten-4 :: reddit lichenology
-      .h5.button.btn.blue.lighten-4 :: https://veronica-anderson-atr6.squarespace.com/config/
-      .h6.button.btn.green.lighten-4 :: http://growinggenkiness.me/ai_gg_gdkp
-      .h7.button.btn.white.lighten-4.black-text :: http://growinggenkiness.me/bolsh
-      .h8.button.btn.grey.darken-1 :: https://c18.qbo.intuit.com/app/homepage?launchSetup=false
-      .h9.grey.button.btn.lighten-2 :: https://www.allrecipes.com/cook/my/
-      .h10.button.btn.pink.black-text.lighten-4 :: https://www.facebook.com/
-      .h11.button.btn.cyan.lighten-4 :: https://github.com/docVentur
-      .h12.button.btn.brown.lighten-4 :: https://www.makeplayingcards.com/
-      %hr
-      .h13.button.btn 13
-      .h14.button.btn 14
-      .h15.button.btn localhost
-
-    .col.s1.center
-      .hindex= "hindex <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg"
-      .hneg1= "hneg1 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg"
-      .h0= "h0 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg"
-      %hr
-      .h1 h1 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h2 h2 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h3 h3 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h4 h4 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h5 h5 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h6 h6 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h7 h7 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h8 h8 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h9.grey h9 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h10 h10 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h11 h11 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h12 h12 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      %hr
-      .h13 h13 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h14 h14 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h15 h15 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-
-
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-
-<img src="app/assets/kitten.jpg" alt="Pa" style="width: 100px" style="center"></img>
-
-.hindex almost brought to you in.... parallax
-%p.h0{style: "font-size: .5em"} npm install
-%p.h0{style: "font-size: .5em"} webpack-dev-server
+.row
+  .col.s1
+    %a.button.btn.h1.yellow.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "^"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "player"
+  .col.s1
+    %a.button.btn.h2.orange.lighten-4.black-text{"ui-sref": "levelzeroorange"}= "#"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "beast"
+  .col.s1
+    %a.button.btn.h3.red.lighten-4.black-text{"ui-sref": "levelzerored"}= "|"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "beastiary"
+  .col.s1
+    %a.button.btn.h4.purple.lighten-4.black-text{"ui-sref": "levelzeropurple"}= "/"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "items"
+  .col.s1
+    %a.button.btn.h5.blue.lighten-4.black-text{"ui-sref": "levelzerooblue"}= "."
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "item"
+  .col.s1
+    %a.button.btn.h6.green.lighten-4.black-text{"ui-sref": "levelzerogreen"}= "@"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "world"
+  .col.s1
+    %a.button.btn.h7.white.black-text{href: "http://growinggenkiness.me/bolsh"}= "*"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "bolsh"
+  .col.s1
+    %a.button.btn.h8.black.white-text{"ui-sref": "levelzeroblack"}= '$'
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "curves"
+  .col.s1
+    %a.button.btn.h9.grey{"ui-sref": "levelzerogrey"}= "%"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "admin"
+  .col.s1
+    %a.button.btn.h10.black-text.pink.lighten-4{"ui-sref": "levelzeropink"}= ":"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "legacy"
+  .col.s1
+    %a.button.btn.h11.cyan.lighten-4{"ui-sref": "levelzerocyan"}= "_"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "item editor"
+  .col.s1
+    %a.button.btn.h12.brown.lighten-4{"ui-sref": "levelzerobrown"}= ";"
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "MPC"

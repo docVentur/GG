@@ -1,0 +1,10 @@
+Items :: droppable equipment and trash and collectables and currency
+Equipment
+  "Leather Jerkin"
+    level: 2
+    armor: 3
+    card: chest
+Inventory
+  currency
+    snekscale
+    copper
