@@ -138,7 +138,7 @@
           .row
           .row
             .hindex.button.btn= "[ 愛"
-            %a.button.btn.hindex{href: "http://lab.sectorfour/vongeist/gg", target: "_blank"}= "[ git"
+            %a.button.btn.hindex{href: "https://github.com/docVentur", target: "_blank"}= "[ git"
           .row
             .hneg1.button.btn= "{ 元"
             %a.button.btn.hneg1{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= "{ ;"
@@ -189,36 +189,38 @@
                 %a.button.btn.h15{href: "localhost:8080/#!", target: "_blank"}= "localhost"
                 .h0.pink-text.text-lighten-4.black-text{style: "font-size: .4em"}= "localhost:8080/#!"
     .col.s4
+      .row
       .container.zoo{style: "width: 90%"}
         .container.zoo{style: "width: 90%"}
           .container.zoo{style: "width: 90%"}
             .row
+            .row
               .col.s6
                 %a.button.btn.h1.yellow.lighten-4{href: "http://clu.sectorfour:5984/_utils/index.html"}= "player"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "beastiary"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "^"
                 %a.button.btn.h2.orange.lighten-4{href: "http://growinggenkiness.me"}= "beast"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "#"
                 %a.button.btn.h3.red.lighten-4{href: "http://ddpyoga.com"}= "beastiary"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://ddpyoga.com"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "|"
                 %a.button.btn.h4.purple.lighten-4{href: "https://www.reddit.com/"}= "items"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://reddit/lichenology lichenology relationships programming woweconomy endlessfrontier"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "/"
                 %a.button.btn.h5.blue.lighten-4{href: "http://veronica-anderson-atr6.squarespace.com/config/"}= "item"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://veronica-anderson-atr6.squarespace.com/config/"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "."
                 %a.button.btn.h6.green.lighten-4{href: "http://growinggenkiness.me/ai_gg_gdkp"}= "world"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/ai_gg_gdkp"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "@"
               .col.s6
                 %a.button.btn.h7.white.black-text{href: "http://growinggenkiness.me/bolsh"}= "beast editor"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/bolsh"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "*"
                 %a.button.btn.h8.black.white-text{href: "https://c18.qbo.intuit.com/app/homepage?launchSetup=false"}= 'curves'
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://c18.qbo.intuit.com/app/homepage?launchSetup=false"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "$"
                 %a.button.btn.h9.grey{href: "http://ddpyoga.com"}= "admin"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://www.allrecipes.com/cook/my/"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "(%)"
                 %a.button.btn.h10.black-text.pink.lighten-4{href: "https://www.reddit.com/"}= "ar"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "allrecipes.com/cook/my/"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "{:}"
                 %a.button.btn.h11.cyan.lighten-4{href: "http://facebook"}= "item editor"
-                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://facebook"
+                .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "[_]"
                 %a.button.btn.h12.brown.lighten-4{href: "http://www.makeplayingcards.com"}= "MPC"
-                .h0.pink-text.text-lighten-4.black-text{style: "font-size: .4em"}= "http://www.makeplayingcards"
+                .h0.pink-text.text-lighten-4.black-text{style: "font-size: .4em"}= ";;;"
 
 %hr
 %hr
