@@ -62,7 +62,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
 
   $stateProvider.state {name: 'aiyellowb00kslayout', parent: 'main', url: '/aiyellowb00kslayout', template: require('./components/npc/aiyellowb00ks/app/aiyellowb00kslayout.html.hamlc')}
 
-  $urlRouterProvider.when '', '/levelzero'
+  $urlRouterProvider.when '', '/main/npc'
 
 #  $stateProvider.state {name: 'main', url: '/main', parent: 'layout', template: require('./main.html.hamlc')}
 #  $stateProvider.state {name: 'beginning', url: '/beginning', parent: 'meadow', component: 'beginning'}

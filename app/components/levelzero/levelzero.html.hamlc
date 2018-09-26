@@ -1,3 +1,80 @@
+.h11{style: "font-size: .5em"} ai.am.a faux.tu.hr game
+.hindex{style: "font-size: 3em"} tic.tac.calming puzzle
+.hneg1{style: "font-size: 1.5em"} design document
+.h0{style: "font-size: 1.5em"} explanation of core game looop
+.h10 calming goat alternative
+.h0{style: "font-size: 1.5em"} age meters
+.container
+  %ul.collection
+    %li.collection-item
+      .h1= "PlayStore"
+      .h4 what model are we doing? free to play no ads
+      .h7.black-text Andoid and then Apple
+    %li.collection-item
+      .h2 APK directly distributable
+    %li.collection-item
+      .h4 hardware backed key for signing releases
+      .h12 halvsies on the 1st
+    %li.collection-item
+      .h12 bitcoin called eunits for eustress
+      .h8 perhaps we should call them ewenits
+      .h9 nits are the shape of lice eggs
+
+.h0{style: "font-size: 1.5em"} list of important features
+.container
+  %ul.collection
+    %li.collection-item
+      .h1= "starts 3x3 grid"
+    %li.collection-item
+      .h1 progresses to sudoku grid
+    %li.collection-item
+      .h1.grey-text.text-lighten-3 progresses to crossword grid
+    %li.collection-item
+      .h3 take back button
+    %li.collection-item
+      .h5 view replay button
+    %li.collection-item
+      .h10 rng manipulator eg mean dad v overly generious gma
+.h0{style: "font-size: 1.5em"} /requirements
+.container
+  %ul.collection
+    %li.collection-item
+      .h1 user determinds rules for sudoku tic tak toe
+    %li.collection-item
+      .h3 is sudoku 9 games and then scored in full?
+    %li.collection-item
+      .h5 is full board open to play and sequential x/os scored cumulitivately?
+    %li.collection-item
+      .h6 MMO where each game = control of one dot
+
+.h0{style: "font-size: 1.5em"} age meters
+.container
+  %ul.collection
+    %li.collection-item
+      .h0{style: "font-size: 1.5em"} rage meters
+    %li.collection-item
+      .h12 sumtin spade-ic that explodes rage meter
+    %li.collection-item
+      .h11 single or multi player depending on which is easier
+    %li.collection-item
+      .h10 animations
+    %li.collection-item
+      .h9.black-text basic graphic support
+    %li.collection-item
+      .h8 traditional grids
+    %li.collection-item
+      .h7.black-text sudo-ku grids
+    %li.collection-item
+      .h6.center crossword grids
+
+
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+
 .hindex{style: "font-size: 3em"} gG
 .hindex{style: "font-size: 2em"} g00d game
 .hindex games are just dumb boxes
