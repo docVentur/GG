@@ -93,6 +93,31 @@
         .h12= ";Gg"
 .zoo.center.container{style: "width: 85% !important; max-width: none", 'ng-if': 'true'}
   .row
+    .col.s1.center
+      .h1 ai.log
+    .col.s1.center
+      .h2.o-t add.mono
+    .col.s1.center
+      .h3.r-t lichenology
+    .col.s1.center
+      .h4.p-t poke.db-oard
+    .col.s1.center
+      .h5.b-t hima-tachi_map
+    .col.s1.center
+      .h6.g-t dot.mai.owo
+    .col.s1.center
+      .h7 tsugu
+    .col.s1.center
+      .h8 7edger
+    .col.s1.center
+      .h9.grey axe
+    .col.s1.center
+      .h10 mai.saga
+    .col.s1.center
+      .h11 pract.ice_habit
+    .col.s1.center
+      .h12 saga
+  .row
     .col.s1
       .h1= "^Gg"
     .col.s1

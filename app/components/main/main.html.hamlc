@@ -1,3 +1,46 @@
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s2.center
+      %a.button.btn.hindex{href: "https://github.com/docVentur", target: "_blank"}= "[ github"
+    .col.s2.center
+      %a.button.btn.hneg1{"ui-sref": "levelzero"}= "{ levelzero"
+    .col.s2.center
+      %a.button.btn.h0= "("
+    .col.s2.center
+      %a.button.btn.h13= "))"
+    .col.s2.center
+      %a.button.btn.h14{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"}= "ss }}"
+    .col.s2.center
+      %a.button.btn.h15{href: "localhost:8080/#!"}= "localhost:8080 ]]"
+  .row
+    .col.s1.center
+      %a.button.btn.grey.h1.y-t= "^"
+    .col.s1.center
+      %a.button.btn.grey.h2.o-t= "#"
+    .col.s1.center
+      %a.button.btn.grey.h3.r-t= "|"
+    .col.s1.center
+      %a.button.btn.grey.h4.p-t= "/"
+    .col.s1.center
+      %a.button.btn.grey.h5.b-t= "."
+    .col.s1.center
+      %a.button.btn.grey.h6.g-t= "@"
+    .col.s1.center
+      %a.button.btn.grey.h7.w-t= "*"
+    .col.s1.center
+      %a.button.btn.grey.h8.l-t= "$"
+    .col.s1.center
+      %a.button.btn.h9.e-t.grey= "(%)"
+    .col.s1.center
+      %a.button.btn.grey.h10.i-t= "{:}"
+    .col.s1.center
+      %a.button.btn.grey.h11.c-t= "[_]"
+    .col.s1.center
+      %a.button.btn.grey.h12.n-t= ";"
+
+
+
+
 .container{style: "width: 95% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s2
@@ -225,152 +268,7 @@
 %hr
 %hr
 %hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-
-
-
-
-
-
-
-
-.container{style: "width: 66% !important; max-width: none", 'ng-if': 'true'}
-  .row
-    .col.s1.center
-      .button.btn.hindex= "["
-      .button.btn.hneg1= "{"
-      .button.btn.h0= "("
-      %hr
-      .button.btn.h1.y-t= "^"
-      .button.btn.h2.o-t= "#"
-      .button.btn.h3.r-t= "|"
-      .button.btn.h4.p-t= "/"
-      .button.btn.h5.b-t= "."
-      .button.btn.h6.g-t= "@"
-      .button.btn.h7.w-t= "*"
-      .button.btn.h8.l-t= "$"
-      .button.btn.h9.e-t.grey= "(%)"
-      .button.btn.h10.i-t= "{:}"
-      .button.btn.h11.c-t= "[_]"
-      .button.btn.h12.n-t= ";"
-      %hr
-      .button.btn.h13= "))"
-      .button.btn.h14= "}}"
-      .button.btn.h15= "]]"
-    .col.s1.center
-      .button.btn.hindex.w-t.grey.darken-3= "["
-      .button.btn.hneg1.i-t.grey.darken-2= "{"
-      .button.btn.h0.grey.darken-1= "("
-      %hr
-      .button.btn.h1.grey.y-t.darken-1= "^"
-      .button.btn.h2.grey.o-t.darken-1= "#"
-      .button.btn.h3.grey.r-t.darken-1= "|"
-      .button.btn.h4.grey.p-t.darken-1= "/"
-      .button.btn.h5.grey.b-t.darken-1= "."
-      .button.btn.h6.grey.g-t.darken-1= "@"
-      .button.btn.h7.grey.w-t.darken-1= "*"
-      .button.btn.h8.grey.l-t.darken-1= "$"
-      .button.btn.h9.grey.darken-1.grey-text.text-lighten-1= "(%)"
-      .button.btn.h10.grey.i-t.darken-1= "{:}"
-      .button.btn.h11.grey.c-t.darken-1= "[_]"
-      .button.btn.h12.grey.brown-text.text-lighten-3.darken-1= ";"
-      %hr
-      .button.btn.h13.grey.darken-1= "))"
-      .button.btn.h14.grey.darken-1= "}}"
-      .button.btn.h15.grey.darken-1= "]]"
-    .col.s1.center
-      .button.btn.hindex.grey= "["
-      .button.btn.hneg1.grey= "{"
-      .button.btn.h0.grey= "("
-      %hr
-      .button.btn.h1.grey= "^"
-      .button.btn.h2.grey= "#"
-      .button.btn.h3.grey= "|"
-      .button.btn.h4.grey= "/"
-      .button.btn.h5.grey= "."
-      .button.btn.h6.grey= "@"
-      .button.btn.h7.grey= "*"
-      .button.btn.h8.grey= "$"
-      .button.btn.h9.e-t.grey= "(%)"
-      .button.btn.h10.grey= "{:}"
-      .button.btn.h11.grey= "[_]"
-      .button.btn.h12.grey= ";"
-      %hr
-      .button.btn.h13.grey= "))"
-      .button.btn.h14.grey= "}}"
-      .button.btn.h15.grey= "]]"
-
-
-
-    .col.s1.center
-      .hindex= "["
-      .hneg1= "{"
-      .h0= "("
-      %hr
-      .h1.y-t y
-      .h2.o-t o
-      .h3.r-t r
-      .h4.p-t p
-      .h5.b-t b
-      .h6.g-t g
-      .h7.w-t w
-      .h8.l-t l
-      .h9.e-t.grey e
-      .h10.i-t i
-      .h11.c-t y
-      .h12.n-t n
-      %hr
-      .h13 13
-      .h14 14
-      .h15 15
-    .col.s1.center
-      .hindex= "["
-      .hneg1= "{"
-      .h0= "("
-      %hr
-      .h1.y-t= "^"
-      .h2.o-t= "#"
-      .h3.r-t= "|"
-      .h4.p-t= "/"
-      .h5.b-t= "."
-      .h6.g-t= "@"
-      .h7.w-t= "*"
-      .h8.l-t= "$"
-      .h9.e-t.grey= "(%)"
-      .h10.i-t= "{:}"
-      .h11.c-t= "[_]"
-      .h12.n-t= ";"
-      %hr
-      .h13= "))"
-      .h14= "}}"
-      .h15= "]]"
-
-    .col.s2.center
-      .hindex= "["
-      .hneg1= "{"
-      .h0= "("
-      %hr
-      .h1 ai.log
-      .h2 add.mono
-      .h3 lichenology
-      .h4 poke.db-oard
-      .h5 hima-tachi_map
-      .h6 dot.mai.owo
-      .h7 tsugu
-      .h8 7edger
-      .h9.grey axe
-      .h10 mai.saga
-      .h11 pract.ice_habit
-      .h12 saga
-      %hr
-      .h13 13
-      .h14 14
-      .h15 15
+.container{style: "width: 90%"}
   .row
     .col.s12.center
       .hindex= "hindex <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg"
@@ -393,31 +291,7 @@
       .h13 h13 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg gG gGg
       .h14 h14 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg gG gGg
       .h15 h15 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg gG gGg
-
-
 %hr
 %hr
 %hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-
 <img src="app/assets/kitten.jpg" alt="Pa" style="width: 500px" style="center"></img>

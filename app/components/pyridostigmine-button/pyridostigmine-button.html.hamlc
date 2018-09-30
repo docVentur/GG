@@ -4,11 +4,11 @@
       .col.12
         .h1.i-t.center{style: "font-size: 2em"} ^breathe
     .row
-      .col.s5
+      .col.s8
         .hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
-      .col.s3
-        .hneg1{style: "font-size: .5em"} last clicked
       .col.s4
+        .hneg1{style: "font-size: 1em"} last clicked
+    .row
+      .col.s12
         %div{"ng-if": "$ctrl.mostrecententry"}
-          .hneg1{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
-          .hindex.pink-text b00
+          .hneg1{style: "font-size: 3em"}{"am-time-ago": "$ctrl.mostrecententry.entered_at"}

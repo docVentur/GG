@@ -96,61 +96,7 @@
       .row
     .col.s2
 .zoo.hindex get g00d gaming
-
-.container{style: "width: 66% !important; max-width: none", 'ng-if': 'true'}
-  .row.ice
-    .col.s2
-      .row
-      .row
-        .hindex.button.btn= "[ 愛"
-        %a.button.btn.hindex{href: "http://growinggenkiness.me/dg", target: "_blank"}= "[ dg"
-      .row
-        .hneg1.button.btn= "{ 元"
-        %a.button.btn.hneg1{href: "http://growinggenkiness.me/semicolon", target: "_blank"}= "{ DKDG"
-      .row
-        .h0.button.btn= "( 気"
-        %a.button.btn.h0{href: "http://growinggenkiness.me/ai", target: "_blank"}= "( ai"
-    .col.s4
-      .row
-        .col.s6
-          %a.button.btn.h1.yellow.lighten-4{href: "http://clu.sectorfour:5984/_utils/index.html"}= "db"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://lab.sectorfour/users/sign_in"
-          %a.button.btn.h2.orange.lighten-4{href: "http://growinggenkiness.me"}= "gg.me"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
-          %a.button.btn.h3.red.lighten-4{href: "http://ddpyoga.com"}= "ddpy"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://ddpyoga.com"
-          %a.button.btn.h4.purple.lighten-4{href: "https://www.reddit.com/"}= "rdit"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://reddit/lichenology lichenology relationships programming woweconomy endlessfrontier"
-          %a.button.btn.h5.blue.lighten-4{href: "http://veronica-anderson-atr6.squarespace.com/config/"}= "ss"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://veronica-anderson-atr6.squarespace.com/config/"
-          %a.button.btn.h6.green.lighten-4{href: "http://growinggenkiness.me/ai_gg_gdkp"}= "ai_gg_gdkp"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/ai_gg_gdkp"
-        .col.s6
-          %a.button.btn.h7.white.black-text{href: "http://growinggenkiness.me/bolsh"}= "bolsh"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/bolsh"
-          %a.button.btn.h8.black.white-text{href: "https://c18.qbo.intuit.com/app/homepage?launchSetup=false"}= "qbo"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://c18.qbo.intuit.com/app/homepage?launchSetup=false"
-          %a.button.btn.h9.grey{href: "http://ddpyoga.com"}= "ddpy"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "https://www.allrecipes.com/cook/my/"
-          %a.button.btn.h10.black-text.pink.lighten-4{href: "https://www.reddit.com/"}= "ar"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "allrecipes.com/cook/my/"
-          %a.button.btn.h11.cyan.lighten-4{href: "http://facebook"}= "fb"
-          .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://facebook"
-          %a.button.btn.h12.brown.lighten-4{href: "http://www.makeplayingcards.com"}= "MPC"
-          .h0.pink-text.text-lighten-4.black-text{style: "font-size: .4em"}= "http://www.makeplayingcards"
-
-    .col.s2.zoo
-      .row
-      .row
-      .row
-        %a.button.btn.h13{href: "http://veronica-anderson-atr6.squarespace.com/config/"}= "ss"
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://veronica-anderson-atr6.squarespace.com/config/"
-      .row
-        %a.button.btn.h14{href: "http://clu.sectorfour:5984/_utils/index.html"}= "db"
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://lab.sectorfour/users/sign_in"
-      .row
-        %a.button.btn.h15{href: "localhost:8080/#!"}= "localhost"
-        .h0.pink-text.text-lighten-4.black-text{style: "font-size: .4em"}= "localhost:8080/#!"
+  .row
     .col.s4.zoo.center
       .row.pi
         .col.s6
@@ -351,53 +297,6 @@
       .h14.button.btn 14
       .h15.button.btn localhost
 
-    .col.s1.center
-      .hindex= "hindex <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg"
-      .hneg1= "hneg1 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg"
-      .h0= "h0 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg"
-      %hr
-      .h1 h1 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h2 h2 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h3 h3 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h4 h4 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h5 h5 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h6 h6 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h7 h7 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h8 h8 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h9.grey h9 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h10 h10 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h11 h11 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h12 h12 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      %hr
-      .h13 h13 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h14 h14 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-      .h15 h15 <3 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890 Gg
-
-
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
 
 <img src="app/assets/kitten.jpg" alt="Pa" style="width: 100px" style="center"></img>
 
