@@ -3,15 +3,15 @@
     .col.s2.center
       %a.button.btn.hindex{href: "https://github.com/docVentur", target: "_blank"}= "[ github"
     .col.s2.center
-      %a.button.btn.hneg1{"ui-sref": "levelzero"}= "{ levelzero"
+      %a.button.btn.hneg1{"ui-sref": "levelzero", target: "_blank"}= "{ levelzero"
     .col.s2.center
-      %a.button.btn.h0= "("
+      %a.button.btn.h0{href: "https://academy.zenva.com/", target: "_blank"}= "( zenva"
     .col.s2.center
-      %a.button.btn.h13= "))"
+      %a.button.btn.h13{href: "https://growinggenkiness.me", target: "_blank"}= "))"
     .col.s2.center
       %a.button.btn.h14{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"}= "ss }}"
     .col.s2.center
-      %a.button.btn.h15{href: "localhost:8080/#!"}= "localhost:8080 ]]"
+      %a.button.btn.h15{href: "http://localhost:8080", target: "_blank"}= "localhost:8080 ]]"
   .row
     .col.s1.center
       %a.button.btn.grey.h1.y-t= "^"
