@@ -1,3 +1,86 @@
+.ice.pi.zoo.grey.darken-3.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .container.black
+    .row
+    .row
+      .col.s6.black
+        .container.ice{style: "width: 95%; max-width: none", 'ng-if': 'true'}
+          .row
+          .h12.pink.lighten-3 text box for ai.log
+          .h7{style: "font-size: 1em"}= "change color with pallette below"
+          .row
+      .col.s2.grey
+        .container
+          .row
+          .h1.button.btn.black.white-text NOW
+          .h3.button.btn.white.black-text THEN
+          .row
+      .col.s4.white
+        .h5.blue-text combat log: time in gg_color :: comment wrapped
+        .h5.blue-text combat log: time in gg_color :: comment wrapped
+        .h5.blue-text combat log: time in gg_color :: comment wrapped
+        .h5.blue-text combat log: time in gg_color :: comment wrapped
+    .row
+  .ice.row
+    .col.s4.center
+      %a.button.btn.grey.h1.y-t= "^mes"
+    .col.s4.center
+      %a.button.btn.grey.h3.r-t= "|bl00d|"
+    .col.s4.center
+      %a.button.btn.grey.h5.b-t= ".poGL.."
+  .pi.row
+    .col.s2.center
+      %a.button.btn.grey.h1.y-t= "^jsn"
+    .col.s2.center
+      %a.button.btn.grey.h2.o-t= "#svg"
+    .col.s2.center
+      %a.button.btn.grey.h3.r-t= "|coffee"
+    .col.s2.center
+      %a.button.btn.grey.h4.p-t= "/edu>gov"
+    .col.s2.center
+      %a.button.btn.grey.h5.b-t= ".d3.js."
+    .col.s2.center
+      %a.button.btn.grey.h6.g-t= "@.me.."
+  .zoo.row
+    .col.s1.center
+      %a.button.btn.grey.h1.y-t{style: "font-size: .75em"}= "^"
+      .h1="nebulizer"
+    .col.s1.center
+      %a.button.btn.grey.h2.o-t{style: "font-size: .75em"}= "#"
+      .h2="brush/floss/wash mouth/vocabulary"
+    .col.s1.center
+      %a.button.btn.grey.h3.r-t{style: "font-size: .75em"}= "|"
+      .h3="uSlow"
+    .col.s1.center
+      %a.button.btn.grey.h4.p-t{style: "font-size: .75em"}= "/"
+      .h4="uFast"
+    .col.s1.center
+      %a.button.btn.grey.h5.b-t{style: "font-size: .75em"}= "."
+      .h5=".advair"
+    .col.s1.center
+      %a.button.btn.grey.h6.g-t{style: "font-size: .75em"}= "@"
+      .h6="github"
+    .col.s1.center
+      %a.button.btn.grey.h7.w-t{style: "font-size: .75em"}= "*"
+      .h7="(dis)comfort"
+    .col.s1.center
+      %a.button.btn.grey.h8.l-t{style: "font-size: .75em"}= "$"
+      .h8="peak flow meter"
+    .col.s1.center
+      %a.button.btn.h9.e-t.grey{style: "font-size: .75em"}= "(%)"
+      .h9="g00d m00d f00d"
+    .col.s1.center
+      %a.button.btn.grey.h10.i-t{style: "font-size: .75em"}= "{:}"
+      .h10=" DDP yoga"
+    .col.s1.center
+      %a.button.btn.grey.h11.c-t{style: "font-size: .75em"}= "[_]"
+      .h11=" 1/4 mi"
+    .col.s1.center
+      %a.button.btn.grey.h12.n-t{style: "font-size: .75em"}= ";"
+      .h12=" gg.me"
+
+
+
+
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s2.center
