@@ -50,7 +50,7 @@
           <pyridostigmine-button icon="accessibility" name="pyridostigmine" color="black" mostrecententry="$ctrl.mostrecententry['pyridostigmine']" type="icetask" intensity="lighten-4">
           </pyridostigmine-button>
           %hr
-          <ailog-button icon="change_history" name="ailog" color="black" mostrecentailogentry="$ctrl.mostrecententry['ailog']" type="icetask" intensity="lighten-4">
+          <ailog-button icon="change_history" name="ailog" color="black" mostrecententry="$ctrl.mostrecententry['ailog']" type="icetask" intensity="lighten-4">
           </ailog-button>
         .col.s4
           .row
