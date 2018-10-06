@@ -1,0 +1,16 @@
+%h1 ailogButton
+.div.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
+  .div{"ng-click": "$ctrl.make_entry()"}
+    .row
+      .col.12
+        .h1.i-t.center{style: "font-size: 2em"} ^ailog
+    .row
+      .col.s8
+        .ice.hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
+      .col.s4
+        .pi.hneg1{style: "font-size: 1em"} NOW
+        .pi.hneg1{style: "font-size: 1em"} THEN
+    .row
+      .col.s12
+        %div{"ng-if": "$ctrl.mostrecententry"}
+          .hneg1{style: "font-size: 3em"}{"am-time-ago": "$ctrl.mostrecententry.entered_at"}

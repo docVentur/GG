@@ -1,86 +1,3 @@
-.ice.pi.zoo.grey.darken-3.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
-  .container.black
-    .row
-    .row
-      .col.s6.black
-        .container.ice{style: "width: 95%; max-width: none", 'ng-if': 'true'}
-          .row
-          .h12.pink.lighten-3 text box for ai.log
-          .h7{style: "font-size: 1em"}= "change color with pallette below"
-          .row
-      .col.s2.grey
-        .container
-          .row
-          .h1.button.btn.black.white-text NOW
-          .h3.button.btn.white.black-text THEN
-          .row
-      .col.s4.white
-        .h5.blue-text combat log: time in gg_color :: comment wrapped
-        .h5.blue-text combat log: time in gg_color :: comment wrapped
-        .h5.blue-text combat log: time in gg_color :: comment wrapped
-        .h5.blue-text combat log: time in gg_color :: comment wrapped
-    .row
-  .ice.row
-    .col.s4.center
-      %a.button.btn.grey.h1.y-t= "^mes"
-    .col.s4.center
-      %a.button.btn.grey.h3.r-t= "|bl00d|"
-    .col.s4.center
-      %a.button.btn.grey.h5.b-t= ".poGL.."
-  .pi.row
-    .col.s2.center
-      %a.button.btn.grey.h1.y-t= "^jsn"
-    .col.s2.center
-      %a.button.btn.grey.h2.o-t= "#svg"
-    .col.s2.center
-      %a.button.btn.grey.h3.r-t= "|coffee"
-    .col.s2.center
-      %a.button.btn.grey.h4.p-t= "/edu>gov"
-    .col.s2.center
-      %a.button.btn.grey.h5.b-t= ".d3.js."
-    .col.s2.center
-      %a.button.btn.grey.h6.g-t= "@.me.."
-  .zoo.row
-    .col.s1.center
-      %a.button.btn.grey.h1.y-t{style: "font-size: .75em"}= "^"
-      .h1="nebulizer"
-    .col.s1.center
-      %a.button.btn.grey.h2.o-t{style: "font-size: .75em"}= "#"
-      .h2="brush/floss/wash mouth/vocabulary"
-    .col.s1.center
-      %a.button.btn.grey.h3.r-t{style: "font-size: .75em"}= "|"
-      .h3="uSlow"
-    .col.s1.center
-      %a.button.btn.grey.h4.p-t{style: "font-size: .75em"}= "/"
-      .h4="uFast"
-    .col.s1.center
-      %a.button.btn.grey.h5.b-t{style: "font-size: .75em"}= "."
-      .h5=".advair"
-    .col.s1.center
-      %a.button.btn.grey.h6.g-t{style: "font-size: .75em"}= "@"
-      .h6="github"
-    .col.s1.center
-      %a.button.btn.grey.h7.w-t{style: "font-size: .75em"}= "*"
-      .h7="(dis)comfort"
-    .col.s1.center
-      %a.button.btn.grey.h8.l-t{style: "font-size: .75em"}= "$"
-      .h8="peak flow meter"
-    .col.s1.center
-      %a.button.btn.h9.e-t.grey{style: "font-size: .75em"}= "(%)"
-      .h9="g00d m00d f00d"
-    .col.s1.center
-      %a.button.btn.grey.h10.i-t{style: "font-size: .75em"}= "{:}"
-      .h10=" DDP yoga"
-    .col.s1.center
-      %a.button.btn.grey.h11.c-t{style: "font-size: .75em"}= "[_]"
-      .h11=" 1/4 mi"
-    .col.s1.center
-      %a.button.btn.grey.h12.n-t{style: "font-size: .75em"}= ";"
-      .h12=" gg.me"
-
-
-
-
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s2.center
@@ -126,27 +43,128 @@
 
 .container{style: "width: 95% !important; max-width: none", 'ng-if': 'true'}
   .row
-    .col.s2
-      %hr
-      <pyridostigmine-button icon="accessibility" name="pyridostigmine" color="black" mostrecententry="$ctrl.mostrecententry['pyridostigmine']" type="icetask" intensity="lighten-4">
-      </pyridostigmine-button>
-    .col.s1
+    .col.s4
       .row
-      .row
-      .row
-        .ice.hindex{style: "font-size: 1em"}= ".ice"
-        %a.button.btn.material-icons.white-text.black{style: "font-size: 2em"}{href: "http://localhost:8080", target: "_blank"} change_history
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://localhost:8080"
-      .row
-        .pi.hneg1{style: "font-size: 1em"}= ".pi"
-        %a.button.btn.material-icons.white-text.pink.lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"} more_vert
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
-      .row
-        .zoo.h0{style: "font-size: 1em"}= ".zoo"
-        %a.button.btn.grey.material-icons.pink-text.darken-3.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
-        .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
+        .col.s8
+          %hr
+          <pyridostigmine-button icon="accessibility" name="pyridostigmine" color="black" mostrecententry="$ctrl.mostrecententry['pyridostigmine']" type="icetask" intensity="lighten-4">
+          </pyridostigmine-button>
+          %hr
+          <ailog-button icon="change_history" name="ailog" color="black" mostrecentailogentry="$ctrl.mostrecententry['ailog']" type="icetask" intensity="lighten-4">
+          </ailog-button>
+        .col.s4
+          .row
+          .row
+          .row
+            .ice.hindex{style: "font-size: 1em"}= ".ice"
+            %a.button.btn.material-icons.white-text.black{style: "font-size: 2em"}{href: "http://localhost:8080", target: "_blank"} change_history
+            .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://localhost:8080"
+          .row
+            .pi.hneg1{style: "font-size: 1em"}= ".pi"
+            %a.button.btn.material-icons.white-text.pink.lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me/semicolon", target: "_blank"} more_vert
+            .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me/semicolon"
+          .row
+            .zoo.h0{style: "font-size: 1em"}= ".zoo"
+            %a.button.btn.grey.material-icons.pink-text.darken-3.text-lighten-4{style: "font-size: 2em"}{href: "http://growinggenkiness.me", target: "_blank"} all_out
+            .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "http://growinggenkiness.me"
+      .ice.pi.zoo.black.div
+        .row
+          .col.s10.black
+            .container.ice{style: "width: 95%; max-width: none", 'ng-if': 'true'}
+              .row
+              .h12.pink.lighten-4 text box for ai.log
+              .h7{style: "font-size: .75em"}= "change color with pallette below"
+            .pi.row
+              .col.s3.center
+                %a.button.btn.h1.yellow.lighten-4.white-text= "&nbsp;&nbsp;^mes&nbsp;&nbsp;"
+              .col.s3.center
+                %a.button.btn.h3.red.lighten-4.white-text= "|bl00d|"
+              .col.s3.center
+                %a.button.btn.h5.blue.lighten-4.white-text= "&nbsp;.poGL..&nbsp;"
+              .zoo.col.s3.center
+                .zoo
+                  .zoo
+                    %a.button.btn.h5.brown= "&nbsp;.poGL..&nbsp;"
 
-    .col.s6
+          .col.s2.grey
+            .container
+              .row
+              .h1.button.btn.black.white-text NOW
+              .h3.button.btn.white.black-text THEN
+              .row
+        .zoo.row
+          .row
+            .col.s2.center.yellow
+              %a.h1.black-text{style: "font-size: 1em"}= "^jsn"
+            .col.s2.center.orange
+              %a.h2.black-text{style: "font-size: 1em"}= "#svg"
+            .col.s2.center.red
+              %a.h3.black-text{style: "font-size: 1em"}= "|coffee"
+            .col.s2.center.purple
+              %a.h4.black-text{style: "font-size: 1em"}= "/edu>gov"
+            .col.s2.center.blue
+              %a.h5.black-text{style: "font-size: 1em"}= ".d3.js."
+            .col.s2.center.green
+              %a.h6.black-text{style: "font-size: 1em"}= "@.me.."
+          .zoo.row
+            .col.s1.center
+              %a.yellow.h1.black-text{style: "font-size: 1em"}= "&nbsp;&nbsp;^&nbsp;&nbsp;"
+              .h1{style: "font-size: .25em"}="nebulizer"
+            .col.s1.center
+              %a.orange.h2.black-text{style: "font-size: 1em"}= "&nbsp;&nbsp;#&nbsp;&nbsp;"
+              .h2{style: "font-size: .25em"}="brush/floss/wash mouth/vocabulary"
+            .col.s1.center
+              %a.red.h3.black-text{style: "font-size: 1em"}= "&nbsp;&nbsp;|&nbsp;&nbsp;"
+              .h3{style: "font-size: .25em"}="uSlow"
+            .col.s1.center
+              %a.h4.purple.black-text{style: "font-size: 1em"}= "&nbsp;&nbsp;/&nbsp;&nbsp;"
+              .h4{style: "font-size: .25em"}="uFast"
+            .col.s1.center
+              %a.h5.blue.black-text{style: "font-size: 1em"}= "&nbsp;&nbsp;.&nbsp;&nbsp;"
+              .h5{style: "font-size: .25em"}=".advair"
+            .col.s1.center
+              %a.green.black-text.h6{style: "font-size: 1em"}= "&nbsp;&nbsp;@&nbsp;&nbsp;"
+              .h6{style: "font-size: .25em"}="github"
+            .col.s1.center
+              %a.white.black-text.h7{style: "font-size: 1em"}= "&nbsp;&nbsp;*&nbsp;&nbsp;"
+              .h7{style: "font-size: .25em"}="(dis)comfort"
+            .col.s1.center
+              %a.h8.black.white-text{style: "font-size: 1em"}= "&nbsp;&nbsp;$&nbsp;&nbsp;"
+              .h8{style: "font-size: .25em"}="peak flow meter"
+            .col.s1.center
+              %a.h9.grey.black-text{style: "font-size: 1em"}= "&nbsp;(%)&nbsp;"
+              .h9{style: "font-size: .25em"}="g00d m00d f00d"
+            .col.s1.center
+              %a.pink.lighten-3.h10.black-text{style: "font-size: 1em"}= "&nbsp;{:}&nbsp;"
+              .h10{style: "font-size: .25em"}=" DDP yoga"
+            .col.s1.center
+              %a.teal.black-text.h11{style: "font-size: 1em"}= "&nbsp;[_]&nbsp;"
+              .h11{style: "font-size: .5em"}=" 1/4 mi"
+            .col.s1.center
+              %a.h12.brown.black-text{style: "font-size: 1em"}= "&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;"
+              .h12{style: "font-size: .25em"}=" gg.me"
+
+        .row.pi
+          .h5.blue-text.white{style: "font-size: 1em"} start by listing pyridostigmine-button log
+          .h5.blue-text.pink.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.yellow.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.red.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.blue.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.pink.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.yellow.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.red.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.blue.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.pink.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.yellow.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.red.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+          .h5.blue-text.blue.lighten-4{style: "font-size: .4em"} combat log: time in gg_color
+
+
+
+
+
+
+    .col.s5
       .row.center
         .col.s12
           .h10.grey This box contains what will be published as a fidget game on Android Apps by Thanksgiving 2018 as a proof of concept educational project.
