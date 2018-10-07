@@ -1,40 +1,52 @@
-%h1 ailogButton
-
-.input-field.white
-  %input{type: "text", "ng-model": "$ctrl.new_project_name", "length": "32"}
-  %label Project Name
-
-
-
-.div.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
+.div.black.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
   .div{"ng-click": "$ctrl.make_entry()"}
     .row
-      .col.12
-        .h1.i-t.center{style: "font-size: 2em"} ^breathe
-    .row
       .col.s8
-        .hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
+        .input-field{"ng-class": "$ctrl.comment_classes"}
+          %input{type: "text", "ng-model": "$ctrl.new_project_name", "length": "33"}
+          %label= "^mai.words go here!"
+          .hindex.i-t{style: "font-size: 1em"}= "{{ $ctrl.name }} gg_color_code drop-down"
+
       .col.s4
-        .hneg1{style: "font-size: 1em"} last clicked
-    .row
-      .col.s12
-        %div{"ng-if": "$ctrl.mostrecententry"}
-          .hneg1{style: "font-size: 3em"}{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
+        .pi
+          .black.white-text{style: "font-size: 1em"} NOW
+          .white.black-text{style: "font-size: 1em"} THEN
+        .zoo
+          %div{"ng-if": "$ctrl.mostrecententry"}
+            .hneg1{style: "font-size: 1.5em"}{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
+    %a.button.btn.h8{href: "http://clu.sectorfour:5984/_utils/database.html?ailogdb", target: "_blank"} ailogdb
+    .h12= "_id: f36b7409d7a0c001ed44c505370092be"
+    .h12= "_rev: 1-f55c0f6e8e700389ea63900de3cff825"
+    .h12= "$ref: http://gg/ai.log/entry.schema"
+    .h12= "entered_at: 2018-07-23T15:29:05-07:00"
+    %hr
+    .h12= "color: yellow"
+    .h12= "intensity: lighten-4"
+    %hr
+
+    .h12= "name: Mestinon"
+    .h12= "icon: expand_less"
 
 
+    .h12= "comment: button press"
+    .h12= "fields: { }"
 
-.div.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
-  .div{"ng-click": "$ctrl.make_entry()"}
-    .row
-      .col.12
-        .h1.i-t.center{style: "font-size: 2em"} ^ailog
-    .row
-      .col.s8
-        .ice.hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
-      .col.s4
-        .pi.hneg1{style: "font-size: 1em"} NOW
-        .pi.hneg1{style: "font-size: 1em"} THEN
-    .row
-      .col.s12
-        %div{"ng-if": "$ctrl.mostrecententry"}
-          .hneg1{style: "font-size: 3em"}{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
+    .h12= "type: pitask"
+%hr
+%hr
+%hr
+
+%hr
+%hr
+%hr
+%hr
+%hr
+%hr
+
+%select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggcolor"}
+  %option{"ng-repeat": "ggcolor in $ctrl.ggcolors"}
+    ="{{ ggcolor }}"
+
+%select.browser-default{"ng-change": "$ctrl.dropdownintensity_changed()", "ng-model": "$ctrl.ggintensity"}
+  %option{"ng-repeat": "ggintensity in $ctrl.ggintensity"}
+    ="{{ ggintensity }}"

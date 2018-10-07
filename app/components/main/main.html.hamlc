@@ -1,3 +1,36 @@
+.ice.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .row
+    .col.s4.yellow.lighten-5
+      <pyridostigmine-button icon="accessibility" name="pyridostigmine" color="black" mostrecententry="$ctrl.mostrecententry['pyridostigmine']" type="icetask" intensity="lighten-4">
+      </pyridostigmine-button>
+    .col.s4.red.lighten-5
+      <ailog-button icon="change_history" name="ailog" color="grey" mostrecententry="$ctrl.mostrecententry['ailog']" type="icetask" intensity="darken-2">
+      </ailog-button>
+    .col.s4.blue.lighten-5
+      .h12.blue-grey-text.pink.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
+      .h12.blue-grey-text.yellow.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
+      .h12.blue-grey-text.red.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
+      .h12.blue-grey-text.blue.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
+      .h12.blue-grey-text.yellow.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
+      .h12.blue-grey-text.red.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
+      .h12.blue-grey-text.blue.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
+
+.pi.container{style: "width: 90% !important; max-width: none", 'ng-if': 'true'}
+  .row.grey.darken-1.center
+    .col.s2
+      .h1.y-t{style: "font-size: 3em"}= "^jsns"
+    .col.s2
+      .h2.o-t{style: "font-size: 3em"}= "#svg"
+    .col.s2
+      .h3.r-t{style: "font-size: 3em"}= "|coffee|"
+    .col.s2
+      .h4.p-t{style: "font-size: 3em"}= "Vedu>gov/"
+    .col.s2
+      .h5.b-t{style: "font-size: 3em"}= ".d3.js."
+    .col.s2
+      .h6.g-t{style: "font-size: 2em"}= "@me @ewe @us"
+
+
 .container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s2.center

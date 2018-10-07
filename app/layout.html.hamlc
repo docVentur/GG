@@ -5,6 +5,19 @@
 .pi.container{style: "width: 90% !important; max-width: none", 'ng-if': 'true'}
   .row.grey.darken-1.center
     .col.s2
+      .h1.y-t= "^jsns"
+    .col.s2
+      .h2.o-t= "#svg"
+    .col.s2
+      .h3.r-t= "|coffee|"
+    .col.s2
+      .h4.p-t= "Vedu>gov/"
+    .col.s2
+      .h5.b-t= ".d3.js."
+    .col.s2
+      .h6.g-t= "@me @ @"
+  .row.grey.darken-1.center
+    .col.s2
       .h1.y-t= "^ai.yellow.b00ks"
     .col.s2
       .h2.o-t= "#playing.card-tachi"
