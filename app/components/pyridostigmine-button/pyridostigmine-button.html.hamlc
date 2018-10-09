@@ -1,10 +1,17 @@
-.div.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
+.ice.div.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
   .div{"ng-click": "$ctrl.make_entry()"}
     .row
       .col.s6
         .h1.i-t.center{style: "font-size: 3em"} ^breathe
         .hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
+        %i.material-icons.white-text.black{style: "font-size: 5em"} terrain
       .col.s6
         .hneg1{style: "font-size: 1em"} last clicked
         %div{"ng-if": "$ctrl.mostrecententry"}
-          .hneg1{style: "font-size: 1.5em"}{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
+          .h4.pink.lighten-5{style: "font-size: 3em"}{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
+    .row
+      .col.s8
+        .hindex{style: "font-size: 1.3em"} ::: ^IN CASE OF EMERGENCY :::
+      .col.s2
+        .hindex{style: "font-size: 3em"} ^.ice
+      .col.s2

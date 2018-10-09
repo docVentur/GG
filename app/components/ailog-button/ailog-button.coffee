@@ -40,7 +40,7 @@ app.component 'ailogButton', {
 
     @dropdown_changed = () =>
       @comment_classes = {}
-      @comment_classes[ @intensity ] = true
+      @comment_classes[ @ggintensity ] = true
       @comment_classes[ @ggcolor ] = true
 
       console.log "dropdown_changed #{ @dropdown_value }"

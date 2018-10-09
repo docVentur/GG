@@ -1,20 +1,104 @@
 .ice.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s4.yellow.lighten-5
-      <pyridostigmine-button icon="accessibility" name="pyridostigmine" color="black" mostrecententry="$ctrl.mostrecententry['pyridostigmine']" type="icetask" intensity="lighten-4">
-      </pyridostigmine-button>
+      .ice.z-depth-5
+        <pyridostigmine-button icon="accessibility" name="pyridostigmine" color="black" mostrecententry="$ctrl.mostrecententry['pyridostigmine']" type="icetask" intensity="lighten-4">
+        </pyridostigmine-button>
+      .div
+        %i.material-icons.white-text.black{style: "font-size: 2em"} looks
+        %i.material-icons.white-text.black{style: "font-size: 2em"} arrow_drop_up
+        %i.material-icons.white-text.black{style: "font-size: 2em"} expand_less
+        %i.material-icons.white-text.black{style: "font-size: 2em"} keyboard_arrow_up
+        %i.material-icons.white-text.black{style: "font-size: 2em"} keyboard_capslock
+        %i.material-icons.white-text.black{style: "font-size: 2em"} navigation
+        %i.material-icons.white-text.black{style: "font-size: 2em"} report_problem
+        %i.material-icons.white-text.black{style: "font-size: 3em"} terrain
+        %i.material-icons.white-text.black{style: "font-size: 2em"} text_format
+        %i.material-icons.white-text.black{style: "font-size: 2em"} warning
+        .hindex= "_id: hindex"
+        .hneg1= "entered_at: 2018-07-23T15:29:05-07:00"
+        .h0= "$ref: http://gg/ai.log/entry.schema"
+        %hr
+        .h1= "carot"
+        .h3= "icon: terrain"
+        .h5= "type: icetask"
+        %hr
+        .h2= "color: yellow"
+        .h4= "intensity: lighten-5"
+        .h6= "_rev: permanent marker"
+        %hr
+        .h7.grey= "name: Mestinon"
+        .h8= "comment: button press"
+        .h9= "fields: { }"
+        %hr
+        .h10= "watch your phrase-ology!"
+        .h11= "www link hypoxia"
+        .h12= "h12"
+        %hr
+        .h13= "hysteria"
+        .h14= "gluten-free bread crumbs"
+        .h15= "h15"
+
     .col.s4.red.lighten-5
       <ailog-button icon="change_history" name="ailog" color="grey" mostrecententry="$ctrl.mostrecententry['ailog']" type="icetask" intensity="darken-2">
       </ailog-button>
     .col.s4.blue.lighten-5
-      .h12.blue-grey-text.pink.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
-      .h12.blue-grey-text.yellow.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
-      .h12.blue-grey-text.red.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
-      .h12.blue-grey-text.blue.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
-      .h12.blue-grey-text.yellow.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
-      .h12.blue-grey-text.red.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
-      .h12.blue-grey-text.blue.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz
-
+      .row
+        .col.s4
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+        .col.s4.zoo
+          .zoo
+            .zoo
+              %i.material-icons.blue-grey-text.lighten-3.brown{style: "font-size: 10em"} blur_on
+        .col.s4
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+      .row
+        .col.s1
+        .col.10.zoo
+          .h12.blue-grey-text.white how do i publish the current mes log here?
+          .h12 https://en.wikipedia.org/wiki/Color_blindness
+          .h12.blue-grey-text.pink.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz  ^|. :: abcdefghijklmnopqrstuvwxyz
+          .h12.blue-grey-text.yellow.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz  ^|. :: abcdefghijklmnopqrstuvwxyz
+          .h12.blue-grey-text.red.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz ^|. :: abcdefghijklmnopqrstuvwxyz
+          .h12.blue-grey-text.blue.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz ^|. :: abcdefghijklmnopqrstuvwxyz
+          .h12.blue-grey-text.yellow.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz ^|. :: abcdefghijklmnopqrstuvwxyz
+          .h12.blue-grey-text.red.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz ^|. :: abcdefghijklmnopqrstuvwxyz
+          .h12.blue-grey-text.blue.lighten-4 TIMESTAMP :: ^|. :: abcdefghijklmnopqrstuvwxyz ^|. :: abcdefghijklmnopqrstuvwxyz
+        .col.s1
 .pi.container{style: "width: 90% !important; max-width: none", 'ng-if': 'true'}
   .row.grey.darken-1.center
     .col.s2

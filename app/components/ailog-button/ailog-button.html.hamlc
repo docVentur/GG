@@ -1,52 +1,73 @@
-.div.black.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
-  .div{"ng-click": "$ctrl.make_entry()"}
+.pi.div.black.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
+  .div
     .row
+
       .col.s8
         .input-field{"ng-class": "$ctrl.comment_classes"}
           %input{type: "text", "ng-model": "$ctrl.new_project_name", "length": "33"}
           %label= "^mai.words go here!"
-          .hindex.i-t{style: "font-size: 1em"}= "{{ $ctrl.name }} gg_color_code drop-down"
-
+        .row
+          .col.s5
+            %select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggcolor"}
+              %option{"ng-repeat": "ggcolor in $ctrl.ggcolors"}
+                ="{{ ggcolor }}"
+          .col.s2
+            %i.material-icons{style: "font-size: 3em"} border_vertical
+          .col.s5
+            %select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggintensity"}
+              %option{"ng-repeat": "ggintensity in $ctrl.ggintensity"}
+                ="{{ ggintensity }}"
       .col.s4
-        .pi
-          .black.white-text{style: "font-size: 1em"} NOW
-          .white.black-text{style: "font-size: 1em"} THEN
-        .zoo
-          %div{"ng-if": "$ctrl.mostrecententry"}
+        .hneg1.grey.black-text.darken-2= "| . pi . |"
+
+        .row
+          .col.s6
+            .pi.black
+              .div.z-depth-5{"ng-click": "$ctrl.make_entry()"}
+                %i.material-icons.white-text.black{style: "font-size: 2em"} border_outer
+                .black.white-text{style: "font-size: 1em"} NOW
+          .col.s6
+            .pi.white
+              .div{"ng-click": "$ctrl.make_entry()"}
+                %i.material-icons.white.black-text{style: "font-size: 2em"} border_clear
+                .white.black-text{style: "font-size: 1em"} THEN
+        .row
+          .zoo
+            %div{"ng-if": "$ctrl.mostrecententry"}
             .hneg1{style: "font-size: 1.5em"}{"am-time-ago": "$ctrl.mostrecententry.entered_at"}
-    %a.button.btn.h8{href: "http://clu.sectorfour:5984/_utils/database.html?ailogdb", target: "_blank"} ailogdb
-    .h12= "_id: f36b7409d7a0c001ed44c505370092be"
-    .h12= "_rev: 1-f55c0f6e8e700389ea63900de3cff825"
-    .h12= "$ref: http://gg/ai.log/entry.schema"
-    .h12= "entered_at: 2018-07-23T15:29:05-07:00"
-    %hr
-    .h12= "color: yellow"
-    .h12= "intensity: lighten-4"
-    %hr
-
-    .h12= "name: Mestinon"
-    .h12= "icon: expand_less"
 
 
-    .h12= "comment: button press"
-    .h12= "fields: { }"
+%i.material-icons.white-text.black{style: "font-size: 3em"} blur_on
+%i.material-icons.white-text.black{style: "font-size: 2em"} border_clear
+%i.material-icons.white-text.black{style: "font-size: 2em"} border_outer
+%i.material-icons.white-text.black{style: "font-size: 2em"} border_vertical
+%i.material-icons.white-text.black{style: "font-size: 2em"} grid_on
+%i.material-icons.white-text.black{style: "font-size: 2em"} view_comfy
+%i.material-icons.white-text.black{style: "font-size: 2em"} view_module
 
-    .h12= "type: pitask"
+%a.button.btn.h8{href: "http://clu.sectorfour:5984/_utils/database.html?ailogdb", target: "_blank"} ailogdb
+.hneg1= "_id: f36b7409d7a0c001ed44c505370092be :: .hneg1"
+.hneg1= "entered_at: 2018-07-23T15:29:05-07:00"
+.h0= "$ref: http://gg/ai.log/entry.schema"
+%hr
+.h1= "pipe"
+.h3= "icon: blur_on"
+.h5= "type: icetask"
+%hr
+.h2= "color: pink"
+.h4= "intensity: lighten-5"
+.h6= "_rev: 1-f55c0f6e8e700389ea63900de3cff825"
+%hr
+.h7.grey= "name: gg"
+.h8= "comment: button press"
+.h9= "fields: { }"
+%hr
+.h10= "Doctor Who?"
+.h11= "wiki link world health organization"
+.h12= "h12"
+%hr
+.h13= "Horton Hears a Who"
+.h14= "emotionally sober living"
+.h15= "h15"
 %hr
 %hr
-%hr
-
-%hr
-%hr
-%hr
-%hr
-%hr
-%hr
-
-%select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggcolor"}
-  %option{"ng-repeat": "ggcolor in $ctrl.ggcolors"}
-    ="{{ ggcolor }}"
-
-%select.browser-default{"ng-change": "$ctrl.dropdownintensity_changed()", "ng-model": "$ctrl.ggintensity"}
-  %option{"ng-repeat": "ggintensity in $ctrl.ggintensity"}
-    ="{{ ggintensity }}"
