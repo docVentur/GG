@@ -1,3 +1,57 @@
+.row
+  think svg editor for playing card
+.row
+  .ice.grey.hneg1 ice
+    %i.material-icons.black-text{style: "font-size: 3em"} border_vertical
+
+    .row
+      .col.s3
+        .pi.black
+          .div.z-depth-5{"ng-click": "$ctrl.make_entry()"}
+            %i.material-icons.white-text.black{style: "font-size: 2em"} border_outer
+            .black.white-text{style: "font-size: 1em"} NOW
+          .div
+            %select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggcolor"}
+              %option{"ng-repeat": "ggcolor in $ctrl.ggcolors"}
+                ="{{ ggcolor }}"
+          .div
+            %select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggintensity"}
+              %option{"ng-repeat": "ggintensity in $ctrl.ggintensity"}
+                ="{{ ggintensity }}"
+
+      .col.s6
+        .zoo
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          .input-field{"ng-class": "$ctrl.comment_classes"}
+            %input{type: "text", "ng-model": "$ctrl.new_project_name", "length": "33"}
+            %label= "^mai.words go here!"
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+          %hr
+      .col.s3
+        .row
+        .row
+        .row
+        .row
+        .row
+        .row
+        .row
+        .pi.white
+          .div{"ng-click": "$ctrl.make_entry()"}
+            %i.material-icons.white.black-text{style: "font-size: 2em"} border_clear
+            .white.black-text{style: "font-size: 1em"} THEN
+
+
+
+
 .pi.div.black.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
   .div
     .row
@@ -46,28 +100,30 @@
 %i.material-icons.white-text.black{style: "font-size: 2em"} view_module
 
 %a.button.btn.h8{href: "http://clu.sectorfour:5984/_utils/database.html?ailogdb", target: "_blank"} ailogdb
-.hneg1= "_id: f36b7409d7a0c001ed44c505370092be :: .hneg1"
-.hneg1= "entered_at: 2018-07-23T15:29:05-07:00"
-.h0= "$ref: http://gg/ai.log/entry.schema"
-%hr
-.h1= "pipe"
-.h3= "icon: blur_on"
-.h5= "type: icetask"
-%hr
-.h2= "color: pink"
-.h4= "intensity: lighten-5"
-.h6= "_rev: 1-f55c0f6e8e700389ea63900de3cff825"
-%hr
-.h7.grey= "name: gg"
-.h8= "comment: button press"
-.h9= "fields: { }"
-%hr
-.h10= "Doctor Who?"
-.h11= "wiki link world health organization"
-.h12= "h12"
-%hr
-.h13= "Horton Hears a Who"
-.h14= "emotionally sober living"
-.h15= "h15"
-%hr
-%hr
+.row
+  .col.s12
+  .hneg1= "_id: f36b7409d7a0c001ed44c505370092be :: .hneg1"
+  .hneg1= "entered_at: 2018-07-23T15:29:05-07:00"
+  .h0= "$ref: http://gg/ai.log/entry.schema"
+  %hr
+  .h1= "pipe"
+  .h3= "icon: blur_on"
+  .h5= "type: icetask"
+  %hr
+  .h2= "color: pink"
+  .h4= "intensity: lighten-5"
+  .h6= "_rev: 1-f55c0f6e8e700389ea63900de3cff825"
+  %hr
+  .h7.grey= "name: gg"
+  .h8= "comment: button press"
+  .h9= "fields: { }"
+  %hr
+  .h10= "Doctor Who?"
+  .h11= "wiki link world health organization"
+  .h12= "h12"
+  %hr
+  .h13= "Horton Hears a Who"
+  .h14= "emotionally sober living"
+  .h15= "h15"
+  %hr
+  %hr

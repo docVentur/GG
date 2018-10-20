@@ -1,3 +1,50 @@
+
+.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
+  .col.s4
+    .row
+      .col.s4.center
+        %a.button.btn.hindex{href: "https://github.com/docVentur", target: "_blank"}= "[ github"
+      .col.s4.center
+        %a.button.btn.hneg1{"ui-sref": "levelzero", target: "_blank"}= "{ levelzero"
+      .col.s4.center
+        %a.button.btn.h0{href: "https://academy.zenva.com/", target: "_blank"}= "( zenva"
+
+  .col.s4
+    .row
+      .col.s1.center
+        %a.button.btn.grey.h1.y-t= "^"
+      .col.s1.center
+        %a.button.btn.grey.h2.o-t= "#"
+      .col.s1.center
+        %a.button.btn.grey.h3.r-t= "|"
+      .col.s1.center
+        %a.button.btn.grey.h4.p-t= "/"
+      .col.s1.center
+        %a.button.btn.grey.h5.b-t= "."
+      .col.s1.center
+        %a.button.btn.grey.h6.g-t= "@"
+      .col.s1.center
+        %a.button.btn.grey.h7.w-t= "*"
+      .col.s1.center
+        %a.button.btn.grey.h8.l-t= "$"
+      .col.s1.center
+        %a.button.btn.h9.e-t.grey= "(%)"
+      .col.s1.center
+        %a.button.btn.grey.h10.i-t= "{:}"
+      .col.s1.center
+        %a.button.btn.grey.h11.c-t= "[_]"
+      .col.s1.center
+        %a.button.btn.grey.h12.n-t= ";"
+  .col.s4
+    .row
+      .col.s4.center
+        %a.button.btn.h13{href: "https://growinggenkiness.me", target: "_blank"}= "42 ))"
+      .col.s4.center
+        %a.button.btn.h14{href: "https://veronica-anderson-atr6.squarespace.com/config/", target: "_blank"}= "ss }}"
+      .col.s4.center
+        %a.button.btn.h15{href: "http://localhost:8080", target: "_blank"}= "8080 ]]"
+
+
 .ice.container{style: "width: 100% !important; max-width: none", 'ng-if': 'true'}
   .row
     .col.s4.yellow.lighten-5
