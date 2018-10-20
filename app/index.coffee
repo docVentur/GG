@@ -51,6 +51,7 @@ app.config ($stateProvider, $urlRouterProvider) ->
   $stateProvider.state {name: 'levelzero', url: '/levelzero', component: 'levelzero'}
   $stateProvider.state {name: 'main', url: '/main', parent: 'layout', component: 'main'}
   $stateProvider.state {name: 'npc', url: '/npc', parent: 'main', component: 'npc'}
+  $stateProvider.state {name: 'shipoopi', url: '/shipoopi', component: 'shipoopi'}
 
 #  $stateProvider.state {name: 'aiyellowb00ks', url: '/npc/aiyellowb00ks', parent: 'npc', component: 'aiyellowb00ks'}
 #  $stateProvider.state {name: 'playingcardtachi', url: '/npc/playingcardtachi', parent: 'npc', component: 'playingcardtachi'}
@@ -62,7 +63,8 @@ app.config ($stateProvider, $urlRouterProvider) ->
 
   $stateProvider.state {name: 'aiyellowb00kslayout', parent: 'main', url: '/aiyellowb00kslayout', template: require('./components/npc/aiyellowb00ks/app/aiyellowb00kslayout.html.hamlc')}
 
-  $urlRouterProvider.when '', '/main/npc'
+  #$urlRouterProvider.when '', '/main/npc'
+  $urlRouterProvider.when '', '/shipoopi'
 
 #  $stateProvider.state {name: 'main', url: '/main', parent: 'layout', template: require('./main.html.hamlc')}
 #  $stateProvider.state {name: 'beginning', url: '/beginning', parent: 'meadow', component: 'beginning'}
