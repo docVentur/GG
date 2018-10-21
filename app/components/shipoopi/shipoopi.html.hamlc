@@ -1,0 +1,24 @@
+.container
+  .row
+    .col.s3
+      Some Thing
+    .col.s9
+      Some Other Thing
+  .row
+    .col.s3
+      %button{"ng-click": "$ctrl.add_log_entry('Some entry text')"} Add Entry
+  .row
+    .col.s4
+      %ul
+        %li{"ng-repeat": "domain in $ctrl.domains"}
+          = "{{ domain.name }}"
+    .col.s4
+      %ul
+        %li{"ng-repeat": "log_entry_type in $ctrl.log_entry_types"}
+          = "{{ log_entry_type.value }}"
+    .col.s4
+      %ul
+        %li{"ng-repeat": "log_entry in $ctrl.log_entries"}
+          = "{{ $ctrl.users_by_id[log_entry.user_id].name }}"
+          %span{"am-time-ago": "log_entry.created_at"}
+          = "{{ log_entry.entry }}"

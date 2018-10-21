@@ -6,6 +6,7 @@ require 'expose-loader?PouchDB!pouchdb'
 pdb = require 'angular-pouchdb'
 angularMaterialize = require 'angular-materialize'
 require 'angular-moment'
+require 'angular-resource'
 
 require('materialize-css/dist/css/materialize.css')
 require('materialize-css/dist/js/materialize.js')
@@ -15,7 +16,8 @@ app = angular.module 'gg', [
   'ngAnimate',
   'pouchdb',
   'ui.materialize',
-  'angularMoment'
+  'angularMoment',
+  'ngResource'
 ]
 
 require './services/npc.css'
