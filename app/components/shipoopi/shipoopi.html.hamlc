@@ -1,22 +1,48 @@
 .container
   .row
-    .col.s3
-      Some Thing
-    .col.s9
-      Some Other Thing
+    .col.s4
+      .ice.div.center.z-depth-5.black
+        .div{"ng-click": "$ctrl.add_log_entry('Breath Pill', 'pyridostigmine')"}
+          .row
+            .col.s6
+              .h1.i-t.center{style: "font-size: 3em"} ^breathe
+              .hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
+              %i.material-icons.white-text.black{style: "font-size: 5em"} terrain
+            .col.s6
+              .hneg1{style: "font-size: 1em"} last clicked
+              %div
+                .h4.pink.lighten-5{style: "font-size: 3em"}{"am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['pyridostigmine']].created_at"}
+          .row
+            .col.s8
+              .hindex{style: "font-size: 1.3em"} ::: ^IN CASE OF EMERGENCY :::
+            .col.s2
+              .hindex{style: "font-size: 3em"} ^.ice
+            .col.s2
+.container
   .row
     .col.s3
       %button{"ng-click": "$ctrl.add_log_entry('Some entry text')"} Add Entry
+      %button{"ng-click": "$ctrl.add_log_entry('Breathe', 'pyridostigmine')"} Add Breathe Entry
   .row
     .col.s4
+      %h2 Domains
       %ul
         %li{"ng-repeat": "domain in $ctrl.domains"}
+          = "{{ domain.id }})"
           = "{{ domain.name }}"
+      %h2 Users
+      %ul
+        %li{"ng-repeat": "user in $ctrl.users"}
+          = "{{ user.user_id }})"
+          = "{{ user.name }}"
     .col.s4
+      %h2 Entry Types
       %ul
         %li{"ng-repeat": "log_entry_type in $ctrl.log_entry_types"}
+          = "{{ log_entry_type.id }})"
           = "{{ log_entry_type.value }}"
     .col.s4
+      %h2 Entries
       %ul
         %li{"ng-repeat": "log_entry in $ctrl.log_entries"}
           = "{{ $ctrl.users_by_id[log_entry.user_id].name }}"
