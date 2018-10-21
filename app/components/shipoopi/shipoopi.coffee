@@ -87,7 +87,8 @@ app.component 'shipoopi', {
         console.log data
         Promise.resolve data
         console.log vm.latest_entry_by_entry_type
-  
+        vm.mostrecententry=data[0]
+
     @update_log_entries()
 
     @users = User.query({apikey: apikey})
@@ -110,6 +111,40 @@ app.component 'shipoopi', {
         .then () =>
           vm.update_log_entries()
       true
+
+    @field_values = {}
+
+    @get_dynamic_class = =>
+      colors = {}
+      colors[@color] = "true"
+      colors[@intensity] = "true"
+      return colors
+
+    @comment_classes = {
+
+    }
+
+    @ggcolor = "pink"
+
+    @dropdown_changed = () =>
+      @comment_classes = {}
+      @comment_classes[ @ggintensity ] = true
+      @comment_classes[ @ggcolor ] = true
+
+      console.log "dropdown_changed #{ @dropdown_value }"
+
+    @ggcolors = [
+      "yellow", "orange", "red", "purple", "blue", "green", "white", "black", "grey", "pink", "cyan", "brown"
+    ]
+
+    @ggintensity = "lighten-3"
+
+    @dropdownintensity_changed = () =>
+      console.log "dropdownintensity_changed #{ @dropdownintensity_value }"
+
+    @ggintensity = [
+      "lighten-5", "lighten-4", "lighten-3", "lighten-2", "lighten-1", "", "darken-1", "darken-2", "darken-3", "darken-4", "accent-1", "accent-2", "accent-3", "accent-4"
+    ]
 
     @
 }

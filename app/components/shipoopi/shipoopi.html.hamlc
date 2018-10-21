@@ -1,6 +1,6 @@
-.container
+.div
   .row
-    .col.s4
+    .col.s4.yellow.lighten-5
       .ice.div.center.z-depth-5.black
         .div{"ng-click": "$ctrl.add_log_entry('Breath Pill', 'pyridostigmine')"}
           .row
@@ -18,6 +18,54 @@
             .col.s2
               .hindex{style: "font-size: 3em"} ^.ice
             .col.s2
+    .col.s4.pink.lighten-5
+      .pi
+        .pi.div.grey.darken-2.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
+          .div
+            .row
+
+              .col.s8
+                .input-field{"ng-class": "$ctrl.comment_classes"}
+                  %input{type: "text", "ng-model": "$ctrl.new_entry_text"}
+                  %label= "^mai.words go here!"
+                .row
+                  .col.s5
+                    %select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggcolor"}
+                      %option{"ng-repeat": "ggcolor in $ctrl.ggcolors"}
+                        ="{{ ggcolor }}"
+                  .col.s2
+                    %i.material-icons{style: "font-size: 3em"} border_vertical
+                  .col.s5
+                    %select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggintensity"}
+                      %option{"ng-repeat": "ggintensity in $ctrl.ggintensity"}
+                        ="{{ ggintensity }}"
+              .col.s4
+                .hneg1.grey.black-text.darken-2= "| . pi . |"
+
+                .row
+                  .col.s6
+                    .pi.black
+                      .div.z-depth-5{"ng-click": "$ctrl.add_log_entry($ctrl.new_entry_text); $ctrl.new_entry_text = '' "}
+                        %i.material-icons.white-text.black{style: "font-size: 2em"} border_outer
+                        .black.white-text{style: "font-size: 1em"} NOW
+                  .col.s6
+                    .pi.white
+                      .div{"ng-click": "$ctrl.make_entry()"}
+                        %i.material-icons.white.black-text{style: "font-size: 2em"} border_clear
+                        .white.black-text{style: "font-size: 1em"} THEN
+                .row
+                  .zoo
+                    %div{"ng-if": "$ctrl.mostrecententry"}
+                    .hneg1{style: "font-size: 1.5em", "am-time-ago": "$ctrl.mostrecententry.created_at"}
+        .row.grey
+          think svg editor for playing card
+
+    .col.s4.blue.lighten-5
+      .h12 log abcdefghijklmnopqrstuvwxyz
+      .h12 log abcdefghijklmnopqrstuvwxyz
+      .h12 log abcdefghijklmnopqrstuvwxyz
+      .h12 log abcdefghijklmnopqrstuvwxyz
+      .h12 log abcdefghijklmnopqrstuvwxyz
 .container
   .row
     .col.s3
