@@ -21,6 +21,14 @@
 .container
   .row
     .col.s3
+    .col.s6
+      %input{"ng-model": "$ctrl.new_entry_text"}
+      %button{"ng-click": "$ctrl.add_log_entry($ctrl.new_entry_text)"}
+        Log IT
+    .col.s3
+.container
+  .row
+    .col.s3
       %button{"ng-click": "$ctrl.add_log_entry('Some entry text')"} Add Entry
       %button{"ng-click": "$ctrl.add_log_entry('Breathe', 'pyridostigmine')"} Add Breathe Entry
   .row
