@@ -14,7 +14,7 @@ app.component 'shipoopi', {
     apikey = "bb43f6ba-8b77-4304-8d24-52db1319eb20" # mel
 
     prefix = "http://rinzler:3000"
-    prefix = "http://ai.gdkp.org:4000"
+    prefix = "https://ai.gdkp.org"
 
     Domain = $resource("#{prefix}/domains", {id: '@id'})
     LogEntryType = $resource("#{prefix}/log_entry_types", {id: '@id'})
@@ -41,6 +41,9 @@ app.component 'shipoopi', {
 
     @domains.$promise.then (data) ->
       vm.require_domain 'Medication'
+      vm.require_domain 'Dailies'
+      vm.require_domain 'Weeklies'
+      vm.require_domain 'Fewd'
       Promise.resolve data
 
     @reload_entry_types = ->
@@ -55,7 +58,39 @@ app.component 'shipoopi', {
     @reload_entry_types()
       .then () ->
         vm.require_log_entry_type 'Medication', 'pyridostigmine'
-
+        vm.require_log_entry_type 'Medication', 'nebulizer'
+        vm.require_log_entry_type 'Medication', 'albuterol inhaler'
+        vm.require_log_entry_type 'Medication', 'Advair'
+        vm.require_log_entry_type 'Medication', 'Pig Pill'
+        vm.require_log_entry_type 'Medication', 'Pain Management'
+        vm.require_log_entry_type 'Dailies', 'de-Hare the Shower'
+        vm.require_log_entry_type 'Dailies', 'Clean Sink'
+        vm.require_log_entry_type 'Dailies', 'Laundry Done'
+        vm.require_log_entry_type 'Dailies', 'Took out the Trash'
+        vm.require_log_entry_type 'Dailies', 'Brushed Teeth'
+        vm.require_log_entry_type 'Weeklies', 'Cleaned the Rat Cage'
+        vm.require_log_entry_type 'Weeklies', 'Recycling'
+        vm.require_log_entry_type 'Weeklies', 'Post Office'
+        vm.require_log_entry_type 'Weeklies', 'Mail Check'
+        vm.require_log_entry_type 'Weeklies', 'Shopping Trip'
+        vm.require_log_entry_type 'Fewd', 'Soda: 20oz Bottle'
+        vm.require_log_entry_type 'Fewd', 'Soda: 12oz Can'
+        vm.require_log_entry_type 'Fewd', 'Capital Tea'
+        vm.require_log_entry_type 'Fewd', 'Steak'
+        vm.require_log_entry_type 'Fewd', 'Taco Tuesday'
+        vm.require_log_entry_type 'Fewd', 'Sheperds Pi'
+        vm.require_log_entry_type 'Fewd', 'Chicken Thighs'
+        vm.require_log_entry_type 'Fewd', 'Salman'
+        vm.require_log_entry_type 'Fewd', 'Tamales'
+        vm.require_log_entry_type 'Fewd', 'Yogurt'
+        vm.require_log_entry_type 'Fewd', 'Tuna'
+        vm.require_log_entry_type 'Fewd', 'Cereal'
+        vm.require_log_entry_type 'Fewd', 'Quesadilla'
+        vm.require_log_entry_type 'Fewd', 'Oatmeal'
+        vm.require_log_entry_type 'Fewd', 'French Fries'
+        vm.require_log_entry_type 'Fewd', 'Vegetables'
+        vm.require_log_entry_type 'Fewd', 'Salad'
+        vm.reload_entry_types()
 
     @require_domain = (domain_name) ->
       for domain in vm.domains
@@ -72,8 +107,6 @@ app.component 'shipoopi', {
           return entry_type
       newEntry = new LogEntryType
       newEntry.$save({value: require_entry_type, domain_id: vm.domain_ids_by_name[domain_name], apikey: apikey})
-        .then (data) ->
-          vm.reload_entry_types()
 
     @update_log_entries = () ->
       vm.log_entries = LogEntry.query({apikey: apikey})
@@ -100,7 +133,10 @@ app.component 'shipoopi', {
     @add_log_entry = (entry, log_entry_type) ->
       newEntry = new LogEntry
       args = {entry: entry, apikey: apikey}
+      console.log "add_log_entry()"
       if log_entry_type
+        console.log "with log_entry_type"
+        console.log log_entry_type
         entryType = false
         for t in @log_entry_types
           if t.value == log_entry_type

@@ -11,7 +11,7 @@
             .col.s6
               .hneg1{style: "font-size: 1em"} last clicked
               %div
-                .h4.pink.lighten-5{style: "font-size: 3em"}{"am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['pyridostigmine']].created_at"}
+                .h4.pink.lighten-5{style: "font-size: 3em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['pyridostigmine']].created_at"}
           .row
             .col.s8
               .hindex{style: "font-size: 1.3em"} ::: ^IN CASE OF EMERGENCY :::
@@ -61,24 +61,23 @@
           think svg editor for playing card
 
     .col.s4.blue.lighten-5
-      .h12 log abcdefghijklmnopqrstuvwxyz
-      .h12 log abcdefghijklmnopqrstuvwxyz
-      .h12 log abcdefghijklmnopqrstuvwxyz
-      .h12 log abcdefghijklmnopqrstuvwxyz
-      .h12 log abcdefghijklmnopqrstuvwxyz
-.container
-  .row
-    .col.s3
-    .col.s6
-      %input{"ng-model": "$ctrl.new_entry_text"}
-      %button{"ng-click": "$ctrl.add_log_entry($ctrl.new_entry_text)"}
-        Log IT
-    .col.s3
+      .h12{"ng-repeat": "log_entry in $ctrl.log_entries"}
+        = "{{ $ctrl.users_by_id[log_entry.user_id].name }}"
+        %span{"am-time-ago": "log_entry.created_at"}
+        = "{{ log_entry.entry }}"
 .container
   .row
     .col.s3
       %button{"ng-click": "$ctrl.add_log_entry('Some entry text')"} Add Entry
       %button{"ng-click": "$ctrl.add_log_entry('Breathe', 'pyridostigmine')"} Add Breathe Entry
+      %h2 Fewd
+      %button{"ng-click": "$ctrl.add_log_entry('Taco Tuesday', 'Taco Tuesday')"} Taco Tuesday!
+      %br
+      %button{"ng-click": "$ctrl.add_log_entry('Soda: 20oz Bottle', 'Soda: 20oz Bottle')"} Soda: 20oz Bottle
+      .h4.pink.lighten-5{style: "font-size: 3em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['Soda: 20oz Bottle']].created_at"}
+      %br
+      %button{"ng-click": "$ctrl.add_log_entry('Soda: 12oz Can', 'Soda: 12oz Can')"} Soda: 12oz Can
+      .h4.pink.lighten-5{style: "font-size: 3em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['Soda: 12oz Can']].created_at"}
   .row
     .col.s4
       %h2 Domains
@@ -97,10 +96,3 @@
         %li{"ng-repeat": "log_entry_type in $ctrl.log_entry_types"}
           = "{{ log_entry_type.id }})"
           = "{{ log_entry_type.value }}"
-    .col.s4
-      %h2 Entries
-      %ul
-        %li{"ng-repeat": "log_entry in $ctrl.log_entries"}
-          = "{{ $ctrl.users_by_id[log_entry.user_id].name }}"
-          %span{"am-time-ago": "log_entry.created_at"}
-          = "{{ log_entry.entry }}"
