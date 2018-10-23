@@ -60,26 +60,90 @@
         .row.grey
           think svg editor for playing card
 
-    .col.s4.blue.lighten-5
+    .col.s4.blue.lighten-5{style: "height: 100px"}
       .h12{"ng-repeat": "log_entry in $ctrl.log_entries"}
         = "{{ $ctrl.users_by_id[log_entry.user_id].name }}"
         %span{"am-time-ago": "log_entry.created_at"}
         = "{{ log_entry.entry }}"
+
+
+.row.center
+  .col.s1
+    %a.button.btn.h1.yellow.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "^"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('yellow', 'yellow')"} yellow
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "player"
+  .col.s1
+    %a.button.btn.h2.orange.lighten-4.black-text{"ui-sref": "levelzeroorange"}= "#"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('orange', 'orange')"} orange
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['orange']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "beast"
+  .col.s1
+    %a.button.btn.h3.red.lighten-4.black-text{"ui-sref": "levelzerored"}= "|"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('red', 'red')"} red
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['red']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "beastiary"
+  .col.s1
+    %a.button.btn.h4.purple.lighten-4.black-text{"ui-sref": "levelzeropurple"}= "/"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('purple', 'purple')"} purple
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['purple']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "items"
+  .col.s1
+    %a.button.btn.h5.blue.lighten-4.black-text{"ui-sref": "levelzerooblue"}= "."
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('blue', 'blue')"} blue
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['blue']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "item"
+  .col.s1
+    %a.button.btn.h6.green.lighten-4.black-text{"ui-sref": "levelzerogreen"}= "@"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('green', 'green')"} green
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['green']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "world"
+  .col.s1
+    %a.button.btn.h7.white.black-text{href: "http://growinggenkiness.me/bolsh"}= "*"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('white', 'white')"} white
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['white']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "bolsh"
+  .col.s1
+    %a.button.btn.h8.black.white-text{"ui-sref": "levelzeroblack"}= '$'
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('black', 'black')"} black
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['black']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "curves"
+  .col.s1
+    %a.button.btn.h9.grey{"ui-sref": "levelzerogrey"}= "%"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('grey', 'grey')"} grey
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['grey']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "admin"
+  .col.s1
+    %a.button.btn.h10.black-text.pink.lighten-4{"ui-sref": "levelzeropink"}= ":"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('pink', 'pink')"} pink
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['pink']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "legacy"
+  .col.s1
+    %a.button.btn.h11.cyan.lighten-4{"ui-sref": "levelzerocyan"}= "_"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('cyan', 'cyan')"} cyan
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['cyan']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "item editor"
+  .col.s1
+    %a.button.btn.h12.brown.lighten-4{"ui-sref": "levelzerobrown"}= ";"
+    %a.button.btn{"ng-click": "$ctrl.add_log_entry('brown', 'brown')"} brown
+    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['brown']].created_at"}
+    .h0.pink-text.text-lighten-4{style: "font-size: .4em"}= "MPC"
+
+
 .container
   .row
     .col.s3
-      %button{"ng-click": "$ctrl.add_log_entry('Some entry text')"} Add Entry
-      %button{"ng-click": "$ctrl.add_log_entry('Breathe', 'pyridostigmine')"} Add Breathe Entry
+      %button.btn{"ng-click": "$ctrl.add_log_entry('Some entry text')"} Add Entry
+      %button.btn{"ng-click": "$ctrl.add_log_entry('Breathe', 'pyridostigmine')"} Add Breathe Entry
       %h2 Fewd
-      %button{"ng-click": "$ctrl.add_log_entry('Taco Tuesday', 'Taco Tuesday')"} Taco Tuesday!
+      %button.btn{"ng-click": "$ctrl.add_log_entry('Taco Tuesday', 'Taco Tuesday')"} Taco Tuesday!
       %br
-      %button{"ng-click": "$ctrl.add_log_entry('Soda: 20oz Bottle', 'Soda: 20oz Bottle')"} Soda: 20oz Bottle
+      %button.btn{"ng-click": "$ctrl.add_log_entry('Soda: 20oz Bottle', 'Soda: 20oz Bottle')"} Soda: 20oz Bottle
       .h4.pink.lighten-5{style: "font-size: 3em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['Soda: 20oz Bottle']].created_at"}
       %br
-      %button{"ng-click": "$ctrl.add_log_entry('Soda: 12oz Can', 'Soda: 12oz Can')"} Soda: 12oz Can
+      %button.btn{"ng-click": "$ctrl.add_log_entry('Soda: 12oz Can', 'Soda: 12oz Can')"} Soda: 12oz Can
       .h4.pink.lighten-5{style: "font-size: 3em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['Soda: 12oz Can']].created_at"}
-  .row
-    .col.s4
+    .col.s3
       %h2 Domains
       %ul
         %li{"ng-repeat": "domain in $ctrl.domains"}
@@ -90,7 +154,7 @@
         %li{"ng-repeat": "user in $ctrl.users"}
           = "{{ user.user_id }})"
           = "{{ user.name }}"
-    .col.s4
+    .col.s3
       %h2 Entry Types
       %ul
         %li{"ng-repeat": "log_entry_type in $ctrl.log_entry_types"}

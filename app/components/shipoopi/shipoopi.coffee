@@ -44,6 +44,7 @@ app.component 'shipoopi', {
       vm.require_domain 'Dailies'
       vm.require_domain 'Weeklies'
       vm.require_domain 'Fewd'
+      vm.require_domain 'Color'
       Promise.resolve data
 
     @reload_entry_types = ->
@@ -90,7 +91,21 @@ app.component 'shipoopi', {
         vm.require_log_entry_type 'Fewd', 'French Fries'
         vm.require_log_entry_type 'Fewd', 'Vegetables'
         vm.require_log_entry_type 'Fewd', 'Salad'
+        vm.require_log_entry_type 'Color', 'yellow'
+        vm.require_log_entry_type 'Color', 'orange'
+        vm.require_log_entry_type 'Color', 'red'
+        vm.require_log_entry_type 'Color', 'purple'
+        vm.require_log_entry_type 'Color', 'blue'
+        vm.require_log_entry_type 'Color', 'green'
+        vm.require_log_entry_type 'Color', 'white'
+        vm.require_log_entry_type 'Color', 'black'
+        vm.require_log_entry_type 'Color', 'grey'
+        vm.require_log_entry_type 'Color', 'pink'
+        vm.require_log_entry_type 'Color', 'cyan'
+        vm.require_log_entry_type 'Color', 'brown'                                                                        
+
         vm.reload_entry_types()
+
 
     @require_domain = (domain_name) ->
       for domain in vm.domains
