@@ -49,11 +49,14 @@ app.component 'shipoopi', {
 
     @reload_entry_types = ->
       vm.entry_types_by_value = {}
+      vm.entry_type_name_by_id = {}
       vm.log_entry_types = LogEntryType.query({apikey: apikey})
       vm.log_entry_types.$promise.then (data) ->
         for entry_type in data
           vm.entry_types_by_value[entry_type.value] = entry_type
           vm.log_entry_type_id_by_name[entry_type.value] = entry_type.id
+          vm.entry_type_name_by_id[entry_type.id] = entry_type.value
+
         Promise.resolve data
 
     @reload_entry_types()
@@ -102,7 +105,7 @@ app.component 'shipoopi', {
         vm.require_log_entry_type 'Color', 'grey'
         vm.require_log_entry_type 'Color', 'pink'
         vm.require_log_entry_type 'Color', 'cyan'
-        vm.require_log_entry_type 'Color', 'brown'                                                                        
+        vm.require_log_entry_type 'Color', 'brown'
 
         vm.reload_entry_types()
 

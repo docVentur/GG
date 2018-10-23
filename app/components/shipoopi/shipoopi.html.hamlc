@@ -61,11 +61,12 @@
           think svg editor for playing card
 
     .col.s4.blue.lighten-5{style: "height: 100px"}
+      .h11 ^mono |koto| .dot.mai.owo.
       .h12{"ng-repeat": "log_entry in $ctrl.log_entries"}
         = "{{ $ctrl.users_by_id[log_entry.user_id].name }}"
         %span{"am-time-ago": "log_entry.created_at"}
+        = "{{ $ctrl.entry_type_name_by_id[log_entry.log_entry_type_id] }}"
         = "{{ log_entry.entry }}"
-
 
 .row.center
   .col.s1
