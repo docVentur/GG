@@ -1,9 +1,3 @@
-.row{
-  border-collapse: collapse;
-  border-spacing: 0;
-  line-height: 1;
-  margin: 0;
-}
 
 .em{
 
@@ -200,16 +194,25 @@
 
 
 
+.row{
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
 
+.ailog.button.btn {
+  border: 2px solid cyan;
+  border-radius: 3px;
+  background-color: ;
+  color: black;
+  text-align: center;
+  transition: all 3s;
+  cursor: pointer;
+  vertical-align: middle;
 
-
-
-
-
-
-
-
-
+}
 
 .button {
   border-radius: 3px;
