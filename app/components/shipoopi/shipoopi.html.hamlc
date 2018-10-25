@@ -1,598 +1,667 @@
-.row.center
-  .col.s5
-  .col.s1
-    .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Monday"
-  .col.s1
-    .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Tuesday"
-  .col.s1
-    .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Wednesday"
-  .col.s1
-    .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Thursday"
-  .col.s1
-    .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Friday"
-  .col.s1
-    .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Saturday"
-  .col.s1
-    .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Sunday"
-.row.center.grey.darken-1{style: "font-size: .75em"}
-  .col.s1
-    .h9 ai_gg_gdkp
-    .h9 ai
-    .h9 ai_gg
-  .col.s1
-    .h9 gg
-    .h9 ai_gg_gdkp
-    .h9 gg_gdkp
-  .col.s1
-    .h9 ai_gg_gdkp
-    .h9 ai_gg
-    .h9 gg_gdkp
-  .col.s1
-    .h9 ai_gdkp
-    .h9 ai_gg_gdkp
-    .h9 gg
-  .col.s1
-    .h9 ai
-    .h9 ai_gg
-    .h9 ai_gg_gdkp
-  .col.s1
-    %a.button.btn.h0.yellow.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "^"
-  .col.s1
-    %a.button.btn.h0.orange.lighten-4.black-text{"ui-sref": "levelzeroorange"}= "#"
-  .col.s1
-    %a.button.btn.h0.red.lighten-4.black-text{"ui-sref": "levelzerored"}= "|"
-  .col.s1
-    %a.button.btn.h0.purple.lighten-4.black-text{"ui-sref": "levelzeropurple"}= "/"
-  .col.s1
-    %a.button.btn.h0.blue.lighten-4.black-text{"ui-sref": "levelzerooblue"}= "."
-  .col.s1
-    %a.button.btn.h0.green.lighten-4.black-text{"ui-sref": "levelzerogreen"}= "@"
-  .col.s1
-    %a.button.btn.h0.white.black-text{href: "http://growinggenkiness.me/bolsh"}= "*"
+.row
+  .col.s3
+    .div.yellow.lighten-5
+      .ice.div.center.z-depth-5.black
+        .div{"ng-click": "$ctrl.add_log_entry('Breath Pill', 'pyridostigmine')"}
+          .row
+            .col.s6
+              .h1.i-t.center{style: "font-size: 3em"} ^breathe
+              .hindex{style: "font-size: 1em"}= "{{ $ctrl.name }}"
+              %i.material-icons.white-text.black{style: "font-size: 5em"} terrain
+            .col.s6
+              .hneg1{style: "font-size: 1em"} last clicked
+              %div
+                .h4.pink.lighten-5{style: "font-size: 3em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['pyridostigmine']].created_at"}
+          .row
+            .col.s8
+              .hindex{style: "font-size: 1.3em"} ::: ^IN CASE OF EMERGENCY :::
+            .col.s2
+              .hindex{style: "font-size: 3em"} ^.ice
+            .col.s2
+    .div.pink.lighten-5
+      .pi
+        .div.grey.darken-2.center.z-depth-5{"ng-class": "$ctrl.get_dynamic_class()"}
+          .div
+            .row
+              .col.s8
+                .input-field{"ng-class": "$ctrl.comment_classes"}
+                  %input{type: "text", "ng-model": "$ctrl.new_entry_text"}
+                  %label= "^mai.words go here!"
+                .row
+                  .col.s5
+                    %select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggcolor"}
+                      %option{"ng-repeat": "ggcolor in $ctrl.ggcolors"}
+                        ="{{ ggcolor }}"
+                  .col.s2
+                    %i.material-icons{style: "font-size: 3em"} border_vertical
+                  .col.s5
+                    %select.browser-default{"ng-change": "$ctrl.dropdown_changed()", "ng-model": "$ctrl.ggintensity"}
+                      %option{"ng-repeat": "ggintensity in $ctrl.ggintensity"}
+                        ="{{ ggintensity }}"
+              .col.s4
+                .hneg1.grey.black-text.darken-2= "| . pi . |"
+                .row
+                  .col.s6
+                    .pi.black
+                      .div.z-depth-5{"ng-click": "$ctrl.add_log_entry($ctrl.new_entry_text); $ctrl.new_entry_text = '' "}
+                        %i.material-icons.white-text.black{style: "font-size: 2em"} border_outer
+                        .black.white-text{style: "font-size: 1em"} NOW
+                  .col.s6
+                    .pi.white
+                      .div{"ng-click": "$ctrl.make_entry()"}
+                        %i.material-icons.white.black-text{style: "font-size: 2em"} border_clear
+                        .white.black-text{style: "font-size: 1em"} THEN
+                .row
+                  .zoo
+                    %div{"ng-if": "$ctrl.mostrecententry"}
+                    .hneg1{style: "font-size: 1.5em", "am-time-ago": "$ctrl.mostrecententry.created_at"}
+        .row.grey
+          think svg editor for playing card
+    .div.blue.lighten-5{style: "height: 333px"}
+      .h11 ^mono |koto| .dot.mai.owo.
+      .h12{"ng-repeat": "log_entry in $ctrl.log_entries"}
+        = "{{ $ctrl.users_by_id[log_entry.user_id].name }}"
+        %span{"am-time-ago": "log_entry.created_at"}
+        = "{{ $ctrl.entry_type_name_by_id[log_entry.log_entry_type_id] }}"
+        = "{{ log_entry.entry }}"
+
+  .col.s9
+    .row.center
+      .col.s5
+      .col.s1
+        .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Monday"
+      .col.s1
+        .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Tuesday"
+      .col.s1
+        .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Wednesday"
+      .col.s1
+        .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Thursday"
+      .col.s1
+        .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Friday"
+      .col.s1
+        .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Saturday"
+      .col.s1
+        .h0.pink-text.text-lighten-4{style: "font-size: 1em"}= "Sunday"
+    .row.center.grey.darken-1{style: "font-size: .75em"}
+      .col.s1
+        .h9 ai_gg_gdkp
+        .h9 ai
+        .h9 ai_gg
+      .col.s1
+        .h9 gg
+        .h9 ai_gg_gdkp
+        .h9 gg_gdkp
+      .col.s1
+        .h9 ai_gg_gdkp
+        .h9 ai_gg
+        .h9 gg_gdkp
+      .col.s1
+        .h9 ai_gdkp
+        .h9 ai_gg_gdkp
+        .h9 gg
+      .col.s1
+        .h9 ai
+        .h9 ai_gg
+        .h9 ai_gg_gdkp
+      .col.s1
+        %a.button.btn.h0.yellow.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "^"
+      .col.s1
+        %a.button.btn.h0.orange.lighten-4.black-text{"ui-sref": "levelzeroorange"}= "#"
+      .col.s1
+        %a.button.btn.h0.red.lighten-4.black-text{"ui-sref": "levelzerored"}= "|"
+      .col.s1
+        %a.button.btn.h0.purple.lighten-4.black-text{"ui-sref": "levelzeropurple"}= "/"
+      .col.s1
+        %a.button.btn.h0.blue.lighten-4.black-text{"ui-sref": "levelzerooblue"}= "."
+      .col.s1
+        %a.button.btn.h0.green.lighten-4.black-text{"ui-sref": "levelzerogreen"}= "@"
+      .col.s1
+        %a.button.btn.h0.white.black-text{href: "http://growinggenkiness.me/bolsh"}= "*"
 
 
-.row.center
-  .col.s1
-    .h1 mes
-  .col.s2
-    .h1 yogurt
-  .col.s1
-    .h7 ::: 7am :::
-  .col.s1
-    %a.button.btn.h0.yellow.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "^"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^^"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['orange']].created_at"}
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['red']].created_at"}
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['purple']].created_at"}
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['blue']].created_at"}
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['green']].created_at"}
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['white']].created_at"}
-.row.center
-  .col.s1
-  .col.s2
-    .h2 peakflow & Advair & neb count
-  .col.s1
-    .h7 ::: 8am :::
-  .col.s1
-    %a.button.btn.h0.red.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "|"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-.row.center
-  .col.s1
-  .col.s2
-    .h3 oatmeal
-  .col.s1
-    .h7 ::: 9am :::
-  .col.s1
-    %a.button.btn.h0.blue.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "."
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^."
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-.row.center
-  .col.s1
-  .col.s2
-    .h4 teeth & laundry
-  .col.s1
-    .h7 ::: 10am :::
-  .col.s1
-    %a.button.btn.h0.orange.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "#"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+        .h1 mes
+      .col.s2
+        .h1 yogurt
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 7am
+      .col.s1
+        %a.button.btn.h0.yellow.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "^"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^^"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['orange']].created_at"}
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['red']].created_at"}
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['purple']].created_at"}
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['blue']].created_at"}
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['green']].created_at"}
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['white']].created_at"}
+    .row.center
+      .col.s1
+        .h1 NPH
+      .col.s2
+        .h2 peakflow & Advair & neb count
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 8am
+      .col.s1
+        %a.button.btn.h0.red.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "|"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h3 oatmeal
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 9am
+      .col.s1
+        %a.button.btn.h0.blue.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "."
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^."
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h4 teeth & laundry
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 10am
+      .col.s1
+        %a.button.btn.h0.orange.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "#"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-  .col.s2
-    .h5 capital Tea
-  .col.s1
-    .h7 ::: 11am :::
-  .col.s1
-    %a.button.btn.h0.purple.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "/"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^/"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h5 capital Tea
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 11am
+      .col.s1
+        %a.button.btn.h0.purple.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "/"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^/"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-  .col.s2
-    .h6 black dots
-  .col.s1
-    .h7 ::: n00n :::
-  .col.s1
-    %a.button.btn.h0.green.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "@"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^@"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h6 black dots
+      .col.s1
+        .h7{style: "font-size: 2.2em"} n00n
+      .col.s1
+        %a.button.btn.h0.green.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "@"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^@"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-%hr
+    %hr
 
 
-.row.center
-  .col.s1
-  .col.s2
-    .h1 protein+veggie
-  .col.s1
-    .h7 ::: 1pm :::
-  .col.s1
-    %a.button.btn.h0.yellow.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "^"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^^"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h1 protein+veggie
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 1pm
+      .col.s1
+        %a.button.btn.h0.yellow.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "^"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^^"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-  .col.s2
-    .h2 DDP Yoga
-  .col.s1
-    .h7 ::: 2pm :::
-  .col.s1
-    %a.button.btn.h0.orange.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "#"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h2 DDP Yoga
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 2pm
+      .col.s1
+        %a.button.btn.h0.orange.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "#"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^#"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-    .h1 mes
-  .col.s2
-    .h3 banana
-  .col.s1
-    .h7 ::: 3pm :::
-  .col.s1
-    %a.button.btn.h0.red.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "|"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+        .h1 mes
+      .col.s2
+        .h3 banana
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 3pm
+      .col.s1
+        %a.button.btn.h0.red.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "|"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-  .col.s2
-    .h4 capital Tea
-  .col.s1
-    .h7 ::: 4pm :::
-  .col.s1
-    %a.button.btn.h0.purple.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "/"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^/"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-.row.center
-  .col.s1
-  .col.s2
-    .h5 social media
-  .col.s1
-    .h7 ::: 5pm :::
-  .col.s1
-    %a.button.btn.h0.blue.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "."
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^."
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h4 capital Tea
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 4pm
+      .col.s1
+        %a.button.btn.h0.purple.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "/"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^/"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h5 social media
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 5pm
+      .col.s1
+        %a.button.btn.h0.blue.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "."
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^."
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-  .col.s2
-    .h6 MyPlate
-  .col.s1
-    .h7 ::: 6pm :::
-  .col.s1
-    %a.button.btn.h0.green.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "@"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^@"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-%hr
-.row.center
-  .col.s1
-  .col.s2
-    .h7 +
-  .col.s1
-    .h7 ::: 7pm :::
-  .col.s1
-    %a.button.btn.h0.white.black-text{"ui-sref": "levelzeroyellow"}= "*"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^*"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h6 MyPlate
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 6pm
+      .col.s1
+        %a.button.btn.h0.green.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "@"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^@"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    %hr
+    .row.center
+      .col.s1
+      .col.s2
+        .h7 +
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 7pm
+      .col.s1
+        %a.button.btn.h0.white.black-text{"ui-sref": "levelzeroyellow"}= "*"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^*"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-  .col.s2
-    .h8 veggies
-  .col.s1
-    .h7 ::: 8pm :::
-  .col.s1
-    %a.button.btn.h0.black.white-text{"ui-sref": "levelzeroyellow"}= "$"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^$"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h8 veggies
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 8pm
+      .col.s1
+        %a.button.btn.h0.black.white-text{"ui-sref": "levelzeroyellow"}= "$"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^$"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-  .col.s2
-    .h9 gg
-  .col.s1
-    .h7 ::: 9pm :::
-  .col.s1
-    %a.button.btn.h0.grey.lighten-2.black-text{"ui-sref": "levelzeroyellow"}= "%"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^%"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h9.grey gg
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 9pm
+      .col.s1
+        %a.button.btn.h0.grey.lighten-2.black-text{"ui-sref": "levelzeroyellow"}= "%"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^%"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-    .h1 mes
-  .col.s2
-    .h10 applesauce & powder
-  .col.s1
-    .h7 ::: 10pm :::
-  .col.s1
-    %a.button.btn.h0.pink.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= ":"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^:"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+        .h1 mes & NPH
+      .col.s2
+        .h10 applesauce & powder
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 10pm
+      .col.s1
+        %a.button.btn.h0.pink.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= ":"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^:"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-  .col.s2
-    .h11 teeth & laundry
-  .col.s1
-    .h7 ::: 11pm :::
-  .col.s1
-    %a.button.btn.h0.cyan.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "_"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^_"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s2
+        .h11 teeth & laundry
+      .col.s1
+        .h7{style: "font-size: 2.2em"} 11pm
+      .col.s1
+        %a.button.btn.h0.cyan.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= "_"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^_"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
-.row.center
-  .col.s1
-  .col.s1
-  .col.s1
-    .h12 bed-ya?
-  .col.s1
-    .h7 ::: midnight :::
-  .col.s1
-    %a.button.btn.h0.brown.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= ";"
-  .col.s1
-    %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^;"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
-  .col.s1
-    %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
-    .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+    .row.center
+      .col.s1
+      .col.s1
+      .col.s1
+        .h12 bed-ya?
+      .col.s1
+        .h7{style: "font-size: 2.2em"} midnight
+      .col.s1
+        %a.button.btn.h0.brown.lighten-4.black-text{"ui-sref": "levelzeroyellow"}= ";"
+      .col.s1
+        %a.ailog.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^;"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
+      .col.s1
+        %a.button.btn{"ng-click": "$ctrl.add_log_entry('Monday', 'Breakfast')"}= "^|"
+        .h4.pink.lighten-5{style: "font-size: 1em", "am-time-ago": "$ctrl.latest_entry_by_entry_type[$ctrl.log_entry_type_id_by_name['yellow']].created_at"}
 
 %hr
 %hr
